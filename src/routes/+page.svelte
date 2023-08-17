@@ -13,14 +13,10 @@
 </script>
 
 <Navigation />
-
-<!-- Page Content-->
-<div class="container-fluid p-0">
-  <About />
-  <Experience />
-  <Projects />
-  <Education />
-  <Skills />
-  <Interests />
-  <Awards />
-</div>
+<About />
+<Experience />
+<Projects />
+<Education />
+<Skills />
+<Interests />
+<Awards />

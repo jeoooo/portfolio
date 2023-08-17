@@ -1,10 +1,13 @@
 <script lang="ts">
-	import '$lib/css/styles.css';
+	import "$lib/css/styles.css";
 </script>
 
 <!-- Navigation-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-	<a class="navbar-brand js-scroll-trigger" href="#page-top">
+<nav
+	class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
+	id="sideNav"
+>
+	<a class="navbar-brand js-scroll-trigger" href="#about">
 		<span class="d-block d-lg-none">Jeo Carlo Lubao</span>
 		<span class="d-none d-lg-block"
 			><img
@@ -21,27 +24,42 @@
 		data-bs-target="#navbarResponsive"
 		aria-controls="navbarResponsive"
 		aria-expanded="false"
-		aria-label="Toggle navigation"><span class="navbar-toggler-icon" /></button
+		aria-label="Toggle navigation"
+		><span class="navbar-toggler-icon" /></button
 	>
 	<div class="collapse navbar-collapse" id="navbarResponsive">
 		<ul class="navbar-nav">
-			<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
 			<li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#workexperience">Work experience</a>
+				<a class="nav-link js-scroll-trigger" href="#about">About</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#experience">My Projects</a>
+				<a class="nav-link js-scroll-trigger" href="#workexperience"
+					>Work experience</a
+				>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#education">Education</a>
+				<a class="nav-link js-scroll-trigger" href="#experience"
+					>My Projects</a
+				>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#skills">Tech Stack</a>
+				<a class="nav-link js-scroll-trigger" href="#education"
+					>Education</a
+				>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#interests">Interests & Hobbies</a>
+				<a class="nav-link js-scroll-trigger" href="#skills"
+					>Tech Stack</a
+				>
 			</li>
-			<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+			<li class="nav-item">
+				<a class="nav-link js-scroll-trigger" href="#interests"
+					>Interests & Hobbies</a
+				>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+			</li>
 		</ul>
 	</div>
 </nav>
