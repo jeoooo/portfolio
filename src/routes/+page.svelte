@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import '$lib/css/styles.css';
 
 	import Navigation from '$lib/components/navigation/navigation.svelte';
