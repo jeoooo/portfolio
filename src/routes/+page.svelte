@@ -1,4 +1,5 @@
 <script>
+  import Projects from "../lib/components/Projects.svelte";
   import Education from "../lib/components/Education.svelte";
   import Experience from "../lib/components/Experience.svelte";
   import TechStack from "../lib/components/TechStack.svelte";
@@ -11,3 +12,4 @@
 <TechStack />
 <Experience />
 <Education />
+<Projects />
