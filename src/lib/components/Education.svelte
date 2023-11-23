@@ -1,8 +1,10 @@
 <div class="flex h-full my-5">
   <div
-    class="flex flex-col h-full w-full mx-64 my-5 border-4 p-12 bg-[#161d52e7]"
+    class="flex flex-col h-full w-full mx-64 my-24 border-4 p-12 bg-[#161d52e7]"
   >
-    <h1 class="text-5xl font-black p-3 text-white mb-5">Education</h1>
+    <h1 class="text-5xl font-black p-3 text-white mb-5">
+      <i class="fa-solid fa-user-graduate mr-2" />Education
+    </h1>
     <ol class="relative border-s border-gray-200 dark:border-gray-700">
       <li class="mb-10 ms-4">
         <div
@@ -19,12 +21,16 @@
         <time class="mb-1 text-sm font-normal leading-none text-white"
           >2019 &ndash; 2023</time
         >
-        <ul class="pl-5 pt-3 list-disc list-inside">
-          <li class="text-base font-bold text-white pt-2">Loyalty Award</li>
+        <ul class="pl-5 pt-3">
           <li class="text-base font-bold text-white pt-2">
-            Departmental Award
+            <i class="fa-solid fa-medal mr-1" />Loyalty Award
           </li>
-          <li class="text-base font-bold text-white pt-2">Citation Award</li>
+          <li class="text-base font-bold text-white pt-2">
+            <i class="fa-solid fa-medal mr-1" />Departmental Award
+          </li>
+          <li class="text-base font-bold text-white pt-2">
+            <i class="fa-solid fa-medal mr-1" />Citation Award
+          </li>
         </ul>
 
         <p class="text-base font-bold text-white pt-5">
@@ -59,18 +65,18 @@
           </li>
         </ul>
         <p class="text-base font-bold text-white pt-5">Dean's Lister</p>
-        <ul class="pl-5 pt-3 list-disc list-inside">
+        <ul class="pl-5 pt-3 list-inside">
           <li class="text-white">
             <!-- Set text to white -->
-            2nd Semester, A.Y. 2019 – 2020
+            <i class="fa-solid fa-medal mr-1" />2nd Semester, A.Y. 2019 – 2020
           </li>
           <li class="text-white">
             <!-- Set text to white -->
-            2nd Semester, A.Y. 2020 – 2021
+            <i class="fa-solid fa-medal mr-1" />2nd Semester, A.Y. 2020 – 2021
           </li>
           <li class="text-white">
             <!-- Set text to white -->
-            2nd Semester, A.Y. 2021 – 2022
+            <i class="fa-solid fa-medal mr-1" />2nd Semester, A.Y. 2021 – 2022
           </li>
         </ul>
       </li>

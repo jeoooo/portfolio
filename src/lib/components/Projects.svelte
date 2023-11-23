@@ -6,11 +6,13 @@
   import Introduction from "./Introduction.svelte";
 </script>
 
-<div class="flex h-full my-5">
+<div class="flex h-full my-5" id="projects">
   <div
-    class="flex flex-col h-full w-full mx-64 my-5 border-4 p-12 bg-[#161d52e7]"
+    class="flex flex-col h-full w-full mx-64 my-20 border-4 p-12 bg-[#161d52e7]"
   >
-    <h1 class="text-5xl font-black p-3 text-white mb-5">Projects</h1>
+    <h1 class="text-5xl font-black p-3 text-white mb-5">
+      <i class="fa-solid fa-code mr-2" />Projects
+    </h1>
     <ol class="relative border-s border-gray-200 dark:border-gray-700">
       <li class="mb-10 ms-4">
         <div
@@ -593,6 +595,7 @@
           <!-- Set text to white -->
           A Speech-to-Text (STT) note taking app using SQLite
         </h3>
+
         <a
           href="https://github.com/jeoooo/VoiceNotes"
           target="_blank"
@@ -618,7 +621,7 @@
         </a>
 
         <p class="text-base text-white pt-2">
-          Voice Notes is a user-friendly Speech-to-Text app that effortlessly
+          VoiceNotes is a user-friendly Speech-to-Text app that effortlessly
           converts spoken words into written notes. With the simplicity of
           SQLite, your transcribed thoughts are securely stored and easily
           accessible. Streamline your note-taking experience with Voice Notes

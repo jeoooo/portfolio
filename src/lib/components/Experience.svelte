@@ -1,8 +1,10 @@
 <div class="flex h-full my-5">
   <div
-    class="flex flex-col h-full w-full mx-64 my-5 border-4 p-12 bg-[#161d52e7]"
+    class="flex flex-col h-full w-full mx-64 my-24 border-4 p-12 bg-[#161d52e7]"
   >
-    <h1 class="text-5xl font-black p-3 text-white mb-5">Work Experience</h1>
+    <h1 class="text-5xl font-black p-3 text-white mb-5">
+      <i class="fa-solid fa-briefcase mr-2" />Work Experience
+    </h1>
     <ol class="relative border-s border-gray-200 dark:border-gray-700">
       <li class="mb-10 ms-4">
         <div

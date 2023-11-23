@@ -7,19 +7,16 @@
   <div
     class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
   >
-    <a
-      href="https://flowbite.com/"
-      class="flex items-center space-x-3 rtl:space-x-reverse"
-    >
+    <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
       <!-- <img
         src="https://flowbite.com/docs/images/logo.svg"
         class="h-8"
         alt="Flowbite Logo"
-      />
+      /> -->
       <span
-        class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-        >Flowbite</span
-      > -->
+        class="self-center text-2xl text-white font-semibold whitespace-nowrap"
+        >@jeooo</span
+      >
     </a>
     <button
       data-collapse-toggle="navbar-default"
@@ -51,14 +48,14 @@
       >
         <li>
           <a
-            href="#"
+            href="#about"
             class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
             >About</a
           >
         </li>
         <li>
           <a
-            href="#"
+            href="#projects"
             class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
             >Projects</a
           >
@@ -72,7 +69,7 @@
         </li> -->
         <li>
           <a
-            href="#"
+            href="#hello"
             class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
             >Contact</a
           >

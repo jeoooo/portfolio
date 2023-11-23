@@ -1,10 +1,10 @@
-<div class="flex h-full mt-20">
+<div class="flex h-full mt-18">
   <div
-    class="bg-[#161d52e7] flex flex-row h-auto w-full mx-64 my-5 border-4 justify-center"
+    class="bg-[#161d52e7] flex flex-row h-auto w-full mx-64 mt-28 border-4 justify-center"
   >
     <div class="flex flex-col">
       <div class="flex flex-col my-20">
-        <p class="text-5xl flex text-white font-bold p-3 self-center">
+        <p class="text-5xl flex text-white font-black p-3 self-center">
           Hello I'm Jeo!
           <svg
             class="ml-3"
@@ -47,7 +47,7 @@
           Software Developer | Graphic Designer
         </p>
 
-        <a
+        <!-- <a
           class="bg-[#161d52] fill-white hover:fill-[#161d52] transition ease-in-out duration-150 text-white hover:text-[#161d52] border border-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-white font-medium text-sm px-5 py-2.5 me-2 mb-2 mt-4"
           href="https://www.linkedin.com/in/jeoooo/"
           target="_blank"
@@ -62,8 +62,8 @@
 
             LinkedIn
           </button>
-        </a>
-        <a
+        </a> -->
+        <!-- <a
           class="bg-[#161d52] fill-white hover:fill-[#161d52] transition ease-in-out duration-150 text-white hover:text-[#161d52] border border-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-white font-medium text-sm px-5 py-2.5 me-2 mb-2 mt-4"
           href="https://github.com/jeoooo"
           target="_blank"
@@ -84,8 +84,8 @@
             </svg>
             GitHub
           </button>
-        </a>
-        <a
+        </a> -->
+        <!-- <a
           class="bg-[#161d52] fill-white hover:fill-[#161d52] transition ease-in-out duration-150 text-white hover:text-[#161d52] border border-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-white font-medium text-sm px-5 py-2.5 me-2 mb-2 mt-4"
           href="https://www.behance.net/jeolubao"
           target="_blank"
@@ -104,7 +104,7 @@
 
             Behance
           </button>
-        </a>
+        </a> -->
       </div>
     </div>
   </div>
