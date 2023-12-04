@@ -12,7 +12,7 @@
       const apiUrl = "https://api.waifu.im/search";
       const params = {
         included_tags: "marin-kitagawa",
-        is_nsfw: false,
+        is_nsfw: false, // NO HORNY! (○>ω<)ﾉﾞ
       };
 
       const queryParams = new URLSearchParams(params);
@@ -143,29 +143,63 @@
   <div class="min-h-screen flex items-center justify-center bg-[#161d5269]">
     <div
       role="status"
-      class="space-y-8 md:space-y-0 md:space-x-8 rtl:space-x-reverse md:flex md:items-center"
+      class=" bg-[#161d52] border-4 border-white p-8 space-y-8 rtl:space-x-reverse md:flex md:items-center"
     >
-      <div
-        class="flex items-center justify-center w-full h-48 bg-gray-300 rounded sm:w-96 dark:bg-gray-700"
-      >
+      <div class="flex items-center justify-center w-full h-48 rounded sm:w-96">
         <!-- svelte-ignore a11y-img-redundant-alt -->
         <img
-          class="w-full h-auto text-gray-200 dark:text-gray-600"
+          class="w-auto h-auto scale-[1] text-gray-200 p-14"
           src={IMAGE_URL}
           alt="Waifu Image"
         />
       </div>
       <div class="w-full">
-        <h1 class="text-white font-black text-lg">
+        <h1
+          class=" text-white font-black text-4xl inline-flex mb-4 font-ibm-plex-mono"
+        >
           {$page.status}: {$page.error.message}
+          <img
+            src="https://gumlet.assettype.com/afkgaming%2F2021-08%2F79649079-d0e7-4acd-853b-6a2b92797da3%2Fcopium_png.png?auto=format%2Ccompress&dpr=1.0&w=1200"
+            alt=""
+            class="ml-2 h-8"
+          />
+          <img
+            src="https://en.meming.world/images/en/thumb/e/e2/Crying_Cat_screaming.jpg/300px-Crying_Cat_screaming.jpg"
+            alt=""
+            class="ml-2 h-8"
+          />
+          <img
+            src="https://cdn3.emoji.gg/emojis/1634-shocked-guy.png"
+            alt=""
+            class="ml-2 h-8"
+          />
         </h1>
-        <h1 class="text-white font-normal text-xs w-[100px] my-4">
-          Random Fact: {randomFact}
+        <br />
+        <h1
+          class="text-white font-black text-lg inline-flex font-ibm-plex-sans"
+        >
+          <img
+            src="https://storage.ko-fi.com/cdn/useruploads/display/34a5238b-feaf-4b35-921a-4817a71f84a1_salute_0000.gif"
+            alt=""
+            class="mr-2 h-8"
+          />
+          Here's Marin to brighten up your day!
+          <img
+            src="https://storage.ko-fi.com/cdn/useruploads/display/34a5238b-feaf-4b35-921a-4817a71f84a1_salute_0000.gif"
+            alt=""
+            class="ml-2 h-8"
+          />
+        </h1>
+        <h1
+          class="text-white font-normal text-s w-[400px] my-4 font-ibm-plex-mono text-justify"
+        >
+          <strong>Random Fact:</strong>
+          {randomFact}
         </h1>
         <a href="/" rel="noopener noreferrer">
           <button
             type="button"
-            class="text-white border border-white transition ease-in-out hover:bg-white hover:text-[#161d52] focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+            class="w-full bg-[#161d52] text-white border border-white transition ease-in-out hover:bg-white hover:text-[#161d52] focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
             ><i class="fa-solid fa-house mr-1" />Back to Homepage
           </button>
         </a>
