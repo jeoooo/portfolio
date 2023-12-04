@@ -2,8 +2,12 @@
   <div
     class="flex flex-col h-full w-full mx-64 my-5 border-4 p-12 bg-[#161d52e7]"
   >
-    <h1 class="text-5xl font-bold pb-2 self-center text-white">Tech Stack</h1>
-    <h1 class="text-l italic pb-10 self-center text-white">
+    <h1
+      class="text-5xl font-bold pb-2 self-center text-white font-ibm-plex-sans"
+    >
+      Tech Stack
+    </h1>
+    <h1 class="text-l italic pb-10 self-center text-white text-justify px-5">
       *encountered so far...*
     </h1>
     <div class="grid grid-cols-8 sm:grid-cols-12 gap-6">
@@ -299,7 +303,9 @@
         </svg>
       </div>
     </div>
-    <h1 class="text-5xl font-bold pb-10 self-center mt-10 text-white">
+    <h1
+      class="text-5xl font-bold pb-10 self-center mt-10 text-white font-ibm-plex-sans"
+    >
       Graphic + UI/UX Design Tools
     </h1>
 

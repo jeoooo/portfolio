@@ -2,10 +2,15 @@
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}',],
   theme: {
-    extend: {},
-  },
-  plugins: [
-    require('flowbite/plugin')
-  ],
+    extend: {
+      fontFamily: {
+        'ibm-plex-sans': ["IBM Plex Sans"],
+        'ibm-plex-mono': ["IBM Plex Mono"]
+      },
+    },
+    plugins: [
+      require('flowbite/plugin')
+    ],
+  }
 }
 

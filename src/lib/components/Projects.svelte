@@ -10,19 +10,19 @@
   <div
     class="flex flex-col h-full w-full mx-64 my-20 border-4 p-12 bg-[#161d52e7]"
   >
-    <h1 class="text-5xl font-black p-3 text-white mb-5">
+    <h1 class="text-5xl font-black p-3 text-white mb-5 font-ibm-plex-sans">
       <i class="fa-solid fa-code mr-2" />Projects
     </h1>
-    <ol class="relative border-s border-gray-200 dark:border-gray-700">
+    <ol class="relative border-s border-gray-200">
       <li class="mb-10 ms-4">
         <div
-          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"
         />
-        <h3 class="text-3xl font-bold text-white">
+        <h3 class="text-3xl font-bold text-white font-ibm-plex-sans">
           <!-- Set text to white -->
           Flutterdex
           <span
-            class="bg-yellow-100 text-yellow-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded me-2 border border-yellow-500"
+            class="font-ibm-plex-sans bg-yellow-100 text-yellow-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded me-2 border border-yellow-500"
           >
             <svg
               class="w-2.5 h-2.5 me-1.5"
@@ -40,13 +40,13 @@
         </h3>
         <h3
           target="_blank"
-          class="text-lg text-white py-2 inline-flex items-center font-medium dark:text-blue-500"
+          class="text-lg text-white py-2 inline-flex items-center font-medium font-ibm-plex-mono"
         >
           <!-- Set text to white -->
           Flutter Gen 3 Pokedex App
         </h3>
 
-        <p class="text-base text-white pt-2">
+        <p class=" text-white pt-2 text-lg font-ibm-plex-sans">
           <b>(Under Development)</b> FlutterDex is set to become an exceptional Pokedex
           app powered by Flutter and integrated with PokeAPI. This ambitious project
           aims to deliver a seamless and visually appealing experience for Pokemon
@@ -85,13 +85,13 @@
       </li>
       <li class="mb-10 ms-4">
         <div
-          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"
         />
-        <h3 class="text-3xl font-bold text-white">
+        <h3 class="text-3xl font-bold text-white font-ibm-plex-sans">
           <!-- Set text to white -->
           AniSvelte
           <span
-            class="bg-yellow-100 text-yellow-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded me-2 border border-yellow-500"
+            class="font-ibm-plex-sans bg-yellow-100 text-yellow-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded me-2 border border-yellow-500"
           >
             <svg
               class="w-2.5 h-2.5 me-1.5"
@@ -109,13 +109,13 @@
         </h3>
         <h3
           target="_blank"
-          class="text-lg text-white py-2 inline-flex items-center font-medium dark:text-blue-500"
+          class="text-lg text-white py-2 inline-flex items-center font-medium font-ibm-plex-mono"
         >
           <!-- Set text to white -->
           An Anime Website using Svelte
         </h3>
 
-        <p class="text-base text-white pt-2">
+        <p class="text-lg font-ibm-plex-sans text-white pt-2">
           Currently under development, AniSvelte is an exciting project in the
           works, combining the power of Svelte with the Jikan API to create a
           feature-rich anime website. This project aims to replicate the
@@ -149,13 +149,13 @@
       </li>
       <li class="mb-10 ms-4">
         <div
-          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"
         />
-        <h3 class="text-3xl font-bold text-white">
+        <h3 class="text-3xl font-bold text-white font-ibm-plex-sans">
           <!-- Set text to white -->
           True Site
           <span
-            class="bg-yellow-100 text-yellow-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded me-2 border border-yellow-500"
+            class="font-ibm-plex-sans bg-yellow-100 text-yellow-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded me-2 border border-yellow-500"
           >
             <svg
               class="w-2.5 h-2.5 me-1.5"
@@ -174,7 +174,7 @@
         <a
           href="https://hcdctruesite.vercel.app/"
           target="_blank"
-          class="text-lg text-white py-2 inline-flex items-center font-medium dark:text-blue-500 hover:underline"
+          class="font-ibm-plex-mono text-lg text-white py-2 inline-flex items-center font-medium hover:underline"
         >
           <!-- Set text to white -->
           A Website uptime tracker for HCDC Websites
@@ -195,7 +195,7 @@
           </svg>
         </a>
 
-        <p class="text-base text-white pt-2">
+        <p class="text-lg text-white pt-2 font-ibm-plex-sans">
           HCDC True Site is an unofficial, open-source Uptime Status Checker
           dedicated to monitoring the availability of key Holy Cross of Davao
           College websites. This project is written in Svelte and uses SvelteKit
@@ -226,21 +226,21 @@
       </li>
       <li class="mb-10 ms-4">
         <div
-          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"
         />
-        <h3 class="text-3xl font-bold text-white">
+        <h3 class="text-3xl font-bold text-white font-ibm-plex-sans">
           <!-- Set text to white -->
           ARRange
         </h3>
 
         <h3
-          class="text-md font-bold italic text-white py-2 items-center uppercase"
+          class="text-md font-bold italic text-white py-2 items-center uppercase font-ibm-plex-mono"
         >
           <!-- Set text to white -->
           HCI102 PROJECT
         </h3>
 
-        <p class="text-base text-white pt-2">
+        <p class="text-lg text-white pt-2 font-ibm-plex-sans">
           ARRange is a visually stunning UI/UX design concept for an Augmented
           Reality interior design app, created with Adobe XD. Immerse yourself
           in an intuitive and aesthetically pleasing interface that
@@ -259,28 +259,28 @@
       </li>
       <li class="mb-10 ms-4">
         <div
-          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"
         />
-        <h3 class="text-3xl font-bold text-white">
+        <h3 class="text-3xl font-bold text-white font-ibm-plex-sans">
           <!-- Set text to white -->
           FireTracker
         </h3>
         <h3
           s
-          class="text-lg text-white py-2 inline-flex items-center font-medium"
+          class="text-lg text-white py-2 inline-flex items-center font-medium font-ibm-plex-sans"
         >
           <!-- Set text to white -->
           An IoT-based First Responder App for Firemen
         </h3>
 
         <h3
-          class="text-md font-bold italic text-white py-2 items-center uppercase"
+          class="text-md font-bold italic text-white py-2 items-center uppercase font-ibm-plex-mono"
         >
           <!-- Set text to white -->
           Capstone Project
         </h3>
 
-        <p class="text-base text-white pt-2">
+        <p class="text-lg text-white pt-2 font-ibm-plex-sans">
           FireTracker, an Android app for firefighters, utilizes IoT, Java, and
           Kotlin for early fire detection and real-time data processing with
           Firebase. Integrated with Mapbox for precise navigation and SMS
@@ -468,20 +468,20 @@
       </li>
       <li class="mb-10 ms-4">
         <div
-          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"
         />
-        <h3 class="text-3xl font-bold text-white">
+        <h3 class="text-3xl font-bold text-white font-ibm-plex-sans">
           <!-- Set text to white -->
           Netrunners
         </h3>
-        <h3 s class="text-lg text-white py-2 font-medium">
+        <h3 s class="text-lg text-white py-2 font-medium font-ibm-plex-mono">
           <!-- Set text to white -->
           A simple ecommerce Android app using SQLite
         </h3>
         <a
           href="https://github.com/jeoooo/Netrunners"
           target="_blank"
-          class=" text-md font-bold italic text-white py-2 uppercase text-lg inline-flex items-center dark:text-blue-500 hover:underline"
+          class=" text-md font-bold italic text-white py-2 uppercase text-lg inline-flex items-center font-ibm-plex-mono hover:underline"
         >
           <!-- Set text to white -->
           ADV101 PROJECT
@@ -502,7 +502,7 @@
           </svg>
         </a>
 
-        <p class="text-base text-white pt-2">
+        <p class="text-lg text-white pt-2 font-ibm-plex-sans">
           Netrunners is a mobile computer hardware store that is retailing
           computer hardware and other consumer electronics. It sells different
           kinds of hardware from well-known hardware manufacturers of
@@ -585,13 +585,13 @@
       </li>
       <li class="mb-10 ms-4">
         <div
-          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"
         />
-        <h3 class="text-3xl font-bold text-white">
+        <h3 class="text-3xl font-bold text-white font-ibm-plex-sans">
           <!-- Set text to white -->
           VoiceNotes
         </h3>
-        <h3 s class="text-lg text-white py-2 font-medium">
+        <h3 s class="text-lg text-white py-2 font-medium font-ibm-plex-mono">
           <!-- Set text to white -->
           A Speech-to-Text (STT) note taking app using SQLite
         </h3>
@@ -599,7 +599,7 @@
         <a
           href="https://github.com/jeoooo/VoiceNotes"
           target="_blank"
-          class=" text-md font-bold italic text-white py-2 uppercase text-lg inline-flex items-center dark:text-blue-500 hover:underline"
+          class=" text-md font-ibm-plex-mono font-bold italic text-white py-2 uppercase text-lg inline-flex items-center hover:underline"
         >
           <!-- Set text to white -->
           CC106 PROJECT
@@ -620,7 +620,7 @@
           </svg>
         </a>
 
-        <p class="text-base text-white pt-2">
+        <p class="text-lg text-white pt-2 font-ibm-plex-sans">
           VoiceNotes is a user-friendly Speech-to-Text app that effortlessly
           converts spoken words into written notes. With the simplicity of
           SQLite, your transcribed thoughts are securely stored and easily
@@ -703,20 +703,20 @@
       </li>
       <li class="mb-10 ms-4">
         <div
-          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"
         />
-        <h3 class="text-3xl font-bold text-white">
+        <h3 class="text-3xl font-bold text-white font-ibm-plex-sans">
           <!-- Set text to white -->
           Binary Game
         </h3>
-        <h3 s class="text-lg text-white py-2 font-medium">
+        <h3 s class="text-lg text-white py-2 font-medium font-ibm-plex-mono">
           <!-- Set text to white -->
           Java-based GUI Game for teaching the Binary number system
         </h3>
         <a
           href="https://github.com/jeoooo/BinaryGame"
           target="_blank"
-          class=" text-md font-bold italic text-white py-2 uppercase text-lg inline-flex items-center dark:text-blue-500 hover:underline"
+          class=" font-ibm-plex-mono text-md font-bold italic text-white py-2 uppercase text-lg inline-flex items-center hover:underline"
         >
           <!-- Set text to white -->
           CC103 PROJECT
@@ -737,7 +737,7 @@
           </svg>
         </a>
 
-        <p class="text-base text-white pt-2">
+        <p class="text-lg text-white pt-2 font-ibm-plex-sans">
           Binary Game is a Java-based GUI educational tool, utilizing Java Swing
           to teach the principles of the binary number system. Dive into an
           interactive experience, navigating challenges that make learning
