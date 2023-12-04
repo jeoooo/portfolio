@@ -1,3 +1,7 @@
+<script>
+  let accessKey = "bb96a054-d85d-4f40-bd60-d317301f54a4";
+</script>
+
 <div class="flex h-full mt-18" id="hello">
   <div
     class="bg-[#161d52e7] flex flex-col h-auto w-full mx-64 mb-16 border-4 justify-center"
@@ -81,17 +85,28 @@
           </button>
         </a>
       </div>
-      <div class="flex flex-col w-[40%] px-2 py-4">
+      <!-- <div class="flex flex-col w-[40%] px-2 py-4">
         <p class="text-3xl flex text-white font-black my-2 self-center">
           Email Me! 📭
         </p>
         <form
-          action="https://formsubmit.co/05cde8aaa9e8a1625d4b84002672097f"
+          action="https://api.staticforms.xyz/submit"
           method="post"
           enctype="text/plain"
         >
-          <input type="hidden" name="_cc" value="jeocarlolubao@gmail.com" />
-          <input type="text" name="_honey" style="display:none" />
+          <input type="text" name="honeypot" style="display: none;" />
+
+          <input type="hidden" name="accessKey" value={accessKey} />
+
+
+          <label for="subject" class="text-white text-sm">Name:</label>
+          <input
+            type="text"
+            name="name"
+            class="mt-2 border p-2 w-full"
+            placeholder="Your Name"
+            required
+          />
 
           <div class="mb-4">
             <label for="subject" class="text-white text-sm">Subject:</label>
@@ -100,17 +115,18 @@
               id="subject"
               name="subject"
               class="mt-2 border p-2 w-full"
+              placeholder="Your Subject"
               required
             />
           </div>
           <div class="mb-4">
-            <label for="message" class="text-white text-sm">Your message:</label
-            >
+            <label for="message" class="text-white text-sm">Message:</label>
             <textarea
               id="message"
               name="message"
               rows="4"
               class="mt-2 border p-2 w-full"
+              placeholder="Your Message"
               required
             ></textarea>
           </div>
@@ -122,7 +138,7 @@
             Send
           </button>
         </form>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>
