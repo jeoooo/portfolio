@@ -2,7 +2,10 @@
   <div
     class="flex flex-col h-full w-full mx-64 my-5 border-4 p-12 bg-[#161d52e7]"
   >
-    <h1 class="text-5xl font-bold pb-10 self-center text-white">Tech Stack</h1>
+    <h1 class="text-5xl font-bold pb-2 self-center text-white">Tech Stack</h1>
+    <h1 class="text-l italic pb-10 self-center text-white">
+      *encountered so far...*
+    </h1>
     <div class="grid grid-cols-8 sm:grid-cols-12 gap-6">
       <!-- svelte -->
       <div>
