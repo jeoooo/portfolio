@@ -122,24 +122,6 @@
     </div>
   </div>
 {:else}
-  <!-- <div class="min-h-screen flex items-center justify-center bg-[#161d5269]">
-    <div
-      class="text-center text-white bg-[#161d52cb] border-4 p-32 items-center"
-    >
-
-      <img
-        src={IMAGE_URL}
-        alt="Waifu Image"
-        class="max-w-full h-64 mx-auto flex-shrink-0 m-14"
-      />
-
-      <h1>{$page.status}: {$page.error.message}</h1>
-      {#if randomFact}
-        <p class="text-xs mt-4">Random Fact: {randomFact}</p>
-      {/if}
-    </div>
-  </div> -->
-
   <div class="min-h-screen flex items-center justify-center bg-[#161d5269]">
     <div
       role="status"

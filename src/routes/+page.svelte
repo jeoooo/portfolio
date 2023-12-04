@@ -1,6 +1,5 @@
 <script>
   import Contact from "../lib/components/Contact.svelte";
-
   import Accolades from "../lib/components/Accolades.svelte";
   import Projects from "../lib/components/Projects.svelte";
   import Education from "../lib/components/Education.svelte";
