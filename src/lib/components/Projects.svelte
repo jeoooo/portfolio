@@ -116,14 +116,11 @@
         </h3>
 
         <p class="text-lg font-ibm-plex-sans text-white pt-2">
-          Currently under development, AniSvelte is an exciting project in the
-          works, combining the power of Svelte with the Jikan API to create a
-          feature-rich anime website. This project aims to replicate the
-          functionalities of MyAnimeList (MAL), offering users a seamless
-          experience for tracking, discovering, and exploring anime content.
-          Stay tuned as AniSvelte evolves, showcasing the potential of Svelte in
-          creating dynamic and responsive web applications for anime
-          enthusiasts.
+          <strong>(Under Development)</strong> AniSvelte is an exciting project in
+          the works, combining the power of Svelte with the Jikan API to create a
+          feature-rich anime website. This project aims to replicate the functionalities
+          of MyAnimeList (MAL), offering users a seamless experience for exploring
+          anime content.
         </p>
         <div class="flex flex-row gap-4">
           <svg viewBox="0 0 128 128" class="h-14 pt-5">
@@ -154,22 +151,6 @@
         <h3 class="text-3xl font-bold text-white font-ibm-plex-sans">
           <!-- Set text to white -->
           True Site
-          <span
-            class="font-ibm-plex-sans bg-yellow-100 text-yellow-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded me-2 border border-yellow-500"
-          >
-            <svg
-              class="w-2.5 h-2.5 me-1.5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm3.982 13.982a1 1 0 0 1-1.414 0l-3.274-3.274A1.012 1.012 0 0 1 9 10V6a1 1 0 0 1 2 0v3.586l2.982 2.982a1 1 0 0 1 0 1.414Z"
-              />
-            </svg>
-            Work in Progress
-          </span>
         </h3>
         <a
           href="https://hcdctruesite.vercel.app/"
@@ -196,11 +177,10 @@
         </a>
 
         <p class="text-lg text-white pt-2 font-ibm-plex-sans">
-          HCDC True Site is an unofficial, open-source Uptime Status Checker
-          dedicated to monitoring the availability of key Holy Cross of Davao
-          College websites. This project is written in Svelte and uses SvelteKit
-          as its meta-framework. It conducts routine checks by leveraging proxy
-          servers to check the uptime of the websites.
+          HCDC True Site is an unofficial, open-source Uptime Status Page
+          dedicated to monitoring the uptime of key Holy Cross of Davao College
+          websites. This project is written in Svelte and uses SvelteKit as its
+          meta-framework.
         </p>
         <div class="flex flex-row gap-4">
           <svg viewBox="0 0 128 128" class="h-14 pt-5">
