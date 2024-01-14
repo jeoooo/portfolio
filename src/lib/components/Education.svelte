@@ -89,69 +89,66 @@
           </li>
         </ul>
       </li>
-      <li class="mb-10 ms-4">
+      <!-- <li class="mb-10 ms-4">
         <div
           class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"
         />
         <h3 class="text-3xl font-bold text-white font-ibm-plex-sans">
-          <!-- Set text to white -->
           Holy Cross of Davao College
         </h3>
         <h4 class="text-lg font-semibold text-white pt-3 font-ibm-plex-sans">
-          <!-- Set text to white -->
           Science, Technology, Engineering & Mathematics (STEM)
         </h4>
         <h4
           class="text-md font-semibold text-white pt-2 pb-4 font-ibm-plex-sans"
         >
-          <!-- Set text to white -->
           Senior High School (SHS)
         </h4>
         <time
           class="mb-1 text-sm font-normal leading-none text-white font-ibm-plex-mono"
-          >2017 &ndash; 2019</time
+          >2017 - 2019</time
         >
-      </li>
-      <li class="mb-10 ms-4">
+      </li> -->
+      <!-- <li class="mb-10 ms-4">
         <div
           class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"
         />
         <h3 class="text-3xl font-bold text-white font-ibm-plex-sans">
-          <!-- Set text to white -->
+          
           Holy Cross of Davao College
         </h3>
 
         <h4
           class="text-md font-semibold text-white pt-2 pb-4 font-ibm-plex-sans"
         >
-          <!-- Set text to white -->
+          
           Junior High School (JHS)
         </h4>
         <time
           class="mb-1 text-sm font-normal leading-none text-white font-ibm-plex-mono"
-          >2013 &ndash; 2017</time
+          >2013 - 2017</time
         >
-      </li>
-      <li class="mb-10 ms-4">
+      </li> -->
+      <!-- <li class="mb-10 ms-4">
         <div
           class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"
         />
         <h3 class="text-3xl font-bold text-white font-ibm-plex-sans">
-          <!-- Set text to white -->
+         
           Holy Cross of Davao College
         </h3>
 
         <h4
           class="text-md font-semibold text-white pt-2 pb-4 font-ibm-plex-sans"
         >
-          <!-- Set text to white -->
+         
           Elementary
         </h4>
         <time
           class="mb-1 text-sm font-normal leading-none text-white font-ibm-plex-mono"
-          >2006 &ndash; 2013</time
+          >2006 - 2013</time
         >
-      </li>
+      </li> -->
     </ol>
   </div>
 </div>

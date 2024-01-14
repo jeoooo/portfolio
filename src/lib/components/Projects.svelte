@@ -90,7 +90,7 @@
         <h3 class="text-3xl font-bold text-white font-ibm-plex-sans">
           <!-- Set text to white -->
           AniSvelte
-          <span
+          <!-- <span
             class="font-ibm-plex-sans bg-yellow-100 text-yellow-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded me-2 border border-yellow-500"
           >
             <svg
@@ -105,16 +105,32 @@
               />
             </svg>
             Work in Progress
-          </span>
+          </span> -->
         </h3>
-        <h3
+        <a
+          href="https://anilist-seven.vercel.app/"
           target="_blank"
-          class="text-lg text-white py-2 inline-flex items-center font-medium font-ibm-plex-mono"
+          class="font-ibm-plex-mono text-lg text-white py-2 inline-flex items-center font-medium hover:underline"
         >
           <!-- Set text to white -->
-          An Anime Website using Svelte
-        </h3>
 
+          Svelte Anime Website using Jikan API
+          <svg
+            class="w-4 h-4 ms-2 rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 14 10"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9"
+            />
+          </svg>
+        </a>
         <p class="text-lg font-ibm-plex-sans text-white pt-2">
           <strong>(Under Development)</strong> AniSvelte is an exciting project in
           the works, combining the power of Svelte with the Jikan API to create a
