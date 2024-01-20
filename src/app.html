@@ -80,7 +80,7 @@
 </head>
 
 
-<body data-sveltekit-preload-data="hover" style="background-color: #161d52;">
+<body data-sveltekit-preload-data="hover" style="background-color: #1E1E1E;">
   <div id="particles-js"></div>
   <div style="display: contents">%sveltekit.body%</div>
 
@@ -96,10 +96,10 @@
     {
       "particles": {
         "number": {
-          "value": 221,
+          "value": 69,
           "density": {
-            "enable": false,
-            "value_area": 393.85584875935393
+            "enable": true,
+            "value_area": 800
           }
         },
         "color": {
@@ -109,10 +109,10 @@
           "type": "circle",
           "stroke": {
             "width": 0,
-            "color": "#ffffff"
+            "color": "#000000"
           },
           "polygon": {
-            "nb_sides": 3
+            "nb_sides": 5
           },
           "image": {
             "src": "img/github.svg",
@@ -131,7 +131,7 @@
           }
         },
         "size": {
-          "value": 3.998400639744104,
+          "value": 3,
           "random": true,
           "anim": {
             "enable": false,
@@ -142,16 +142,16 @@
         },
         "line_linked": {
           "enable": true,
-          "distance": 191.92323070771698,
+          "distance": 150,
           "color": "#ffffff",
-          "opacity": 0.2239104358256698,
+          "opacity": 0.4,
           "width": 1
         },
         "move": {
           "enable": true,
-          "speed": 0.5,
+          "speed": 0.25,
           "direction": "none",
-          "random": true,
+          "random": false,
           "straight": false,
           "out_mode": "out",
           "bounce": false,
@@ -163,14 +163,14 @@
         }
       },
       "interactivity": {
-        "detect_on": "window",
+        "detect_on": "canvas",
         "events": {
           "onhover": {
-            "enable": true,
-            "mode": "bubble"
+            "enable": false,
+            "mode": "repulse"
           },
           "onclick": {
-            "enable": false,
+            "enable": true,
             "mode": "push"
           },
           "resize": true
@@ -183,10 +183,10 @@
             }
           },
           "bubble": {
-            "distance": 182.24083328608577,
-            "size": 24.2987777714781,
-            "duration": 0.404979629524635,
-            "opacity": 0.1295934814478832,
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
             "speed": 3
           },
           "repulse": {
