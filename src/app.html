@@ -38,16 +38,16 @@
     /* Firefox */
     * {
       scrollbar-width: auto;
-      scrollbar-color: #ffffff #161d52;
+      scrollbar-color: #ffffff #1E1E1E;
     }
 
     /* Chrome, Edge, and Safari */
     *::-webkit-scrollbar {
-      width: 10px;
+      width: 4px;
     }
 
     *::-webkit-scrollbar-track {
-      background: #161d52;
+      background: #1E1E1E;
     }
 
     *::-webkit-scrollbar-thumb {
@@ -163,11 +163,11 @@
         }
       },
       "interactivity": {
-        "detect_on": "canvas",
+        "detect_on": "window",
         "events": {
           "onhover": {
-            "enable": false,
-            "mode": "repulse"
+            "enable": true,
+            "mode": "bubble"
           },
           "onclick": {
             "enable": true,
@@ -184,9 +184,9 @@
           },
           "bubble": {
             "distance": 400,
-            "size": 40,
+            "size": 20,
             "duration": 2,
-            "opacity": 8,
+            "opacity": 1,
             "speed": 3
           },
           "repulse": {
