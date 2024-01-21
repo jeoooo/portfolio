@@ -321,21 +321,27 @@
         <h3 class="mb-5 text-3xl font-semibold text-gray-900 dark:text-white">
           Awards & Competitions
         </h3>
-        <h3 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
-          <i class="fa-solid fa-trophy mr-1" /> Position
-        </h3>
+        {#each data.awardsConferencesCertifications.awardsCompetitions as award}
+          <h3 class="mb-2 text-white">
+            <i class="fa-solid fa-trophy mr-1" />
+            {award}
+          </h3>
+        {/each}
       </li>
       <li class="mb-4 ms-4">
         <div
           class="absolute w-3 h-3 bg-gray-200 rounded-full mt-3.5 start-[38.5px] sm:start-[315px] md:start-[38.5px] lg:start-[315px] border border-white"
         ></div>
+
         <h3 class="mb-5 text-3xl font-semibold text-gray-900 dark:text-white">
           Seminars Attended
         </h3>
-
-        <h3 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
-          <i class="fa-solid fa-certificate mr-1" /> Position
-        </h3>
+        {#each data.awardsConferencesCertifications.seminarsAttended as seminar}
+          <h3 class="mb-2 text-white">
+            <i class="fa-solid fa-certificate mr-1" />
+            {seminar}
+          </h3>
+        {/each}
       </li>
       <li class="mb-4 ms-4">
         <div
@@ -344,10 +350,12 @@
         <h3 class="mb-5 text-3xl font-semibold text-gray-900 dark:text-white">
           Conferences
         </h3>
-
-        <h3 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
-          <i class="fa-solid fa-calendar-day mr-1" /> Position
-        </h3>
+        {#each data.awardsConferencesCertifications.conferences as conference}
+          <h3 class="mb-2 text-white">
+            <i class="fa-solid fa-calendar-day mr-1" />
+            {conference}
+          </h3>
+        {/each}
       </li>
     </ol>
   </div>
