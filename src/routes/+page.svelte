@@ -1,9 +1,5 @@
 <script>
-  import Projects from "./../lib/components/Projects.svelte";
-  import Description from "./../lib/components/Description.svelte";
-  import Experience from "./../lib/components/Experience.svelte";
   import data from "$lib/jeocarlolubao.json";
-  import Education from "$lib/components/Education.svelte";
 </script>
 
 <header>
