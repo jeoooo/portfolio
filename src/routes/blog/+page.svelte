@@ -11,7 +11,7 @@
   </div>
 
   {#each data.posts as post}
-    <a href="/blog/posts/{post.slug}">
+    <a href="/{post.slug}">
       <div class="w-fill h-fit px-[14px] my-4 mx-8 flex flex-col">
         <p class="text-white text-4xl font-bold px-5 pb-0 pt-3 text-justify">
           {post.title}
