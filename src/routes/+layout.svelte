@@ -1,16 +1,17 @@
 <script>
-  import Header from "$lib/components/Header.svelte";
-  import Footer from "$lib/components/Footer.svelte";
+  import { onMount } from "svelte";
   import "../app.css";
 
   let year = "";
 
-  fetch("http://worldtimeapi.org/api/timezone/Asia/Manila")
-    .then((response) => response.json())
-    .then((data) => {
-      const date = new Date(data.datetime);
-      year = date.getFullYear();
-    });
+  onMount(() => {
+    fetch("http://worldtimeapi.org/api/timezone/Asia/Manila")
+      .then((response) => response.json())
+      .then((data) => {
+        const date = new Date(data.datetime);
+        year = date.getFullYear();
+      });
+  });
 </script>
 
 <header>
@@ -18,13 +19,14 @@
     <div class="h-full w-fill lg:mx-[290px] flex flex-row">
       <div class="flex flex-row h-fill gap-2">
         <div class="h-full w-[100px] p-2 bg-zinc-800">
-          <h1 class="text-white">@jeooo</h1>
+          <a href="/" rel="noopener noreferrer">
+            <h1 class="text-white">@jeooo</h1>
+          </a>
         </div>
         <div class="h-full w-[100px] p-2 bg-zinc-800">
-          <h1 class="text-white">blog</h1>
-        </div>
-        <div class="h-full w-[100px] p-2 bg-zinc-800">
-          <h1 class="text-white">contact</h1>
+          <a href="/blog" rel="noopener noreferrer">
+            <h1 class="text-white">blog</h1>
+          </a>
         </div>
       </div>
     </div>
@@ -32,7 +34,9 @@
 </header>
 <slot />
 <footer>
-  <div class=" h-[80px] w-fill bg-zinc-800 justify-center items-center">
+  <div
+    class="relative bottom-0 h-[80px] w-full bg-zinc-800 justify-center items-center"
+  >
     <div
       class="flex w-fill h-full mx-[24px] md:md-[100px] lg:mx-[300px] items-center justify-center"
     >

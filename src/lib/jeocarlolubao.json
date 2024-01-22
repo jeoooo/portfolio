@@ -156,7 +156,11 @@
         {
             "title": "Freelance Developer",
             "duration": "Jul 2023 – Present",
-            "description": "Creating personal projects for skill enhancement and actively contributing to Free and Open Source Software (FOSS) projects on GitHub, driven by a passion for open source and continuous learning."
+            "responsibilities": {
+                "roleDescription": [
+                    "Creating personal projects for skill enhancement and actively contributing to Free and Open Source Software (FOSS) projects on GitHub, driven by a passion for open source and continuous learning."
+                ]
+            }
         },
         {
             "title": "Software Developer Intern",
