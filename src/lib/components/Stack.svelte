@@ -6,12 +6,17 @@
   class=" h-full w-fill mx-[24px] md:md-[100px] lg:mx-[300px] bg-zinc-800 m-3 justify-center items-center"
 >
   <div class="flex flex-col items-start">
-    <p class="px-[14px] pt-4 pb-4 text-4xl font-bold text-white">Tech Stack</p>
+    <p class="px-[24px] pt-8 pb-4 text-4xl text-white font-bold">
+      <i class="fa-solid fa-layer-group mr-3" />Tech Stack
+    </p>
+    <p class="px-[24px] pt-2 pb-4 text-sm text-white font-regular">
+      *encountered so far...
+    </p>
   </div>
   <div
-    class="w-fit h-fit px-[14px] grid grid-cols-8 grid-rows-none gap-y-8 gap-x-8 py-6 select-none"
+    class="mx-5 w-fit h-fit px-[14px] grid grid-cols-8 grid-rows-none gap-y-8 gap-x-8 mb-10 mt-5 select-none"
   >
-    {#each data.techStack as tech (tech.name)}
+    {#each data.techStack.sort( (a, b) => a.name.localeCompare(b.name) ) as tech (tech.name)}
       {#if tech.name == "csharp"}
         <svg class="h-12 fill-white select-none" viewBox="0 0 128 128">
           <path
@@ -41,13 +46,13 @@
       {/if}
     {/each}
   </div>
-  <div class="flex flex-col items-start">
+  <div class="flex flex-col items-start p-4">
     <p class="px-[14px] pt-4 pb-4 text-4xl font-bold text-white">
-      UI/UX Design Tools
+      <i class="fa-solid fa-wand-magic-sparkles mr-3" />UI/UX Design Tools
     </p>
   </div>
   <div
-    class="w-fit h-fit px-[14px] grid grid-cols-8 grid-rows-none gap-y-8 gap-x-8 py-6"
+    class="mx-5 w-fit h-fit px-[14px] grid grid-cols-8 grid-rows-none gap-y-8 gap-x-8 mb-10"
   >
     {#each data.uiUxDesignTools as tool (tool.name)}
       <img
