@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ... */
+
+.prose :is(h2, h3, h4, h5, h6) {
+  margin-top: var(--size-8);
+  margin-bottom: var(--size-3);
+}
+
+.prose p:not(:is(h2, h3, h4, h5, h6) + p) {
+  margin-top: var(--size-7);
+}
+
+.prose :is(ul, ol) {
+  padding-left: var(--size-5);
+}
+
+.prose :is(ul, ol) li {
+  margin-block: var(--size-2);
+  padding-inline-start: var(--size-2);
+}
+
+.prose pre {
+  max-inline-size: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  tab-size: 2;
+}
+.prose :not(pre) {
+  text-align: justify;
+}
+
+.prose a {
+  color: rgb(96 165 250); /* replace with your preferred color */
+  text-decoration: none; /* removes the underline */
+}
+
+.prose a:hover {
+  text-decoration: underline; /* adds underline on hover */
+}

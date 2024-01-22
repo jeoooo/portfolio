@@ -1,5 +1,5 @@
 ---
-title: mdsvex
+title: Creating a SvelteKit Blog Using mdsvex and shiki
 description: this is an example of an mdsvex blog post
 date: '1-22-2024'
 categories:
@@ -10,14 +10,26 @@ published: true
 
 ---
 
+<div style="display: flex; justify-content: center;">
+ <img src="https://madewithnetworkfra.fra1.digitaloceanspaces.com/spatie-space-production/21329/mdsvex.gif" alt="mdsvex" width="600"/>
+ </div>
 
-![mdsvex](https://madewithnetworkfra.fra1.digitaloceanspaces.com/spatie-space-production/21329/mdsvex.gif)
+<br>
+ <div style="text-align: justify">
+SvelteKit is a modern web framework that builds on the principles of the Svelte framework, aiming to simplify the process of building efficient and performant web applications. Developed by the creators of Svelte, SvelteKit provides a higher-level abstraction for routing, navigation, and project structure, making it easier for developers to create dynamic and interactive web experiences. It embraces a file-system-based routing approach, where each route corresponds to a file in the project directory, facilitating a clean and intuitive project structure. SvelteKit also includes built-in support for server-side rendering (SSR), client-side rendering (CSR), and static site generation (SSG), offering flexibility in how developers choose to optimize their applications for speed and search engine visibility. The framework prioritizes developer experience, enabling efficient development with minimal boilerplate while leveraging the power of Svelte's compiler to generate highly optimized and lightweight JavaScript code for the browser.
+</div>
+<br> 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor, nulla eu euismod posuere, augue diam dignissim lorem, vitae rutrum tortor nunc ac nulla. Mauris lobortis, dolor nec convallis cursus, arcu lectus elementum urna, vel viverra mi dui ac erat. Nam vulputate diam ex, sit amet viverra tellus eleifend ac. Nullam vel hendrerit odio. Pellentesque dignissim sem in congue accumsan. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean ac est imperdiet, sagittis nisl eget, vestibulum leo. Donec condimentum, odio in elementum tincidunt, ex lectus suscipit nulla, eu efficitur lorem purus a leo. Mauris eget mattis diam, varius facilisis enim. Vivamus interdum semper urna vitae bibendum. Sed gravida nibh a eros dapibus, at posuere orci tempor. Aenean vitae dignissim enim, nec consectetur augue. Morbi vel magna rutrum, vulputate ex eu, fringilla ante. Sed laoreet ullamcorper lacus, sit amet rhoncus dui lobortis a.
+<h1 class="text-2xl">Joy of Code - Build And Deploy A SvelteKit Markdown Blog</h1>
+<br>
+<iframe class="w-full" height="500" src="https://www.youtube.com/embed/RhScu3uqGd0?si=QhUTIwW1Re3j2Qqb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-![svelte](https://miro.medium.com/v2/resize:fit:800/1*694arrMBzrG9pRcLHxC0WA.png)
-
-Maecenas pulvinar metus in nisl consequat finibus. Integer hendrerit urna quis justo luctus aliquet. Pellentesque ut commodo libero. Nulla ac ornare eros. Nam quis tortor ipsum. In molestie, diam ac venenatis feugiat, purus leo laoreet dui, ut ultricies sem purus sit amet tortor. Aenean nulla quam, imperdiet lobortis purus eu, dignissim auctor justo. Sed id nulla erat. Pellentesque ut faucibus mauris. Maecenas ac faucibus lorem, eu iaculis orci. Mauris ut lobortis nibh. Maecenas vestibulum facilisis ipsum quis luctus. Morbi vitae quam sapien. Suspendisse purus dolor, vulputate nec arcu vel, posuere gravida odio.
+<br> 
+ <div style="text-align: justify">
+Creating a stunning blog site is now easier than ever with SvelteKit and mdsvex. Thanks to the comprehensive tutorial provided at   <a  href="https://joyofcode.xyz/sveltekit-markdown-blog" target="_blank">joyofcode.xyz</a>, you can effortlessly build a feature-rich blog using SvelteKit's powerful framework and mdsvex for seamless Markdown integration. The tutorial covers essential topics such as syntax highlighting, guiding you through the process of setting up your blog site and ensuring a smooth integration of Markdown content. Whether you're a beginner or an experienced developer, this tutorial provides step-by-step instructions, making the journey enjoyable and rewarding. Dive into the world of SvelteKit and mdsvex, and unlock the potential to create a dynamic and visually appealing blog site for your audience.
+</div>
+<br> 
+<br> 
 
 ```js
 // App.svelte
@@ -27,5 +39,7 @@ Maecenas pulvinar metus in nisl consequat finibus. Integer hendrerit urna quis j
 
 <h1>Hello {name}!</h1>
 ```
-
-Nulla porta sem ut nisl sollicitudin mattis. In vehicula dignissim elit non placerat. Pellentesque varius dignissim tortor. Sed ac scelerisque ligula. Quisque ornare est sed metus condimentum, sed pulvinar mi consectetur. Vivamus euismod orci nisi, non efficitur leo condimentum euismod. Maecenas tristique ipsum non imperdiet venenatis. Sed sed tempor mi. Nam et dui non dolor congue pulvinar. Aenean hendrerit tortor nec mauris commodo, quis pharetra tellus accumsan.
+<br> 
+ <div style="text-align: justify">
+Enhancing the visual appeal of your code snippets is a breeze with the inclusion of Shiki in your SvelteKit and mdsvex-powered blog. Shiki, a powerful syntax highlighter, ensures that your code snippets are not only functional but also aesthetically pleasing. The tutorial at joyofcode.xyz provides clear guidance on incorporating Shiki into your project, allowing you to customize the appearance of your code blocks to match the overall design of your blog. With Shiki's extensive language support and themes, you can effortlessly create a professional-looking blog that caters to developers and readers alike. Elevate your blog's coding experience by following the tutorial's instructions on integrating Shiki for top-notch syntax highlighting.
+</div>
