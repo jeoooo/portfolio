@@ -20,7 +20,7 @@ SvelteKit is a modern web framework that builds on the principles of the Svelte 
 </div>
 <br> 
 
-<h1 class="text-2xl">Joy of Code - Build And Deploy A SvelteKit Markdown Blog</h1>
+<h1 class="text-2xl font-bold">Joy of Code - Build And Deploy A SvelteKit Markdown Blog</h1>
 <br>
 <iframe class="w-full" height="500" src="https://www.youtube.com/embed/RhScu3uqGd0?si=QhUTIwW1Re3j2Qqb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -33,6 +33,17 @@ Creating a stunning blog site is now easier than ever with SvelteKit and mdsvex.
 
 ```js
 // App.svelte
+
+/**
+ * 
+ * This is an example of a svelte code
+ * Moreover, this is an example of how we can add code snippets in Markdown,
+ * as well implementing code highlighting syntax using shiki
+ * 
+ * https://github.com/shikijs/shiki
+ * https://svelte.dev/
+ * 
+ */
 <script>
 	let name = 'world';
 </script>
