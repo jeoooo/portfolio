@@ -2,6 +2,7 @@
   import Contact from "./../lib/components/old/Contact.svelte";
   import { onMount } from "svelte";
   import "../app.css";
+  import { base } from "$app/paths";
 
   let year = "";
 
@@ -13,13 +14,14 @@
         year = date.getFullYear();
       });
   });
+  const isDev = process.env.NODE_ENV === "development";
 </script>
 
 <header>
   <div class="fixed top-0 h-12 w-full bg-zinc-800">
     <div class="h-full w-fill lg:mx-[290px] flex flex-row">
       <div class="flex flex-row h-fill gap-2">
-        <a href="/" rel="noopener noreferrer">
+        <a href={base} rel="noopener noreferrer">
           <div
             class="h-full w-[250px] p-2 bg-zinc-800 hover:bg-zinc-200 transition ease-in-out text-zinc-200 hover:text-zinc-800"
           >
@@ -33,7 +35,7 @@
             <h1 class="font-syne text-xl font-normal">Contact</h1>
           </div>
         </a> -->
-        <a href="/blog" rel="noopener noreferrer">
+        <a href="{base}/blog" rel="noopener noreferrer">
           <div
             class="h-full w-[250px] p-2 bg-zinc-800 hover:bg-zinc-200 transition ease-in-out text-zinc-200 hover:text-zinc-800"
           >

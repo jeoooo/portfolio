@@ -10,7 +10,7 @@
       day: "numeric",
     });
   }
-
+  const isDev = process.env.NODE_ENV === "development";
   console.log(data);
 </script>
 
@@ -22,7 +22,7 @@
   </div>
 
   {#each data.posts as post}
-    <a href={`blog/${post.slug}`}>
+    <a href="blog{`/${post.slug}`}">
       <div
         class="w-fill h-fit px-[14px] my-4 mx-8 flex flex-col border-t-[1px] border-b-[1px]"
       >

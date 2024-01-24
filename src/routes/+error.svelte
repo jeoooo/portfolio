@@ -125,7 +125,7 @@
   <div class="min-h-screen flex items-center justify-center">
     <div
       role="status"
-      class=" bg-[#161d52] border-4 border-white p-8 space-y-8 rtl:space-x-reverse md:flex md:items-center"
+      class=" bg-zinc-800 p-8 space-y-8 rtl:space-x-reverse md:flex md:items-center"
     >
       <div class="flex items-center justify-center w-full h-48 rounded sm:w-96">
         <!-- svelte-ignore a11y-img-redundant-alt -->
