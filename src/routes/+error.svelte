@@ -80,7 +80,7 @@
 </script>
 
 {#if isImageLoading || isTextLoading}
-  <div class="min-h-screen flex items-center justify-center bg-[#161d5269]">
+  <div class="min-h-screen flex items-center justify-center">
     <div
       role="status"
       class="space-y-8 animate-pulse md:space-y-0 md:space-x-8 rtl:space-x-reverse md:flex md:items-center"
@@ -122,7 +122,7 @@
     </div>
   </div>
 {:else}
-  <div class="min-h-screen flex items-center justify-center bg-[#161d5269]">
+  <div class="min-h-screen flex items-center justify-center">
     <div
       role="status"
       class=" bg-[#161d52] border-4 border-white p-8 space-y-8 rtl:space-x-reverse md:flex md:items-center"
@@ -181,7 +181,7 @@
         <a href="/" rel="noopener noreferrer">
           <button
             type="button"
-            class="w-full bg-[#161d52] text-white border border-white transition ease-in-out hover:bg-white hover:text-[#161d52] focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+            class="w-full text-white border border-white transition ease-in-out hover:bg-white hover:text-[#161d52] focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
             ><i class="fa-solid fa-house mr-1" />Back to Homepage
           </button>
         </a>

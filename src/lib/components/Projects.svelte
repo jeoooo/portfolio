@@ -58,7 +58,7 @@
               </svg>
             {:else}
               <img
-                class="h-8"
+                class="h-8 select-none"
                 alt="simple-icon"
                 src="https://cdn.simpleicons.org/{tech.name}/fff"
               />
