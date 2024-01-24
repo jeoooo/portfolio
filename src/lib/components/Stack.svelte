@@ -14,7 +14,7 @@
     </p>
   </div>
   <div
-    class="mx-5 w-fit h-fit px-[14px] grid grid-cols-8 grid-rows-none gap-y-8 gap-x-8 mb-10 mt-5 select-none"
+    class="mx-5 w-fit h-fit px-[14px] grid grid-cols-5 lg:grid-cols-8 grid-rows-none gap-y-3 gap-x-4 md:gap-y-4 md:gap-x-4 lg:gap-y-8 lg:gap-x-8 mb-10 mt-5 select-none"
   >
     {#each data.techStack.sort( (a, b) => a.name.localeCompare(b.name) ) as tech (tech.name)}
       {#if tech.name == "csharp"}
@@ -24,7 +24,10 @@
           ></path>
         </svg>
       {:else if tech.name == "java"}
-        <svg class="h-12 fill-white select-none" viewBox="0 0 128 128">
+        <svg
+          class="sm:h-12 lg:h-12 fill-white select-none"
+          viewBox="0 0 128 128"
+        >
           <path
             d="M47.617 98.12s-4.767 2.774 3.397 3.71c9.892 1.13 14.947.968 25.845-1.092 0 0 2.871 1.795 6.873 3.351-24.439 10.47-55.308-.607-36.115-5.969zm-2.988-13.665s-5.348 3.959 2.823 4.805c10.567 1.091 18.91 1.18 33.354-1.6 0 0 1.993 2.025 5.132 3.131-29.542 8.64-62.446.68-41.309-6.336z"
           ></path><path
@@ -39,7 +42,7 @@
         </svg>
       {:else}
         <img
-          class="h-12"
+          class="md:h-20 lg:h-12"
           alt="simple-icon select-none"
           src="https://cdn.simpleicons.org/{tech.name}/fff"
         />
@@ -52,7 +55,7 @@
     </p>
   </div>
   <div
-    class="mx-5 w-fit h-fit px-[14px] grid grid-cols-8 grid-rows-none gap-y-8 gap-x-8 mb-10"
+    class="mx-5 w-fit h-fit px-[14px] flex flex-row lg:grid lg:grid-cols-8 grid-rows-none gap-y-2 gap-x-2 lg:gap-y-8 lg:gap-x-8 mb-10"
   >
     {#each data.uiUxDesignTools as tool (tool.name)}
       <img

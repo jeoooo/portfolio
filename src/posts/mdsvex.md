@@ -1,6 +1,6 @@
 ---
 title: Creating a SvelteKit Blog Using mdsvex and shiki
-description: this is an example of an mdsvex blog post
+description: This is an example of creating an mdsvex blog post using shiki for syntax highlighting
 date: '1-22-2024'
 categories:
     - sveltekit
