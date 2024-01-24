@@ -28,7 +28,7 @@
     property="og:description"
     content="Software Developer | Graphic Designer"
   />
-  <meta property="og:image" content="https://i.imgur.com/BFDKl6t.jpg" />
+  <meta property="og:image" content="https://i.imgur.com/eiU2jzF.png" />
 </svelte:head>
 <header>
   <div class="fixed top-0 h-12 w-full bg-zinc-800">
