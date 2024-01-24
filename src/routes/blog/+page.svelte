@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { title } from "$lib/config.js";
+
   export let data;
 
   function formatDate(dateString: string): string {
@@ -15,6 +17,7 @@
 </script>
 
 <svelte:head>
+  <title>Blog</title>
   <meta title="Jeo | Android Developer" />
   <meta name="description" content="Jeo | Android Developer" />
 

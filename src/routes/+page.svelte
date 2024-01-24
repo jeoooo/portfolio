@@ -10,6 +10,7 @@
 </script>
 
 <svelte:head>
+  <title>Hi! I'm Jeo</title>
   <meta title="Jeo | Android Developer" />
   <meta name="description" content="Jeo | Android Developer" />
 
