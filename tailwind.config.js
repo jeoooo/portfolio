@@ -6,7 +6,8 @@ export default {
       fontFamily: {
         'ibm-plex-sans': ["IBM Plex Sans"],
         'ibm-plex-mono': ["IBM Plex Mono"],
-        'syne': ["Syne"]
+        'syne': ["Syne"],
+
       },
     },
     plugins: [

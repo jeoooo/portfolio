@@ -5,7 +5,7 @@
 <div
   class=" h-fill w-fill mx-[24px] md:md-[100px] lg:mx-[300px] bg-zinc-800 m-3 justify-center items-center pb-[4px]"
 >
-  <h1 class="px-[24px] pt-8 pb-4 text-4xl text-white font-bold">
+  <h1 class="px-[24px] pt-8 pb-4 text-4xl text-white font-syne font-bold">
     <i class="fa-solid fa-laptop-code mr-3" /> Projects
   </h1>
   <ol class="m-[20px] flex flex-col w-fill border-s">
@@ -14,10 +14,10 @@
         <div
           class="absolute w-3 h-3 bg-gray-200 rounded-full mt-3.5 start-[38.5px] sm:start-[315px] md:start-[38.5px] lg:start-[315px] border border-white"
         ></div>
-        <h3 class="mb-1 text-3xl font-semibold text-gray-900 dark:text-white">
+        <h3 class="mb-1 text-3xl font-semibold font-syne text-white">
           {project.title}
         </h3>
-        <h3 class="mb-2 text-xl font-semibold text-gray-900 dark:text-white">
+        <h3 class="my-4 text-xl font-semibold font-ibm-plex-sans text-white">
           {project.description.short_description}
         </h3>
 
@@ -28,7 +28,7 @@
             rel="noopener noreferrer"
           >
             <h3
-              class=" text-md font-normal leading-none text-gray-400 dark:text-gray-500"
+              class=" text-md font-normal leading-none text-gray-200 hover:underline"
             >
               {project.websiteLink}
             </h3>
@@ -36,7 +36,7 @@
         {/if}
 
         <p
-          class="text-base font-normal text-justify text-gray-500 dark:text-gray-400 mt-4"
+          class="text-base font-normal text-justify text-gray-50 mt-4 font-ibm-plex-sans"
         >
           {project.description.long_description}
         </p>

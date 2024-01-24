@@ -9,7 +9,7 @@
   import data from "$lib/jeocarlolubao.json";
 </script>
 
-<section class="flex flex-col gap-y-2 mb-20">
+<section class="flex flex-col gap-y-2 my-16">
   <Intro />
   <About />
   <Stack />

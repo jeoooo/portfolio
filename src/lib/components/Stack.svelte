@@ -6,7 +6,7 @@
   class=" h-full w-fill mx-[24px] md:md-[100px] lg:mx-[300px] bg-zinc-800 m-3 justify-center items-center"
 >
   <div class="flex flex-col items-start">
-    <p class="px-[24px] pt-8 pb-4 text-4xl text-white font-bold">
+    <p class="px-[24px] pt-8 pb-4 text-4xl text-white font-syne font-bold">
       <i class="fa-solid fa-layer-group mr-3" />Tech Stack
     </p>
     <p class="px-[24px] pt-2 pb-4 text-sm text-white font-regular">
@@ -47,7 +47,7 @@
     {/each}
   </div>
   <div class="flex flex-col items-start p-4">
-    <p class="px-[14px] pt-4 pb-4 text-4xl font-bold text-white">
+    <p class="px-[14px] pt-4 pb-4 text-4xl font-syne font-bold text-white">
       <i class="fa-solid fa-wand-magic-sparkles mr-3" />UI/UX Design Tools
     </p>
   </div>

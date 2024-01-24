@@ -4,10 +4,10 @@
 </script>
 
 <div
-  class=" h-full w-fill mx-[24px] md:md-[100px] lg:mx-[300px] bg-zinc-800 m-3 justify-center items-center pb-4"
+  class=" h-full w-fill mx-[24px] md:md-[100px] lg:mx-[300px] bg-zinc-800 m-3 justify-center items-center my-16 pb-4"
 >
   <div class="flex flex-col items-start">
-    <p class="px-[14px] pt-4 pb-4 text-6xl font-bold text-white">Blog</p>
+    <p class="px-[20px] p-6 text-6xl font-bold text-white">Blog</p>
   </div>
 
   {#each data.posts as post}

@@ -1,4 +1,5 @@
 <script>
+  import Contact from "./../lib/components/old/Contact.svelte";
   import { onMount } from "svelte";
   import "../app.css";
 
@@ -15,19 +16,30 @@
 </script>
 
 <header>
-  <div class="h-10 w-fill m-3">
+  <div class="fixed top-0 h-12 w-full bg-zinc-800">
     <div class="h-full w-fill lg:mx-[290px] flex flex-row">
       <div class="flex flex-row h-fill gap-2">
-        <div class="h-full w-[100px] p-2 bg-zinc-800">
-          <a href="/" rel="noopener noreferrer">
-            <h1 class="text-white">@jeooo</h1>
-          </a>
-        </div>
-        <div class="h-full w-[100px] p-2 bg-zinc-800">
-          <a href="/blog" rel="noopener noreferrer">
-            <h1 class="text-white">blog</h1>
-          </a>
-        </div>
+        <a href="/" rel="noopener noreferrer">
+          <div
+            class="h-full w-[250px] p-2 bg-zinc-800 hover:bg-zinc-200 transition ease-in-out text-zinc-200 hover:text-zinc-800"
+          >
+            <h1 class=" font-syne text-xl font-normal">@jeooo</h1>
+          </div>
+        </a>
+        <!-- <a href="/" rel="noopener noreferrer">
+          <div
+            class="h-full w-[250px] p-2 bg-zinc-800 hover:bg-zinc-200 transition ease-in-out text-zinc-200 hover:text-zinc-800"
+          >
+            <h1 class="font-syne text-xl font-normal">Contact</h1>
+          </div>
+        </a> -->
+        <a href="/blog" rel="noopener noreferrer">
+          <div
+            class="h-full w-[250px] p-2 bg-zinc-800 hover:bg-zinc-200 transition ease-in-out text-zinc-200 hover:text-zinc-800"
+          >
+            <h1 class="font-syne text-xl font-normal">Blog</h1>
+          </div>
+        </a>
       </div>
     </div>
   </div>
@@ -40,7 +52,7 @@
     <div
       class="flex w-fill h-full mx-[24px] md:md-[100px] lg:mx-[300px] items-center justify-center"
     >
-      <p class="text-white inline-flex">
+      <p class="text-white inline-flex font-syne font-bold">
         {year}. Made with
         <img
           class="ml-1 mt-1 h-5 mr-1"
