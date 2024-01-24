@@ -17,6 +17,19 @@
   const isDev = process.env.NODE_ENV === "development";
 </script>
 
+<svelte:head>
+  <meta title="Jeo | Android Developer" />
+  <meta name="description" content="Jeo | Android Developer" />
+
+  <meta property="og:url" content="https://jeoooo.github.io/portfolio" />
+  <meta property="og:type" content="portfolio" />
+  <meta property="og:title" content="Hi! I'm Jeo 💻📱👩‍💻" />
+  <meta
+    property="og:description"
+    content="Software Developer | Graphic Designer"
+  />
+  <meta property="og:image" content="https://i.imgur.com/BFDKl6t.jpg" />
+</svelte:head>
 <header>
   <div class="fixed top-0 h-12 w-full bg-zinc-800">
     <div class="h-full w-fill lg:mx-[290px] flex flex-row">

@@ -17,9 +17,8 @@
   <meta property="og:title" content={data.meta.title} />
 
   <meta property="og:url" content="https://jeoooo.github.io/portfolio" />
-  <meta property="og:type" content="portfolio" />
+  <meta property="og:type" content="blog" />
   <meta property="og:description" content={data.meta.description} />
-  <meta property="og:image" content="https://i.imgur.com/BFDKl6t.jpg" />
 </svelte:head>
 
 <div
