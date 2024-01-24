@@ -14,6 +14,20 @@
   console.log(data);
 </script>
 
+<svelte:head>
+  <meta title="Jeo | Android Developer" />
+  <meta name="description" content="Jeo | Android Developer" />
+
+  <meta property="og:url" content="https://jeoooo.github.io/portfolio" />
+  <meta property="og:type" content="portfolio" />
+  <meta property="og:title" content="Hi! I'm Jeo 💻📱👩‍💻" />
+  <meta
+    property="og:description"
+    content="Software Developer | Graphic Designer"
+  />
+  <meta property="og:image" content="https://i.imgur.com/zpipPLf.png" />
+</svelte:head>
+
 <div
   class=" h-full w-fill mx-[24px] md:md-[100px] lg:mx-[300px] bg-zinc-800 m-3 justify-center items-center my-16 pb-4"
 >
