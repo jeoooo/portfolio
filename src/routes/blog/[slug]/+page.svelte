@@ -26,7 +26,9 @@
   class="sm:p-2 lg:p-10 my-20 h-full w-fill sm:mx-[20px] md:md-[100px] lg:mx-[300px] bg-zinc-800 m-3 justify-center items-center"
 >
   <div class="flex flex-col items-start">
-    <p class="px-[32px] pt-8 pb-4 text-4xl lg:text-6xl font-bold text-white">
+    <p
+      class="px-[32px] pt-8 pb-4 text-4xl lg:text-6xl font-bold text-white font-syne"
+    >
       {data.meta.title}
     </p>
   </div>
