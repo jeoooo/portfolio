@@ -11,7 +11,7 @@
     });
   }
   const isDev = process.env.NODE_ENV === "development";
-  console.log(data);
+  console.log(data.posts.slug);
 </script>
 
 <svelte:head>
@@ -29,7 +29,7 @@
 </svelte:head>
 
 <div
-  class=" h-full w-fill mx-[24px] md:md-[100px] lg:mx-[300px] bg-zinc-800 m-3 justify-center items-center my-16 pb-4"
+  class=" h-screen w-fill mx-[24px] md:md-[100px] lg:mx-[300px] bg-zinc-800 justify-center items-center my-20"
 >
   <div class="flex flex-col items-start">
     <p class="px-[20px] p-6 text-6xl font-bold font-syne text-white">Blog</p>
