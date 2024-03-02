@@ -35,7 +35,10 @@ An upcoming change in Project DESTINY's backend infrastructure that will affect 
  <div style="text-align: justify">
  As the sole developer behind this project, I am continuously exploring ways to improve the platform's efficiency and user experience. In this spirit, I am announcing a temporary transition from Pocketbase to a pure JSON format for our backend data.
 </div>
-
+<br>
+<div style="text-align: justify">
+While this may not sound particularly thrilling, I want to assure you that this transition is essential for enhancing the platform's performance and streamlining operations. Here's what you need to know:
+</div>
 <br>
 <ol >
     <li><strong>1. Simplified Data Management:</strong> <br> By moving to a pure JSON format, I will be able to simplify the management of our data, allowing for more efficient maintenance and updates. </li><br>
