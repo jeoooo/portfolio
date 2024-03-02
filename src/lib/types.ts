@@ -1,4 +1,4 @@
-export type Categories = "sveltekit" | "svelte" | "mdsvex";
+export type Categories = "sveltekit" | "svelte" | "mdsvex" | "pocketbase";
 
 export type Post = {
   title: string;
