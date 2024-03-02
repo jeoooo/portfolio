@@ -6,7 +6,7 @@ categories:
     - sveltekit
     - svelte
     - pocketbase
-published: false
+published: true
 
 ---
 
