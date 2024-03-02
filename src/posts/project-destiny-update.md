@@ -46,7 +46,7 @@ An upcoming change in Project DESTINY's backend infrastructure that will affect 
 </ol>
 
  <div style="text-align: justify">
-I understand that changes like this can raise questions or concerns. Please feel free to reach out to me with any queries or feedback you may have regarding this transition. Your input is invaluable as I work to refine and improve Project DESTINY.
+Instructions on how to contribute will be also be updated. I understand that changes like this can raise questions or concerns. Please feel free to reach out to me with any queries or feedback you may have regarding this transition. Your input is invaluable as I work to refine and improve Project DESTINY.
 </div>
 <br> 
 <h1 class="text-3xl font-bold" style="display: inline;"><img src="https://media0.giphy.com/media/h35DVyqakmPFzZWq21/200.gif" width="50" style="display: inline;"/> New UI UX!? </h1>
