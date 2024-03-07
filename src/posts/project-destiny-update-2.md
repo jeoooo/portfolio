@@ -38,57 +38,31 @@ This new process aims to streamline contributions and make it easier for users t
 
 ```json
 {
-
     "name": "Mock School",
-
     "acronym": "MS",
-
     "logo": "mock_school_logo.png",
-
     "websites": [
-
         {
-
             "type": "official_website",
-
             "url": "https://www.mockschool.edu.ph/",
-
             "display_url": "mockschool.edu.ph",
-
             "website_description": "The official website of Mock School"
-
         },
-
         {
-
             "type": "student_portal",
-
             "url": "https://studentportal.mockschool.edu.ph/login",
-
             "display_url": "studentportal.mockschool.edu.ph",
-
             "website_description": "The official student portal of Mock School"
-
         },
-
         {
-
             "type": "lms",
-
             "url": "http://lms.mockschool.edu.ph/",
-
             "display_url": "lms.mockschool.edu.ph",
-
             "website_description": "The official Learning Management System (LMS) of Mock School"
-
         }
-
     ],
-
     "description": "Mock School is a fictional educational institution providing high-quality education.",
-
     "hex_code": "#336699"
-
 }
 ```
 
