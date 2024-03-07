@@ -13,6 +13,8 @@ published: true
  <img src="https://github.com/jeoooo/PROJECTDESTINY/raw/main/projectdestiny.png" alt="destiny" width="1000"/>
  </div>
 
+<br>
+
 It's time for some exciting updates regarding our beloved platform. As the sole developer behind Project DESTINY, I am continuously seeking ways to enhance its functionality, performance, and user experience. Today, I am thrilled to share two significant announcements that will shape the future of our platform.
 <br>
 <h2 class="text-3xl font-bold">Migrating to a Pure JSON Backend </h2>
