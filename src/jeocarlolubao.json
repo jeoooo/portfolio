@@ -145,6 +145,14 @@
         {
             "name": "github",
             "color": "#fff"
+        },
+        {
+            "name": "astro",
+            "color": "#fff"
+        },
+        {
+            "name": "jetpackcompose",
+            "color": "#fff"
         }
     ],
     "uiUxDesignTools": [
