@@ -1,0 +1,45 @@
+<script>
+  import { onMount } from "svelte";
+
+  let year = new Date().getFullYear();
+</script>
+
+<footer>
+  <div
+    class="relative bottom-0 h-[80px] w-full bg-zinc-800 justify-center items-center"
+  >
+    <div
+      class="flex w-fill h-full mx-[24px] md:md-[100px] lg:mx-[300px] items-center justify-center"
+    >
+      <p class="text-white inline-flex font-syne font-bold">
+        {year} . Made with
+        <img
+          class="ml-1 mt-1 h-5 mr-1"
+          alt="simple-icon"
+          src="https://cdn.simpleicons.org/astro/fff"
+        />
+        +
+        <img
+          class="ml-1 mt-1 h-5 mr-1"
+          alt="simple-icon"
+          src="https://cdn.simpleicons.org/svelte/fff"
+        />
+        +
+        <img
+          class="ml-1 mt-1 h-5 mr-1"
+          alt="simple-icon"
+          src="https://cdn.simpleicons.org/typescript/fff"
+        />
+        +
+        <a
+          class="ml-1 hover:underline"
+          href="https://vincentgarreau.com/particles.js/#default"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          particles.js
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>

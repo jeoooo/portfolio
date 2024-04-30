@@ -1,4 +1,13 @@
 ---
+import About from "../components/About.svelte";
+import Awards from "../components/Awards.svelte";
+import Education from "../components/Education.svelte";
+import Experience from "../components/Experience.svelte";
+import Footer from "../components/Footer.svelte";
+import Intro from "../components/Intro.svelte";
+import Projects from "../components/Projects.svelte";
+import Stack from "../components/Stack.svelte";
+
 
 ---
 
@@ -53,11 +62,16 @@
 		<!-- syne fonts -->
 		<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 	</head>
-	<body class="">
-		<div id="particles-js"></div>
-		<h1>Astro</h1>
+	<body class="bg-zinc-900">
+		<Intro />
+		<About />
+		<Stack />
+		<Experience />
+		<Education />
+		<Projects />
+		<Awards />
+		<Footer/>
 	</body>
 
-	
 
 </html>
