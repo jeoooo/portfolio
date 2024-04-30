@@ -167,6 +167,11 @@
     ],
     "experience": [
         {
+            "title": "Software Developer",
+            "company": "Ingenuity Software",
+            "duration": "Feb 2024 – Present"
+        },
+        {
             "title": "Freelance Developer",
             "duration": "Jul 2023 – Present",
             "responsibilities": {
