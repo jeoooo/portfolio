@@ -241,6 +241,7 @@
                 "short_description": "Pocketbase Library for Arduino",
                 "long_description": "(Under Development) The PocketBaseArduino library facilitates smooth integration between Arduino projects and PocketBase, an open-source backend solution. PocketBase encompasses an embedded SQLite database with real-time subscriptions, integrated authentication management, a user-friendly dashboard UI, and a straightforward REST-ish API. By using the PocketBaseArduino library, developers can effortlessly connect their Arduino devices to the feature-rich PocketBase platform, streamlining real-time data processing and communication. Simplify your IoT projects with the seamless integration provided by the PocketBaseArduino library."
             },
+            "websiteLink": "https://github.com/jeoooo/PocketbaseExtended",
             "techStack": [
                 {
                     "name": "Pocketbase",
