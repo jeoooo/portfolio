@@ -1,0 +1,516 @@
+{
+    "name": "Jeo Carlo Lubao",
+    "description": "Software Developer | Graphic Designer",
+    "socials": [
+        {
+            "icon_name": "GitHub",
+            "name": "GitHub",
+            "link": "https://github.com/jeoooo"
+        },
+        {
+            "icon_name": "Linkedin",
+            "name": "Linkedin",
+            "link": "https://www.linkedin.com/in/jeoooo/"
+        },
+        {
+            "icon_name": "Behance",
+            "name": "Behance",
+            "link": "https://www.behance.net/jeolubao"
+        },
+        {
+            "icon_name": "BuyMeACoffee",
+            "name": "Buy Me A Coffee!",
+            "link": "https://www.buymeacoffee.com/jeooo"
+        },
+        {
+            "icon_name": "githubsponsors",
+            "name": "Sponsor me on GitHub!",
+            "link": "https://github.com/sponsors/jeoooo"
+        }
+    ],
+    "aboutMe": "I am an IT professional with a primary focus on Android mobile development, complemented by a deep passion for web and backend development, along with UI/UX design. Beyond academia, I explore diverse areas such as Algorithmic Music, Machine Learning, Game Development, and IT Project Management. \n\n My insatiable curiosity fuels my drive to constantly expand my knowledge and embrace new concepts, empowering me to contribute to groundbreaking projects that push the boundaries of technology and deliver innovative solutions.",
+    "techStack": [
+        {
+            "name": "androidstudio",
+            "color": "#fff"
+        },
+        {
+            "name": "arduino",
+            "color": "#fff"
+        },
+        {
+            "name": "c++",
+            "color": "#fff"
+        },
+        {
+            "name": "csharp",
+            "color": "#fff"
+        },
+        {
+            "name": "css3",
+            "color": "#fff"
+        },
+        {
+            "name": "docker",
+            "color": "#fff"
+        },
+        {
+            "name": "dotnet",
+            "color": "#fff"
+        },
+        {
+            "name": "firebase",
+            "color": "#fff"
+        },
+        {
+            "name": "flutter",
+            "color": "#fff"
+        },
+        {
+            "name": "html5",
+            "color": "#fff"
+        },
+        {
+            "name": "java",
+            "color": "#fff"
+        },
+        {
+            "name": "javascript",
+            "color": "#fff"
+        },
+        {
+            "name": "kotlin",
+            "color": "#fff"
+        },
+        {
+            "name": "laravel",
+            "color": "#fff"
+        },
+        {
+            "name": "mysql",
+            "color": "#fff"
+        },
+        {
+            "name": "next.js",
+            "color": "#fff"
+        },
+        {
+            "name": "nodedotjs",
+            "color": "#fff"
+        },
+        {
+            "name": "php",
+            "color": "#fff"
+        },
+        {
+            "name": "pocketbase",
+            "color": "#fff"
+        },
+        {
+            "name": "postman",
+            "color": "#fff"
+        },
+        {
+            "name": "python",
+            "color": "#fff"
+        },
+        {
+            "name": "react",
+            "color": "#fff"
+        },
+        {
+            "name": "sqlite",
+            "color": "#fff"
+        },
+        {
+            "name": "svelte",
+            "color": "#fff"
+        },
+        {
+            "name": "tailwindcss",
+            "color": "#fff"
+        },
+        {
+            "name": "typescript",
+            "color": "#fff"
+        },
+        {
+            "name": "microsoftsqlserver",
+            "color": "#fff"
+        },
+        {
+            "name": "git",
+            "color": "#fff"
+        },
+        {
+            "name": "github",
+            "color": "#fff"
+        }
+    ],
+    "uiUxDesignTools": [
+        {
+            "name": "adobephotoshop",
+            "color": "#fff"
+        },
+        {
+            "name": "adobeillustrator",
+            "color": "#fff"
+        },
+        {
+            "name": "adobexd",
+            "color": "#fff"
+        },
+        {
+            "name": "figma",
+            "color": "#fff"
+        }
+    ],
+    "experience": [
+        {
+            "title": "Freelance Developer",
+            "duration": "Jul 2023 – Present",
+            "responsibilities": {
+                "roleDescription": [
+                    "Creating personal projects for skill enhancement and actively contributing to Free and Open Source Software (FOSS) projects on GitHub, driven by a passion for open source and continuous learning."
+                ]
+            }
+        },
+        {
+            "title": "Software Developer Intern",
+            "company": "Infinity Hub",
+            "duration": "March 2023 – May 2023",
+            "responsibilities": {
+                "roleDescription": [
+                    "Enhanced user experience and functionality of a business consultancy services app.",
+                    "Developed a freelancing platform for Medical Professionals, focusing on accessibility and functionality."
+                ]
+            }
+        },
+        {
+            "title": "Creatives Head",
+            "company": "HCDC Esports Club",
+            "duration": "April 2021 – July 2023",
+            "responsibilities": {
+                "roleDescription": [
+                    "As creatives head, I specialized in creating esports-related publication materials for the HCDC Esports Club."
+                ],
+                "featuredEvents": [
+                    "Cross Blazers Cup 2023",
+                    "Cross Blazers Cup 2022",
+                    "Cross Blazers Cup 2021",
+                    "HCDC Esports Club CODM Tournament 2021",
+                    "HCDC Esports Club Pokemon Unite Tournament 2021",
+                    "HCDC Esports Club ML:BB Tournament 2021"
+                ]
+            }
+        },
+        {
+            "title": "Graphic Designer",
+            "company": "HCDC CETSO",
+            "duration": "August 2021 – July 2023",
+            "responsibilities": {
+                "roleDescription": [
+                    "During my tenure as an officer at HCDC – College of Engineering and Technology Students Organization (HCDC – CETSO), I volunteered to use my graphic design skills to create compelling publication materials for social media platforms.",
+                    "By actively contributing my skills and expertise in graphic design, I significantly contributed to the success of these events by creating engaging publication materials for social media. This helped promote the events effectively and enhance the online presence of the organization."
+                ],
+                "featuredEvents": [
+                    "CET Day 2022",
+                    "CET Day 2021",
+                    "CET Techno Fair 2023"
+                ]
+            }
+        }
+    ],
+    "projects": [
+        {
+            "title": "PocketbaseArduino",
+            "description": {
+                "short_description": "Pocketbase Library for Arduino",
+                "long_description": "(Under Development) The PocketBaseArduino library facilitates smooth integration between Arduino projects and PocketBase, an open-source backend solution. PocketBase encompasses an embedded SQLite database with real-time subscriptions, integrated authentication management, a user-friendly dashboard UI, and a straightforward REST-ish API. By using the PocketBaseArduino library, developers can effortlessly connect their Arduino devices to the feature-rich PocketBase platform, streamlining real-time data processing and communication. Simplify your IoT projects with the seamless integration provided by the PocketBaseArduino library."
+            },
+            "techStack": [
+                {
+                    "name": "Pocketbase",
+                    "color": "#fff"
+                },
+                {
+                    "name": "arduino",
+                    "color": "#fff"
+                }
+            ]
+        },
+        {
+            "title": "Flutterdex",
+            "description": {
+                "short_description": "Flutter Gen 3 Pokedex App ",
+                "long_description": "(Under Development) FlutterDex is set to become an exceptional Pokedex app powered by Flutter and integrated with PokeAPI. This ambitious project aims to deliver a seamless and visually appealing experience for Pokemon enthusiasts, offering comprehensive details about Pokemon, their abilities, and evolutions."
+            },
+            "techStack": [
+                {
+                    "name": "Flutter",
+                    "color": "#fff"
+                }
+            ]
+        },
+        {
+            "title": "AniSvelte",
+            "description": {
+                "short_description": "Svelte Anime Website using Jikan API",
+                "long_description": "AniSvelte is an exciting project in the works, combining the power of Svelte with the Jikan API to create a feature-rich anime website. This project aims to replicate the functionalities of MyAnimeList (MAL) as a website to browse otaku-related content."
+            },
+            "websiteLink": "https://anilist-seven.vercel.app/",
+            "techStack": [
+                {
+                    "name": "Figma",
+                    "color": "#fff"
+                },
+                {
+                    "name": "Svelte",
+                    "color": "#fff"
+                },
+                {
+                    "name": "Typescript",
+                    "color": "#fff"
+                },
+                {
+                    "name": "tailwindcss",
+                    "color": "#fff"
+                }
+            ]
+        },
+        {
+            "title": "Project DESTINY",
+            "description": {
+                "short_description": "Davao City Student Portal Status Page",
+                "long_description": "Project DESTINY is an unofficial, open-source Uptime Status Page designed to monitor the availability of critical educational websites in Davao City. This initiative aims to provide real-time information about the uptime status of key online platforms to ensure a seamless online learning experience for students."
+            },
+            "websiteLink": "https://projectdestiny.vercel.app/",
+            "techStack": [
+                {
+                    "name": "Figma",
+                    "color": "#fff"
+                },
+                {
+                    "name": "Svelte",
+                    "color": "#fff"
+                },
+                {
+                    "name": "Pocketbase",
+                    "color": "#fff"
+                },
+                {
+                    "name": "tailwindcss",
+                    "color": "#fff"
+                },
+                {
+                    "name": "Typescript",
+                    "color": "#fff"
+                }
+            ]
+        },
+        {
+            "title": "True Site",
+            "description": {
+                "short_description": "HCDC Websites Status Page",
+                "long_description": "HCDC True Site is an unofficial, open-source Uptime Status Page dedicated to monitoring the uptime of key Holy Cross of Davao College websites. This project is written in Svelte and uses SvelteKit as its meta-framework. This project is the predecessor of Project DESTINY"
+            },
+            "websiteLink": "https://hcdctruesite.vercel.app/",
+            "techStack": [
+                {
+                    "name": "Figma",
+                    "color": "#fff"
+                },
+                {
+                    "name": "Svelte",
+                    "color": "#fff"
+                },
+                {
+                    "name": "tailwindcss",
+                    "color": "#fff"
+                },
+                {
+                    "name": "Typescript",
+                    "color": "#fff"
+                }
+            ]
+        },
+        {
+            "title": "ARRange",
+            "description": {
+                "short_description": "UI/UX design concept for an Augmented Reality interior design app",
+                "long_description": "ARRange is a visually stunning UI/UX design concept for an Augmented Reality interior design app, created with Adobe XD. Immerse yourself in an intuitive and aesthetically pleasing interface that revolutionizes the E-Commerce experience. Explore the future of interior design effortlessly with ARRange's innovative design and user-friendly navigation."
+            },
+            "techStack": [
+                {
+                    "name": "Figma",
+                    "color": "#fff"
+                }
+            ]
+        },
+        {
+            "title": "FireTracker",
+            "description": {
+                "short_description": "An IoT-based First Responder App for Firemen",
+                "long_description": "FireTracker, an Android app for firefighters, utilizes IoT, Java, and Kotlin for early fire detection and real-time data processing with Firebase. Integrated with Mapbox for precise navigation and SMS capabilities for automated notifications, the app enhances coordination and communication within firefighting teams, optimizing emergency response efforts."
+            },
+            "techStack": [
+                {
+                    "name": "android",
+                    "color": "#fff"
+                },
+                {
+                    "name": "androidstudio",
+                    "color": "#fff"
+                },
+                {
+                    "name": "java",
+                    "color": "#fff"
+                },
+                {
+                    "name": "kotlin",
+                    "color": "#fff"
+                },
+                {
+                    "name": "mapbox",
+                    "color": "#fff"
+                },
+                {
+                    "name": "firebase",
+                    "color": "#fff"
+                },
+                {
+                    "name": "mqtt",
+                    "color": "#fff"
+                }
+            ]
+        },
+        {
+            "title": "Netrunners",
+            "description": {
+                "short_description": "A simple ecommerce Android app using SQLite",
+                "long_description": "Netrunners is a mobile computer hardware store that retails computer hardware and other consumer electronics. It sells different kinds of hardware from well-known hardware manufacturers of motherboards, computer processors, graphics cards, storage devices, and more."
+            },
+            "techStack": [
+                {
+                    "name": "Android",
+                    "color": "#fff"
+                },
+                {
+                    "name": "androidstudio",
+                    "color": "#fff"
+                },
+                {
+                    "name": "java",
+                    "color": "#fff"
+                },
+                {
+                    "name": "SQLite",
+                    "color": "#fff"
+                }
+            ]
+        },
+        {
+            "title": "VoiceNotes",
+            "description": {
+                "short_description": "A Speech-to-Text (STT) note-taking app using SQLite",
+                "long_description": "VoiceNotes is a user-friendly Speech-to-Text app that effortlessly converts spoken words into written notes. With the simplicity of SQLite, your transcribed thoughts are securely stored and easily accessible. Streamline your note-taking experience with Voice Notes for efficient and organized voice-to-text functionality."
+            },
+            "techStack": [
+                {
+                    "name": "Android",
+                    "color": "#fff"
+                },
+                {
+                    "name": "androidstudio",
+                    "color": "#fff"
+                },
+                {
+                    "name": "java",
+                    "color": "#fff"
+                },
+                {
+                    "name": "SQLite",
+                    "color": "#fff"
+                }
+            ]
+        },
+        {
+            "title": "Binary Game",
+            "description": {
+                "short_description": "A Java-based GUI educational tool for learning binary encoding",
+                "long_description": "Binary Game is a Java-based GUI educational tool, utilizing Java Swing to teach the principles of the binary number system. Dive into an interactive experience, navigating challenges that make learning binary encoding both engaging and accessible. With its user-friendly interface, Binary Game is designed to simplify the understanding of binary numbers for learners of all levels."
+            },
+            "techStack": [
+                {
+                    "name": "java",
+                    "color": "#fff"
+                }
+            ]
+        }
+    ],
+    "education": [
+        {
+            "awards": [
+                "Loyalty Award",
+                "Departmental Award",
+                "Citation Award"
+            ],
+            "organizations": [
+                {
+                    "name": "HCDC Information Technology Society",
+                    "positions": {
+                        "President": [
+                            "A.Y. 2021 – 2022",
+                            "A.Y. 2022 – 2023"
+                        ],
+                        "Treasurer": [
+                            "A.Y. 2020-2021"
+                        ],
+                        "1st Year Representative": [
+                            "A.Y. 2019 – 2020"
+                        ]
+                    }
+                },
+                {
+                    "name": "HCDC - College of Engineering and Technology Students Organization (HCDC – CETSO)",
+                    "positions": {
+                        "Assistant Secretary": [
+                            "A.Y. 2022 – 2023"
+                        ],
+                        "Secretary": [
+                            "A.Y. 2021 – 2022"
+                        ]
+                    }
+                }
+            ],
+            "deansLister": [
+                "2nd Semester, A.Y. 2019 – 2020",
+                "2nd Semester, A.Y. 2020 – 2021",
+                "2nd Semester, A.Y. 2021 – 2022"
+            ],
+            "institution": "Holy Cross of Davao College",
+            "degree": "Bachelor of Science in Information Technology (BSIT)",
+            "duration": "2019 – 2023"
+        }
+    ],
+    "awardsConferencesCertifications": {
+        "awardsCompetitions": [
+            "CHAMPION - IT Olympiad 2020 - Programming Competition",
+            "1ST RUNNER-UP - CET Technofair 2020 - Programming Competition",
+            "CONTESTANT - SMART Innovation Generation Season 3",
+            "PARTICIPANT - IT Olympiad 2023 - Quiz Bowl Competition"
+        ],
+        "seminarsAttended": [
+            "Google I/O Extended Davao 2023",
+            "SMART INNOVATION GENERATION SEASON 3 - InnoGen 3.0 Phase 1 Lecture Series - Design Thinking & Ideation",
+            "SMART INNOVATION GENERATION SEASON 3 - InnoGen 3.0 Phase 1 Lecture Series - Writing and Designing your Proposal.",
+            "Smooth Like Flutter!: Exploring Cross-Platform App Development",
+            "Interfacing with Arduino",
+            "GDSC Mindanao: Technological Empowerment Across an Archipelago Event"
+        ],
+        "conferences": [
+            "PRESENTER - HCDC International Research Congress 2023",
+            "PRESENTER - HCDC CET TechnoFair 2023: Conversazione Research Presentation"
+        ]
+    }
+}
