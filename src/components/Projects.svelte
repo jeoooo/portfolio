@@ -8,11 +8,11 @@
   <h1 class="px-[24px] pt-8 pb-4 text-4xl text-white font-syne font-bold">
     <i class="fa-solid fa-laptop-code mr-3" /> Projects
   </h1>
-  <ol class="m-[20px] flex flex-col w-fill border-s">
+  <ol class="my-[32px] mx-[64px] flex flex-col w-fill border-s">
     {#each data.projects as project (project.title)}
       <li class="mb-4 ms-4">
         <div
-          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-3.5 start-[38.5px] sm:start-[315px] md:start-[38.5px] lg:start-[315px] border border-white"
+          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-3.5 start-[38.5px] sm:start-[358px] md:start-[38.5px] lg:start-[358px] border border-white"
         ></div>
         <h3 class="mb-1 text-3xl font-semibold font-syne text-white">
           {project.title}
