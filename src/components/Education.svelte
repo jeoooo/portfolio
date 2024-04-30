@@ -18,12 +18,12 @@
           {edu.institution}
         </h3>
         <h3
-          class="mt-4 mb-2 text-xl font-semibold text-gray-200 font-ibm-plex-sans"
+          class="mt-4 mb-2 text-xl font-semibold text-gray-200 ibm-plex-sans-bold"
         >
           {edu.degree}
         </h3>
         <h3
-          class=" text-md font-normal leading-none text-gray-400 font-ibm-plex-sans"
+          class=" text-md font-normal leading-none text-gray-400 ibm-plex-sans-regular"
         >
           {edu.duration}
         </h3>
@@ -31,19 +31,19 @@
         <ul class="pl-5 pt-3">
           {#each edu.awards as award (award)}
             <li
-              class="text-base font-bold text-white pt-2 font-ibm-plex-sans my-1"
+              class="text-base font-bold text-white pt-2 ibm-plex-sans-bold my-1"
             >
               <i class="fa-solid fa-medal mr-1" />{award}
             </li>
           {/each}
         </ul>
         {#each edu.organizations as org (org.name)}
-          <p class="text-base font-bold text-white pt-5 font-ibm-plex-sans">
+          <p class="text-base font-bold text-white pt-5 ibm-plex-sans-bold">
             {org.name}
           </p>
           <ul class="pl-5 pt-3 list-disc list-inside">
             {#each Object.entries(org.positions) as [position, years]}
-              <li class="text-white font-ibm-plex-sans my-2">
+              <li class="text-white ibm-plex-sans-regular my-2">
                 <!-- Set text to white -->
                 {position}, ({years.join(", ")})
               </li>
@@ -55,7 +55,7 @@
         </p>
         <ul class="pl-5 pt-3 list-inside">
           {#each edu.deansLister as semester (semester)}
-            <li class="text-white font-ibm-plex-sans my-2">
+            <li class="text-white ibm-plex-sans-regular my-2">
               <!-- Set text to white -->
               <i class="fa-solid fa-medal mr-1" />{semester}
             </li>
