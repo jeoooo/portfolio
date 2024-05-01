@@ -17,7 +17,7 @@
         Awards & Competitions
       </h3>
       {#each data.awardsConferencesCertifications.awardsCompetitions as award}
-        <h3 class="mb-2 text-white font-ibm-plex-sans">
+        <h3 class="mb-2 text-white ibm-plex-sans-regular">
           <i class="fa-solid fa-trophy mr-1" />
           {award}
         </h3>
@@ -32,7 +32,7 @@
         Seminars Attended
       </h3>
       {#each data.awardsConferencesCertifications.seminarsAttended as seminar}
-        <h3 class="mb-2 text-white font-ibm-plex-sans">
+        <h3 class="mb-2 text-white ibm-plex-sans-regular">
           <i class="fa-solid fa-certificate mr-1" />
           {seminar}
         </h3>
@@ -46,7 +46,7 @@
         Conferences
       </h3>
       {#each data.awardsConferencesCertifications.conferences as conference}
-        <h3 class="mb-2 text-white font-ibm-plex-sans">
+        <h3 class="mb-2 text-white ibm-plex-sans-regular">
           <i class="fa-solid fa-calendar-day mr-1" />
           {conference}
         </h3>

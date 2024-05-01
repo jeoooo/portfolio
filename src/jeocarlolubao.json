@@ -236,10 +236,10 @@
     ],
     "projects": [
         {
-            "title": "PocketbaseArduino",
+            "title": "PocketbaseExtended",
             "description": {
                 "short_description": "Pocketbase Library for Arduino",
-                "long_description": "(Under Development) The PocketBaseArduino library facilitates smooth integration between Arduino projects and PocketBase, an open-source backend solution. PocketBase encompasses an embedded SQLite database with real-time subscriptions, integrated authentication management, a user-friendly dashboard UI, and a straightforward REST-ish API. By using the PocketBaseArduino library, developers can effortlessly connect their Arduino devices to the feature-rich PocketBase platform, streamlining real-time data processing and communication. Simplify your IoT projects with the seamless integration provided by the PocketBaseArduino library."
+                "long_description": "(Under Development) The PocketbaseExtended library facilitates smooth integration between Arduino projects and PocketBase, an open-source backend solution. PocketBase encompasses an embedded SQLite database with real-time subscriptions, integrated authentication management, a user-friendly dashboard UI, and a straightforward REST-ish API. By using the PocketbaseExtended library, developers can effortlessly connect their Arduino devices to the feature-rich PocketBase platform, streamlining real-time data processing and communication. Simplify your IoT projects with the seamless integration provided by the PocketbaseExtended library."
             },
             "websiteLink": "https://github.com/jeoooo/PocketbaseExtended",
             "techStack": [
@@ -323,7 +323,7 @@
             ]
         },
         {
-            "title": "True Site",
+            "title": "HCDC True Site",
             "description": {
                 "short_description": "HCDC Websites Status Page",
                 "long_description": "HCDC True Site is an unofficial, open-source Uptime Status Page dedicated to monitoring the uptime of key Holy Cross of Davao College websites. This project is written in Svelte and uses SvelteKit as its meta-framework. This project is the predecessor of Project DESTINY"
