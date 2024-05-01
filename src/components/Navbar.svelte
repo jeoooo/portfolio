@@ -1,43 +1,32 @@
-<nav class="bg-white border-gray-200 dark:bg-zinc-800">
-  <div
-    class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-48 py-4"
-  >
-    <a
-      href="https://flowbite.com/"
-      class="flex items-center space-x-3 rtl:space-x-reverse"
-    >
-      <img
-        src="https://miro.medium.com/v2/resize:fit:1358/0*2hSNUnjKzt6GOa1b"
-        class="h-8"
-        alt="Flowbite Logo"
-      />
-      <!-- <span
-        class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-        >Jeooo</span
-      > -->
-    </a>
-    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-      <ul
-        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-zinc-800 md:dark:bg-zinc-800 dark:border-gray-700"
-      >
-        <li>
-          <a
-            href="#"
-            class="block py-2 px-3 text-white bg-zinc-800 rounded ibm-plex-sans-semibold md:bg-transparent md:text-white md:p-0 dark:text-white md:dark:text-white"
-            aria-current="page">Home</a
+<header>
+  <div class="fixed top-0 h-12 w-full bg-zinc-800 shadow-md z-10">
+    <div class="h-full w-fill lg:mx-[290px] flex flex-row">
+      <div class="flex flex-row h-fill gap-2">
+        <a href="#" rel="noopener noreferrer">
+          <div
+            class="h-full w-[250px] p-2 bg-zinc-800 hover:bg-zinc-200 transition ease-in-out text-zinc-200 hover:text-zinc-800"
           >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="block py-2 px-3 text-gray-900 rounded ibm-plex-sans-semibold hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-            >Blog</a
+            <h1 class=" font-syne text-xl font-normal">@jeooo</h1>
+          </div>
+        </a>
+        <!-- <a href="/" rel="noopener noreferrer">
+          <div
+            class="h-full w-[250px] p-2 bg-zinc-800 hover:bg-zinc-200 transition ease-in-out text-zinc-200 hover:text-zinc-800"
           >
-        </li>
-      </ul>
+            <h1 class="font-syne text-xl font-normal">Contact</h1>
+          </div>
+        </a> -->
+        <a href="#" rel="noopener noreferrer">
+          <div
+            class="h-full w-[250px] p-2 bg-zinc-800 hover:bg-zinc-200 transition ease-in-out text-zinc-200 hover:text-zinc-800"
+          >
+            <h1 class="font-syne text-xl font-normal">Blog</h1>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
-</nav>
+</header>
 
 <style>
   .ibm-plex-sans-thin {
