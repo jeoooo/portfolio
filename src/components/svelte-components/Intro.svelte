@@ -1,5 +1,5 @@
 <script>
-  import data from "../jeocarlolubao.json";
+  import data from "../../jeocarlolubao.json";
 </script>
 
 <div
