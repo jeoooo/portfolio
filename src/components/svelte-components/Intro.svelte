@@ -3,19 +3,33 @@
 </script>
 
 <div
-  class=" h-full w-fill mx-[24px] md:md-[100px] lg:mx-[300px] bg-zinc-800 m-3 justify-center items-center"
+  class="h-full w-fill pt-10../../jeocarlolubao.jsond-[100px] lg:mx-[300px] bg-zinc-800 m-3 flex justify-center items-center mt-16"
 >
-  <div class="flex flex-col items-start">
-    <p class="px-[24px] pt-8 pb-4 text-4xl text-white syne-600 font-bold">
-      <i class="fa-solid fa-circle-question mr-3" />About Me
+  <div class="flex flex-col items-center">
+    <p class=" text-xl lg:text-5xl text-white syne-800 font-extrabold">
+      Jeo Carlo Lubao
     </p>
-  </div>
-  <div class="w-fit h-fit px-[20px] py-5 flex flex-row">
-    <p
-      class="text-zinc-50 text-lg ibm-plex-sans-regular px-5 pb-5 pt-0 text-justify"
-    >
-      {@html data.aboutMe.replace(/\n/g, "<br>")}
+    <p class="text-xs lg:text-xl mt-4 syne-400 font-bold text-white px-4">
+      Software Developer | Graphic Designer
     </p>
+    {#each data.socials as social (social.name)}
+      <a href={social.link} target="_blank" rel="noopener noreferrer">
+        <div class="flex flex-col gap-4 w-[250px] lg:w-[350px] mt-5">
+          <div
+            class="text-zinc-800 border p-2 inline-flex h-12 transition ease-in-out hover:scale-110 bg-zinc-200 hover:bg-white"
+          >
+            <img
+              class="h-4 mt-0.5 mr-2 ml-2 lg:mt-1.5 lg:mr-2 lg:ml-3"
+              alt="simple-icon"
+              src="https://cdn.simpleicons.org/{social.icon_name}/333"
+            />
+            <p class=" ibm-plex-mono-light text-[12px] lg:text-lg">
+              {social.name}
+            </p>
+          </div>
+        </div>
+      </a>
+    {/each}
   </div>
 </div>
 
@@ -191,13 +205,6 @@
     font-family: "Syne", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;
-  }
-
-  .syne-600 {
-    font-family: "Syne", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
     font-style: normal;
   }
 

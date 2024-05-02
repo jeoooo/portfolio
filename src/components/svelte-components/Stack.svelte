@@ -3,7 +3,7 @@
 </script>
 
 <div
-  class=" h-full w-fill mx-[24px] md:md-[100px] lg:mx-[300px] bg-zinc-800 m-3 justify-center items-center"
+  class=" h-full w-fill mx-[../../jeocarlolubao.jsong:mx-[300px] bg-zinc-800 m-3 justify-center items-center"
 >
   <div class="flex flex-col items-start">
     <p class="px-[24px] pt-8 pb-4 text-4xl text-white syne-600">

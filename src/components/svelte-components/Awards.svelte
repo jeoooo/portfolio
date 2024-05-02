@@ -1,32 +1,59 @@
-<header>
-  <div class="fixed top-0 h-12 w-full bg-zinc-800 shadow-md z-10">
-    <div class="h-full w-fill lg:mx-[290px] flex flex-row">
-      <div class="flex flex-row h-fill gap-2">
-        <a href="/" rel="noopener noreferrer">
-          <div
-            class="h-full w-[250px] p-2 bg-zinc-800 hover:bg-zinc-200 transition ease-in-out text-zinc-200 hover:text-zinc-800"
-          >
-            <h1 class=" font-syne text-xl font-normal">@jeooo</h1>
-          </div>
-        </a>
-        <!-- <a href="/" rel="noopener noreferrer">
-          <div
-            class="h-full w-[250px] p-2 bg-zinc-800 hover:bg-zinc-200 transition ease-in-out text-zinc-200 hover:text-zinc-800"
-          >
-            <h1 class="font-syne text-xl font-normal">Contact</h1>
-          </div>
-        </a> -->
-        <a href="#" rel="noopener noreferrer">
-          <div
-            class="h-full w-[250px] p-2 bg-zinc-800 hover:bg-zinc-200 transition ease-in-out text-zinc-200 hover:text-zinc-800"
-          >
-            <h1 class="font-syne text-xl font-normal">Blog</h1>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-</header>
+<script>
+  import data from "../jeocarlolubao.json";
+</script>
+
+<div
+  class=" h-fill w-fill mx-[../../jeocarlolubao.jsong:mx-[300px] bg-zinc-800 m-3 justify-center items-center pb-[4px] mb-4"
+>
+  <h1 class="px-[24px] pt-8 pb-4 text-4xl text-white font-bold syne-600">
+    <i class="fa-solid fa-award mr-3" /> Awards, Conferences, & Certifications
+  </h1>
+  <ol class="my-[32px] mx-[64px] flex flex-col w-fill border-s">
+    <li class="mb-4 ms-4">
+      <div
+        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-3.5 start-[38.5px] sm:start-[358px] md:start-[38.5px] lg:start-[358px] border border-white"
+      ></div>
+      <h3 class="mb-5 text-3xl font-semibold text-white syne-600">
+        Awards & Competitions
+      </h3>
+      {#each data.awardsConferencesCertifications.awardsCompetitions as award}
+        <h3 class="mb-2 text-white ibm-plex-sans-regular">
+          <i class="fa-solid fa-trophy mr-1" />
+          {award}
+        </h3>
+      {/each}
+    </li>
+    <li class="mb-4 ms-4">
+      <div
+        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-3.5 start-[38.5px] sm:start-[358px] md:start-[38.5px] lg:start-[358px] border border-white"
+      ></div>
+
+      <h3 class="mb-5 text-3xl font-semibold syne-600 text-white">
+        Seminars Attended
+      </h3>
+      {#each data.awardsConferencesCertifications.seminarsAttended as seminar}
+        <h3 class="mb-2 text-white ibm-plex-sans-regular">
+          <i class="fa-solid fa-certificate mr-1" />
+          {seminar}
+        </h3>
+      {/each}
+    </li>
+    <li class="mb-4 ms-4">
+      <div
+        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-3.5 start-[38.5px] sm:start-[358px] md:start-[38.5px] lg:start-[358px] border border-white"
+      ></div>
+      <h3 class="mb-5 text-3xl font-semibold syne-600 text-white">
+        Conferences
+      </h3>
+      {#each data.awardsConferencesCertifications.conferences as conference}
+        <h3 class="mb-2 text-white ibm-plex-sans-regular">
+          <i class="fa-solid fa-calendar-day mr-1" />
+          {conference}
+        </h3>
+      {/each}
+    </li>
+  </ol>
+</div>
 
 <style>
   .ibm-plex-sans-thin {

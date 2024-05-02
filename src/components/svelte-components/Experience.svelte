@@ -3,34 +3,58 @@
 </script>
 
 <div
-  class="h-full w-fill pt-10 pb-10 mx-[24px] md:md-[100px] lg:mx-[300px] bg-zinc-800 m-3 flex justify-center items-center mt-16"
+  class=" h-fill w-fill mx-[../../jeocarlolubao.jsong:mx-[300px] bg-zinc-800 m-3 justify-center items-center pb-[4px]"
 >
-  <div class="flex flex-col items-center">
-    <p class=" text-xl lg:text-5xl text-white syne-800 font-extrabold">
-      Jeo Carlo Lubao
-    </p>
-    <p class="text-xs lg:text-xl mt-4 syne-400 font-bold text-white px-4">
-      Software Developer | Graphic Designer
-    </p>
-    {#each data.socials as social (social.name)}
-      <a href={social.link} target="_blank" rel="noopener noreferrer">
-        <div class="flex flex-col gap-4 w-[250px] lg:w-[350px] mt-5">
-          <div
-            class="text-zinc-800 border p-2 inline-flex h-12 transition ease-in-out hover:scale-110 bg-zinc-200 hover:bg-white"
+  <h1 class="px-[24px] pt-8 pb-4 text-4xl text-white syne-600 font-bold">
+    <i class="fa-solid fa-user mr-3" /> Experience
+  </h1>
+  <ol class="my-[32px] mx-[64px] flex flex-col w-fill border-s">
+    {#each data.experience as exp}
+      <li class="mb-4 ms-4">
+        <div
+          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-3.5 start-[82.5px] sm:start-[358px] md:start-[82.5px] lg:start-[358px] border border-white"
+        ></div>
+        <h3 class="mb-1 text-3xl text-white ibm-plex-sans-bold">
+          {exp.title}
+        </h3>
+        {#if exp.company}
+          <h3
+            class="my-2 text-lg font-semibold text-white ibm-plex-sans-semibold"
           >
-            <img
-              class="h-4 mt-0.5 mr-2 ml-2 lg:mt-1.5 lg:mr-2 lg:ml-3"
-              alt="simple-icon"
-              src="https://cdn.simpleicons.org/{social.icon_name}/333"
-            />
-            <p class=" ibm-plex-mono-light text-[12px] lg:text-lg">
-              {social.name}
+            {exp.company}
+          </h3>
+        {/if}
+
+        <h3
+          class="my-3 text-sm font-normal leading-none text-gray-400 ibm-plex-sans-light"
+        >
+          {exp.duration}
+        </h3>
+        {#if exp.responsibilities}
+          {#each exp.responsibilities.roleDescription as role (role)}
+            <p class="ibm-plex-sans-regular text-justify text-gray-50 my-2">
+              {role}
             </p>
-          </div>
-        </div>
-      </a>
+          {/each}
+
+          {#if exp.responsibilities.featuredEvents}
+            <p
+              class="font-ibm-plex-sans font-semibold text-justify text-gray-50 my-2"
+            >
+              Notable Events
+            </p>
+            {#each exp.responsibilities.featuredEvents as event (event)}
+              <ul
+                class="ml-10 font-ibm-plex-sans list-disc text-base font-normal text-justify text-gray-50 my-1"
+              >
+                <li>{event}</li>
+              </ul>
+            {/each}
+          {/if}
+        {/if}
+      </li>
     {/each}
-  </div>
+  </ol>
 </div>
 
 <style>
@@ -205,6 +229,13 @@
     font-family: "Syne", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
+    font-style: normal;
+  }
+
+  .syne-600 {
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
     font-style: normal;
   }
 
