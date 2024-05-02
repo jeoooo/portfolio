@@ -1,4 +1,6 @@
 ---
+layout: ../layouts/blog_layout.astro
+
 title: Project DESTINY - Enhancing Data Management and User Experience
 description: Hello Everyone! I would like to share some annoucements regarding Project DESTINY.
 date: '3-7-2024'

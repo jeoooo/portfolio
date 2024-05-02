@@ -1,4 +1,6 @@
 ---
+layout: ../layouts/blog_layout.astro
+
 title: The Current State of Project DESTINY
 description: Hello Everyone! I would like to share some annoucements regarding Project DESTINY.
 date: '3-2-2024'
