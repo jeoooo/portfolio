@@ -3,7 +3,7 @@
 </script>
 
 <div
-  class=" h-fill w-fill mx-[../../jeocarlolubao.jsong:mx-[300px] bg-zinc-800 m-3 justify-center items-center pb-[4px]"
+  class=" h-fill w-fill mx-[24px] md:md-[100px] lg:mx-[300px] bg-zinc-800 m-3 justify-center items-center pb-[4px]"
 >
   <h1 class="px-[24px] pt-8 pb-4 text-4xl text-white syne-600 font-bold">
     <i class="fa-solid fa-user-graduate mr-3" /> Education
