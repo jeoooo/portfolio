@@ -1,11 +1,78 @@
-<div
-  class=" h-screen w-fill mx-[24px] md:md-[100px] lg:mx-[300px] bg-zinc-800 justify-center items-center my-20"
->
-  <div class="flex flex-col items-start">
-    <p class="px-[20px] p-6 text-6xl font-bold font-syne text-white">Blog</p>
-  </div>
+---
+import Footer from "../components/astro-components/Footer.astro";
+import Navbar from "../components/astro-components/Navbar.astro";
+---
 
-  
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		  <!-- Font Awesome icons (free version)-->
+		  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+		<title>Astro</title>
+		<style>
+
+		
+			/* ===== Scrollbar CSS ===== */
+			/* Firefox */
+			* {
+			  scrollbar-width: auto;
+			  scrollbar-color: #ffffff #1E1E1E;
+			}
+		
+			/* Chrome, Edge, and Safari */
+			*::-webkit-scrollbar {
+			  width: 4px;
+			}
+		
+			*::-webkit-scrollbar-track {
+			  background: #1E1E1E;
+			}
+		
+			*::-webkit-scrollbar-thumb {
+			  background-color: #ffffff;
+			  border-radius: 10px;
+			  border: 3px solid #ffffff;
+			}
+		  </style>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		  	
+		<!-- ibm fonts -->
+		<link
+		  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+		  rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+		  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+		  rel="stylesheet">
+		  	
+		<!-- syne fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Syne:wght@500&display=swap" rel="stylesheet">
+	
+	</head>
+<body>
+    <Navbar/>
+    <div class="  h-screen w-fill mx-[24px] md:md-[100px] lg:mx-[300px] bg-zinc-800 justify-center items-center my-20">
+        <div class="flex flex-col items-start">
+        <p class="px-[20px] p-6 text-6xl font-bold font-syne text-white">Blog</p>
+    </div>
+
     <a href="blog{`/${post.slug}`}">
       <div
         class="w-fill h-fit px-[14px] my-4 mx-8 flex flex-col border-t-[1px] border-b-[1px]"
@@ -36,5 +103,8 @@
         </p>
       </div>
     </a>
-  
+
 </div>
+<Footer/>
+</body>
+</html>
