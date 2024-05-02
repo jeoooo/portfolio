@@ -1,8 +1,8 @@
 <header>
-  <div class="fixed top-0 h-12 w-full bg-zinc-800 shadow-md z-10 pb-12">
+  <div class="fixed top-0 h-12 w-full bg-zinc-800 shadow-md z-10">
     <div class="h-full w-fill lg:mx-[290px] flex flex-row">
       <div class="flex flex-row h-fill gap-2">
-        <a href="#" rel="noopener noreferrer">
+        <a href="/" rel="noopener noreferrer">
           <div
             class="h-full w-[250px] p-2 bg-zinc-800 hover:bg-zinc-200 transition ease-in-out text-zinc-200 hover:text-zinc-800"
           >
