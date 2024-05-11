@@ -1,5 +1,7 @@
 ---
-  let year = new Date().getFullYear();
+import Styles from "../../utils/styles.astro";
+
+let year = new Date().getFullYear();
 ---
 
 <footer>
@@ -10,7 +12,7 @@
       class="flex w-fill h-full mx-[24px] md:md-[100px] lg:mx-[300px] items-center justify-center"
     >
       <p class="text-white inline-flex font-syne font-bold">
-        {year} . Made with
+        {year}. Made with
         <img
           class="ml-1 mt-1 h-5 mr-1"
           alt="simple-icon"
@@ -41,3 +43,5 @@
     </div>
   </div>
 </footer>
+
+<Styles/>
