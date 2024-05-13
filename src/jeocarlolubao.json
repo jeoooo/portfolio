@@ -179,6 +179,14 @@
         {
             "name": "figma",
             "color": "#fff"
+        },
+        {
+            "name": "canva",
+            "color": "#fff"
+        },
+        {
+            "name": "adobeindesign",
+            "color": "#fff"
         }
     ],
     "experience": [
