@@ -153,6 +153,14 @@
         {
             "name": "jetpackcompose",
             "color": "#fff"
+        },
+        {
+            "name": "stripe",
+            "color": "#fff"
+        },
+        {
+            "name": "storybook",
+            "color": "#fff"
         }
     ],
     "uiUxDesignTools": [
