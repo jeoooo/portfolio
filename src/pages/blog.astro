@@ -1,5 +1,6 @@
 ---
 import Footer from "../components/astro-components/Footer.astro";
+import Head from "../components/astro-components/Head.astro";
 import Navbar from "../components/astro-components/Navbar.astro";
 const allPosts = await Astro.glob('../blog/*.md');
 
@@ -9,53 +10,7 @@ console.log(allPosts);
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/x-icon" href="https://www.favicon.cc/logo3d/981764.png" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		  <!-- Font Awesome icons (free version)-->
-		  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-
-		<title>Hi! I'm Jeo</title>
-		<meta title="Jeo | Android Developer" />
-		<meta name="description" content="Jeo | Android Developer" />
-	  
-		<meta property="og:url" content="https://jeoooo.github.io/portfolio" />
-		<meta property="og:type" content="portfolio" />
-		<meta property="og:title" content="Hi! I'm Jeo 💻📱👩‍💻" />
-		<meta
-		  property="og:description"
-		  content="Software Developer | Graphic Designer"
-		/>
-		<meta property="og:image" content="https://i.imgur.com/zpipPLf.png" />
-		  	
-		<!-- ibm fonts -->
-		<link
-		  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-		  rel="stylesheet">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link
-		  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-		  rel="stylesheet">
-		  	
-		<!-- syne fonts -->
-		<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-	
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Syne:wght@400..800&display=swap" rel="stylesheet">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Syne:wght@500&display=swap" rel="stylesheet">
-	
+		<Head/>
 	</head>	
 	<body class="bg-zinc-900 ">
 	    <Navbar/>
@@ -66,7 +21,7 @@ console.log(allPosts);
 	    
 
 		{allPosts.map((post) => 
-			<a href={post.url}>
+			<a href={`/portfolio/blog/${post.url}`}>
 				<div
 				  class="w-fill h-fit px-[14px] my-4 mx-8 flex flex-col border-t-[1px] border-b-[1px]"
 				>
