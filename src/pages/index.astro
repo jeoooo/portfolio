@@ -4,17 +4,29 @@ import "xp.css/dist/XP.css"
 
 import Head from "../components/astro-components/Head.astro";
 
+// astro components
+import Navbar from "../components/astro-components/Navbar.astro";
+import Footer from "../components/astro-components/Footer.astro";
 // windows xp components
-import IntroXP from "../components/astro-components/IntroXP.astro";
-import AboutMeXP from "../components/astro-components/AboutMeXP.astro";
-import TechStackXP from "../components/astro-components/TechStackXP.astro";
-import ExperienceXP from "../components/astro-components/ExperienceXP.astro";
-import EducationXP from "../components/astro-components/EducationXP.astro";
-import ProjectsXP from "../components/astro-components/ProjectsXP.astro";
-import AwardsXP from "../components/astro-components/AwardsXP.astro";
+import IntroXP from "../components/astro-components/xp/IntroXP.astro";
+import AboutMeXP from "../components/astro-components/xp/AboutMeXP.astro";
+import TechStackXP from "../components/astro-components/xp/TechStackXP.astro";
+import ExperienceXP from "../components/astro-components/xp/ExperienceXP.astro";
+import EducationXP from "../components/astro-components/xp/EducationXP.astro";
+import ProjectsXP from "../components/astro-components/xp/ProjectsXP.astro";
+import AwardsXP from "../components/astro-components/xp/AwardsXP.astro";
+import ConferencesXP from "../components/astro-components/xp/ConferencesXP.astro";
+import CertificationsXP from "../components/astro-components/xp/CertificationsXP.astro";
 
 // svelte modern components
 
+import Intro from "../components/svelte-components/Intro.svelte";
+import About from "../components/svelte-components/About.svelte";
+import Stack from "../components/svelte-components/Stack.svelte";
+import Experience from "../components/svelte-components/Experience.svelte";
+import Education from "../components/svelte-components/Education.svelte";
+import Projects from "../components/svelte-components/Projects.svelte";
+import Awards from "../components/svelte-components/Awards.svelte";
 ---
 
 <html lang="en">
@@ -24,7 +36,7 @@ import AwardsXP from "../components/astro-components/AwardsXP.astro";
 	</head>
 
 	<body class="surface" ontouchstart="">
-		<!-- <Navbar/>
+		<Navbar/>
 		<section class="">
 			<div id="particles-js" class="absolute inset-0 z-[-1]"></div>
 			<Intro />
@@ -42,7 +54,7 @@ import AwardsXP from "../components/astro-components/AwardsXP.astro";
 				particlesJS.load("particles-js", "/portfolio/particles.json", function () {
 				  console.log("callback - particles.js config loaded");
 				});
-			</script> -->
+			</script>
 			<aside>
 				<ul class="tree-view">
 				  <li><a href="#intro">Jeooooooooo</a></li>
@@ -90,16 +102,19 @@ import AwardsXP from "../components/astro-components/AwardsXP.astro";
 						</li>
 					</ul>
 				  </li>
+				  <li><a href="#upgrade">✨Upgrade✨</a></li>
 				</ul>
 			</aside>
 			<main>
 				<IntroXP id='intro'/>
 				<AboutMeXP id='about-me' />
 				<TechStackXP id='tech-stack'/>
-				<ExperienceXP/>
-				<EducationXP/>
-				<ProjectsXP/>
-				<AwardsXP/>
+				<ExperienceXP id='experience'/>
+				<EducationXP id='education'/>
+				<ProjectsXP id='projects'/>
+				<AwardsXP id='awards'/>
+				<ConferencesXP id='conferences'/>
+				<CertificationsXP id='conferences'/>
 			</main>
 	</body>
 
