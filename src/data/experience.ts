@@ -125,7 +125,6 @@ export const experience = {
                             `Established partnerships with Google Developer Student Clubs Mapua Malayan Colleges Mindanao and Google Developer Student Clubs University of Immaculate Conception for joint tech initiatives.`,
                             `Successfully organized and executed collaborative tech events.`,
                             `Enhanced organization's visibility and reputation within the tech community through strategic partnerships.`,
-
                         ],
                     }
                 },
