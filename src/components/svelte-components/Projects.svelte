@@ -5,7 +5,7 @@
 
 <div class="flex justify-center bg-black text-white uppercase font-helvetica">
   <div class="w-full max-w-4xl">
-    <h3 class="text-8xl my-4 font-helvetica-bold">Projects</h3>
+    <h3 class="text-6xl my-4 font-helvetica-bold">Projects</h3>
     {#each projects.projects as project}
       <div class="mb-4 text-left border-8 p-4">
         <h3 class=" font-bold">{project.title}</h3>
