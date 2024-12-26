@@ -46,7 +46,7 @@ export const projects = {
                 {
                     name: "pocketbase",
                     color: "#fff",
-                    imgSrc: "https://cdn.simpleicons.org/pocketbase/000",
+                    imgSrc: "https://cdn.simpleicons.org/pocketbase/fff",
                 },
                 {
                     name: "arduino",
@@ -125,7 +125,7 @@ export const projects = {
                 {
                     name: "pocketbase",
                     color: "#fff",
-                    imgSrc: "https://cdn.simpleicons.org/pocketbase/000",
+                    imgSrc: "https://cdn.simpleicons.org/pocketbase/fff",
                 },
                 {
                     name: "tailwindcss",
@@ -213,7 +213,7 @@ export const projects = {
                 {
                     name: "mapbox",
                     color: "#fff",
-                    imgSrc: "https://cdn.simpleicons.org/mapbox",
+                    imgSrc: "https://cdn.simpleicons.org/mapbox/fff",
                 },
                 {
                     name: "firebase",
