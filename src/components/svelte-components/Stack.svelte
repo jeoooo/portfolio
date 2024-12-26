@@ -3,10 +3,14 @@
 </script>
 
 <div class="">
-  <div class="">
-    <p class="text-white">Tech Stack</p>
-    <p class="text-white">*encountered so far...</p>
-    <div class="flex justify-center">
+  <div class="flex justify-center text-left">
+    <div class="">
+      <p class="text-black text-8xl font-helvetica-bold uppercase">
+        Tech Stack
+      </p>
+      <p class="text-black text-xs mb-2 font-helvetica uppercase">
+        *encountered so far...
+      </p>
       <div class="grid grid-cols-3 lg:grid-cols-6 gap-3 mb-8 w-fit">
         {#each techStack.techStack as tech}
           <div class="flex items-center justify-center p-4 bg-black">

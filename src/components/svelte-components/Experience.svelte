@@ -26,15 +26,17 @@
   }
 </script>
 
-<div class="flex justify-center">
+<div class="flex justify-center text-black font-helvetica uppercase">
   <div class="w-full max-w-4xl">
-    <h3 class="text-white">Experience</h3>
+    <h3 class="text-black text-6xl font-helvetica-bold uppercase">
+      Experience
+    </h3>
     {#each experience.experience as exp}
-      <div class="mb-4 text-left border-4 p-4">
+      <div class="mb-4 text-left border-8 border-black p-4">
         {#if exp.roles.length === 1}
-          <p class="text-white font-bold">{exp.roles[0].title}</p>
-          <p class="text-white">{exp.company}</p>
-          <p class="text-white">
+          <p class="">{exp.roles[0].title}</p>
+          <p class="">{exp.company}</p>
+          <p class="">
             {exp.roles[0].durationStart} - {exp.roles[0].durationEnd
               ? exp.roles[0].durationEnd
               : "Present"} ({calculateDuration(
@@ -43,26 +45,26 @@
             )})
           </p>
           {#if exp.roles[0].responsibilities && exp.roles[0].responsibilities.roleDescription}
-            <ul class="text-white text-left">
+            <ul class="text-left">
               {#each exp.roles[0].responsibilities.roleDescription as description}
                 <li>{description}</li>
               {/each}
             </ul>
           {/if}
           {#if exp.roles[0].responsibilities && exp.roles[0].responsibilities.featuredEvents}
-            <p class="text-white font-bold">Featured Events:</p>
-            <ul class="text-white text-left">
+            <p class="font-bold">Featured Events:</p>
+            <ul class="text-left">
               {#each exp.roles[0].responsibilities.featuredEvents as event}
                 <li class="ml-8 list-disc">{event}</li>
               {/each}
             </ul>
           {/if}
         {:else}
-          <p class="text-white font-bold">{exp.company}</p>
+          <p class="font-bold">{exp.company}</p>
           {#each sortRoles(exp.roles) as role}
             <div class="mb-2">
-              <p class="text-white">{role.title}</p>
-              <p class="text-white">
+              <p class="">{role.title}</p>
+              <p class="">
                 {role.durationStart} - {role.durationEnd
                   ? role.durationEnd
                   : "Present"} ({calculateDuration(
@@ -71,15 +73,15 @@
                 )})
               </p>
               {#if role.responsibilities && role.responsibilities.roleDescription}
-                <ul class="text-white text-left">
+                <ul class="text-left">
                   {#each role.responsibilities.roleDescription as description}
                     <li>{description}</li>
                   {/each}
                 </ul>
               {/if}
               {#if role.responsibilities && role.responsibilities.featuredEvents}
-                <p class="text-white font-bold">Featured Events:</p>
-                <ul class="text-white text-left">
+                <p class="font-bold">Featured Events:</p>
+                <ul class="text-left">
                   {#each role.responsibilities.featuredEvents as event}
                     <li class="ml-8 list-disc">{event}</li>
                   {/each}
