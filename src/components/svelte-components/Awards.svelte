@@ -15,7 +15,7 @@
     </div>
 
     <!-- Awards and Competitions Section with background block -->
-    <div class="col-span-1 bg-gray-100 p-8 shadow-md">
+    <div class="col-span-1 bg-gray-100 p-8">
       <h4 class="font-bold text-2xl mb-4 text-gray-800">
         Awards and Competitions
       </h4>
@@ -40,7 +40,7 @@
     </div>
 
     <!-- Conferences Section with bold contrast block -->
-    <div class="col-span-1 bg-yellow-300 p-8 shadow-md">
+    <div class="col-span-1 bg-yellow-300 p-8">
       <h4 class="font-bold text-2xl mb-4 text-white">Talks</h4>
       <ul class="list-disc ml-8 space-y-2 text-lg text-gray-800">
         {#each awards.awardsConferencesCertifications.conferences as conference}
