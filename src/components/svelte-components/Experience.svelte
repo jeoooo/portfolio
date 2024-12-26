@@ -1,4 +1,5 @@
 <script>
+  import Experience from "./Experience.svelte";
   import { experience } from "./../../data/experience.ts";
 
   function calculateDuration(start, end) {
@@ -27,6 +28,7 @@
 
 <div class="flex justify-center">
   <div class="w-full max-w-4xl">
+    <h3 class="text-white">Experience</h3>
     {#each experience.experience as exp}
       <div class="mb-4 text-left border-4 p-4">
         {#if exp.roles.length === 1}
