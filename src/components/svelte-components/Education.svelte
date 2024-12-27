@@ -3,10 +3,14 @@
 </script>
 
 <div class="flex justify-center text-black font-helvetica uppercase">
-  <div class="w-full max-w-4xl px-8 py-16">
+  <div class="w-full px-8 py-16">
     <!-- "EDUCATION" Header -->
     <div class="text-left mb-8">
-      <h2 class="text-4xl uppercase">EDUCATION</h2>
+      <h2
+        class="text-6xl text-center md:text-left md:text-9xl font-bold uppercase my-4"
+      >
+        EDUCATION
+      </h2>
     </div>
 
     {#each education.education as edu}

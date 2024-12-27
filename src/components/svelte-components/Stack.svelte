@@ -2,37 +2,34 @@
   import { techStack, designStack } from "./../../data/stack.ts";
 </script>
 
-<div class="p-8 bg-[#14213D]">
+<div class="p-16 bg-black text-white">
   <!-- Tech Stack Section -->
-  <div class="flex flex-col lg:flex-row items-start mb-16">
-    <div class="lg:w-1/2 text-left mb-8 lg:mb-0 relative">
-      <p class="text-8xl font-helvetica-bold text-white uppercase">
-        Tech Stack
-      </p>
-      <p class="text-xs font-helvetica uppercase text-white mt-2">
+  <div class="mb-24">
+    <div class="mb-16">
+      <h1
+        class="text-[10vw] font-helvetica-bold uppercase tracking-tighter leading-none opacity-0 animate-heading"
+      >
+        Tech<br />Stack
+      </h1>
+      <p
+        class="text-sm font-helvetica uppercase tracking-widest mt-4 opacity-0 animate-fade-slide-up"
+        style="animation-delay: 0.4s"
+      >
         *encountered so far...
       </p>
-
-      <!-- Horizontal Line(s) Below Typography -->
-      <div class="relative mt-6">
-        <div class="h-2 bg-[#00BBF9] mb-4 md:mr-4"></div>
-        <div class="h-4 bg-[#00BBF9] mb-4 md:mr-4"></div>
-        <div class="h-8 bg-[#00BBF9] mb-4 md:mr-4"></div>
-        <div class="h-16 bg-[#00BBF9] mb-4 md:mr-4"></div>
-        <div class="h-24 bg-[#3A86FF] mb-4 md:mr-4"></div>
-        <div class="h-32 bg-[#18e06f] mb-4 md:mr-4"></div>
-        <div class="h-48 bg-[#18e06f] mb-4 md:mr-4"></div>
-      </div>
     </div>
 
-    <!-- Right Side (Tech Stack Grid) -->
-    <div class="lg:w-1/2 grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4">
-      {#each techStack.techStack as tech}
-        <div class="flex items-center justify-center p-4">
+    <!-- Tech Stack Grid -->
+    <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-8">
+      {#each techStack.techStack as tech, i}
+        <div
+          class="group opacity-0 animate-fade-slide-up"
+          style="animation-delay: {i * 0.1}s"
+        >
           <img
             src={tech.imgSrc}
-            alt={tech.name}
-            class="w-24 h-24 object-contain hover:scale-125 transition-transform duration-300"
+            alt=""
+            class="w-full h-24 object-contain grayscale group-hover:grayscale-0 group-hover:scale-110 transition-transform duration-300"
           />
         </div>
       {/each}
@@ -40,24 +37,50 @@
   </div>
 
   <!-- UI/UX Design Tools Section -->
-  <div class="flex flex-col lg:flex-row items-start mb-16 gap-8">
-    <!-- Right Side (Big Typography) -->
-    <div class="lg:w-1/2 text-left mb-8 lg:mb-0">
-      <p class="text-8xl font-helvetica-bold text-white uppercase">
-        UI/UX Design Tools
-      </p>
+  <div>
+    <div class="mb-16">
+      <h1
+        class="text-[10vw] font-helvetica-bold uppercase tracking-tighter leading-none opacity-0 animate-heading"
+      >
+        UI / UX<br />Design
+      </h1>
     </div>
-    <!-- Left Side (Design Tools Grid) -->
-    <div class="lg:w-1/2 grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4">
-      {#each designStack.designStack as tech}
-        <div class="flex items-center justify-center p-4">
+
+    <!-- Design Tools Grid -->
+    <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-8">
+      {#each designStack.designStack as tool, i}
+        <div
+          class="group opacity-0 animate-fade-slide-up"
+          style="animation-delay: {i * 0.1}s"
+        >
           <img
-            src={tech.imgSrc}
-            alt={tech.name}
-            class="w-24 h-24 object-contain hover:scale-125 transition-transform duration-300"
+            src={tool.imgSrc}
+            alt=""
+            class="w-full h-24 object-contain grayscale group-hover:grayscale-0 group-hover:scale-110 transition-transform duration-300"
           />
         </div>
       {/each}
     </div>
   </div>
 </div>
+
+<style>
+  @keyframes fadeSlideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-slide-up {
+    animation: fadeSlideUp 0.8s ease-out forwards;
+  }
+
+  .animate-heading {
+    animation: fadeSlideUp 1s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
+  }
+</style>
