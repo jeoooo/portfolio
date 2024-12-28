@@ -35,7 +35,7 @@
         <a
           href={social.link}
           target="_blank"
-          class="w-12 h-12 flex items-center justify-center border border-black rounded-full hover:bg-black hover:text-white transition-all"
+          class="w-12 h-12 flex items-center justify-center border border-black rounded-full hover:bg-black hover:text-white hover:fill-white transition-all"
         >
           <img src={social.imgSrc} alt={social.name} class="w-8 h-8" />
         </a>

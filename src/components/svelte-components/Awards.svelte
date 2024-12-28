@@ -6,9 +6,9 @@
   <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-12 px-12 py-16">
     <!-- Title Section with line accent -->
     <div class="col-span-1">
-      <h3 class="font-bold text-4xl md:text-8xl mb-6 relative">
+      <h3 class="font-helvetica-bold text-4xl md:text-8xl mb-6 relative">
         Awards, <br /> Conferences, <br /> and Certifications
-        <div class="absolute bottom-0 left-0 w-16 h-1 bg-black"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-1 bg-black"></div>
       </h3>
     </div>
 
