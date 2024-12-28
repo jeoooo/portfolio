@@ -28,7 +28,7 @@
 
 <div class="bg-white text-black font-helvetica px-6 py-12">
   <div class=" mx-auto text-left">
-    <h3 class="text-5xl md:text-9xl font-bold uppercase tracking-wide mb-8">
+    <h3 class="text-5xl md:text-9xl font-helvetica-bold uppercase mb-8">
       Experience
     </h3>
     {#each experience.experience as exp, index}
