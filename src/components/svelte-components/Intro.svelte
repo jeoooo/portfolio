@@ -35,7 +35,7 @@
         <a
           href={social.link}
           target="_blank"
-          class="w-12 h-12 flex items-center justify-center border border-black rounded-full hover:bg-black hover:text-white hover:fill-white transition-all"
+          class="w-12 h-12 flex items-center justify-center border border-black rounded-full hover:text-white hover:fill-white transition-all hover:border-4"
         >
           <img src={social.imgSrc} alt={social.name} class="w-8 h-8" />
         </a>
@@ -44,7 +44,7 @@
   </div>
 
   <!-- Right Section (Updated Visual Design) -->
-  <div class="md:w-1/2 mt-16 md:mt-0 space-y-12">
+  <div class="hidden md:block md:w-1/2 mt-16 md:mt-0 space-y-12">
     <!-- New Visual Design: Asymmetrical Grid with striking blocks -->
     <div class="grid grid-cols-2 gap-8">
       <!-- Block 1: Large Black Block -->
