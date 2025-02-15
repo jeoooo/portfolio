@@ -3,37 +3,37 @@
     "description": "Software Developer | Graphic Designer",
     "socials": [
         {
-            "icon_name": "GitHub",
+            "icon_name": "https://cdn.simpleicons.org/GitHub/333",
             "name": "GitHub",
             "link": "https://github.com/jeoooo"
         },
         {
-            "icon_name": "Linkedin",
+            "icon_name": "https://img.icons8.com/?size=100&id=8808&format=png&color=000000",
             "name": "Linkedin",
             "link": "https://www.linkedin.com/in/jeoooo/"
         },
         {
-            "icon_name": "Behance",
+            "icon_name": "https://cdn.simpleicons.org/Behance/333",
             "name": "Behance",
             "link": "https://www.behance.net/jeolubao"
         },
         {
-            "icon_name": "medium",
+            "icon_name": "https://cdn.simpleicons.org/medium/333",
             "name": "I write articles on Medium",
             "link": "https://medium.com/@jeooocarlo"
         },
         {
-            "icon_name": "BuyMeACoffee",
+            "icon_name": "https://cdn.simpleicons.org/BuyMeACoffee/333",
             "name": "Buy Me A Coffee!",
             "link": "https://www.buymeacoffee.com/jeooo"
         },
         {
-            "icon_name": "githubsponsors",
+            "icon_name": "https://cdn.simpleicons.org/githubsponsors/333",
             "name": "Sponsor me on GitHub!",
             "link": "https://github.com/sponsors/jeoooo"
         }
     ],
-    "aboutMe": "I am an IT professional with a primary focus on Android mobile development, complemented by a deep passion for web and backend development, along with UI/UX design. Beyond academia, I explore diverse areas such as Algorithmic Music, Machine Learning, Game Development, and IT Project Management. \n\n My insatiable curiosity fuels my drive to constantly expand my knowledge and embrace new concepts, empowering me to contribute to groundbreaking projects that push the boundaries of technology and deliver innovative solutions.",
+    "aboutMe": "Jeo is a passionate software developer. Skilled in technologies like Svelte, Mobile Development (Android and Flutter), and Firebase. He actively contributes to the tech community, volunteering at tech communities in Davao City, while also working on personal side projects like creating VSCode color themes, websites and mobile apps. Dedicated to continuous learning, Jeo regularly attends local tech meetups to explore new concepts and enhance his skills. Outside tech stuff, he enjoys playing video games, watching anime, and playing musical instruments",
     "techStack": [
         {
             "name": "androidstudio",
@@ -170,27 +170,27 @@
     ],
     "uiUxDesignTools": [
         {
-            "name": "adobephotoshop",
+            "name": "https://img.icons8.com/?size=100&id=13677&format=png&color=000000",
             "color": "#fff"
         },
         {
-            "name": "adobeillustrator",
+            "name": "https://img.icons8.com/?size=100&id=13631&format=png&color=000000",
             "color": "#fff"
         },
         {
-            "name": "adobexd",
+            "name": "https://img.icons8.com/?size=100&id=4VVL78edhbW9&format=png&color=000000",
             "color": "#fff"
         },
         {
-            "name": "figma",
+            "name": "https://img.icons8.com/?size=100&id=zfHRZ6i1Wg0U&format=png&color=000000",
             "color": "#fff"
         },
         {
-            "name": "canva",
+            "name": "https://img.icons8.com/?size=100&id=iWw83PVcBpLw&format=png&color=000000",
             "color": "#fff"
         },
         {
-            "name": "adobeindesign",
+            "name": "https://img.icons8.com/?size=100&id=13675&format=png&color=000000",
             "color": "#fff"
         }
     ],
@@ -198,11 +198,11 @@
         {
             "title": "Software Developer",
             "company": "Ingenuity Software",
-            "duration": "Feb 2024 – Present"
+            "duration": "2024 – Present"
         },
         {
             "title": "Freelance Developer",
-            "duration": "Jul 2023 – Present",
+            "duration": "2022 – Present",
             "responsibilities": {
                 "roleDescription": [
                     "Creating personal projects for skill enhancement and actively contributing to Free and Open Source Software (FOSS) projects on GitHub, driven by a passion for open source and continuous learning."
@@ -542,7 +542,10 @@
             "SMART INNOVATION GENERATION SEASON 3 - InnoGen 3.0 Phase 1 Lecture Series - Writing and Designing your Proposal.",
             "Smooth Like Flutter!: Exploring Cross-Platform App Development",
             "Interfacing with Arduino",
-            "GDSC Mindanao: Technological Empowerment Across an Archipelago Event"
+            "GDSC Mindanao: Technological Empowerment Across an Archipelago Event",
+            "AWS Community Day Davao 2024 - Volunteer",
+            "Google DevFest 2024",
+            "HCDC TechTalk 2024 - Speaker"
         ],
         "conferences": [
             "PRESENTER - HCDC International Research Congress 2023",
