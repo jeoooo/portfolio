@@ -18,7 +18,7 @@
   <div
     class="mx-5 w-fit h-fit px-[14px] grid grid-cols-5 lg:grid-cols-8 grid-rows-none gap-y-3 gap-x-4 md:gap-y-4 md:gap-x-4 lg:gap-y-8 lg:gap-x-8 mb-10 mt-5 select-none"
   >
-    {#each data.techStack.sort( (a, b) => a.name.localeCompare(b.name) ) as tech (tech.name)}
+    {#each data.techStack.sort( (a, b) => a.name.localeCompare(b.name), ) as tech (tech.name)}
       {#if tech.name == "csharp"}
         <svg class="h-12 fill-white select-none" viewBox="0 0 128 128">
           <path
@@ -66,12 +66,8 @@
   <div
     class="mx-5 w-fit h-fit px-[14px] pb-12 flex flex-row lg:grid lg:grid-cols-8 grid-rows-none gap-y-2 gap-x-2 lg:gap-y-8 lg:gap-x-8 mb-10"
   >
-    {#each data.uiUxDesignTools.sort( (a, b) => a.name.localeCompare(b.name) ) as tool (tool.name)}
-      <img
-        class="h-12"
-        alt="simple-icon"
-        src="https://cdn.simpleicons.org/{tool.name}/fff"
-      />
+    {#each data.uiUxDesignTools.sort( (a, b) => a.name.localeCompare(b.name), ) as tool (tool.name)}
+      <img class="h-12" alt="simple-icon" src={tool.name} />
     {/each}
   </div>
 </div>
