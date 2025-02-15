@@ -21,7 +21,7 @@
             <img
               class="h-4 mt-0.5 mr-2 ml-2 lg:mt-1.5 lg:mr-2 lg:ml-3"
               alt="simple-icon"
-              src="https://cdn.simpleicons.org/{social.icon_name}/333"
+              src={social.icon_name}
             />
             <p class=" ibm-plex-mono-light text-[12px] lg:text-lg">
               {social.name}
