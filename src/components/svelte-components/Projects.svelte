@@ -8,11 +8,11 @@
   <h1 class="px-[24px] pt-8 pb-4 text-4xl text-white syne-600 font-bold">
     <i class="fa-solid fa-laptop-code mr-3" /> Projects
   </h1>
-  <ol class="my-[32px] mx-[64px] flex flex-col w-fill border-s">
+  <ol class="my-[32px] mx-[32px] flex flex-col w-fill border-s">
     {#each data.projects as project (project.title)}
       <li class="mb-4 ms-4">
         <div
-          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-3.5 start-[82.5px] sm:start-[358px] md:start-[82.5px] lg:start-[358px] border border-white"
+          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-3.5 start-[50px] sm:start-[358px] md:start-[82.5px] lg:start-[326px] border border-white"
         ></div>
         <h3 class="mb-1 text-3xl font-semibold syne-400 text-white">
           {project.title}
@@ -28,9 +28,9 @@
             rel="noopener noreferrer"
           >
             <h3
-              class=" text-md font-normal leading-none ibm-plex-sans-semibold text-gray-200 hover:underline"
+              class="text-md font-normal leading-none ibm-plex-sans-semibold text-gray-200 hover:underline break-words max-w-full sm:max-w-xs md:max-w-md lg:max-w-lg"
             >
-              {project.websiteLink}
+              <span class="break-all">{project.websiteLink}</span>
             </h3>
           </a>
         {/if}
