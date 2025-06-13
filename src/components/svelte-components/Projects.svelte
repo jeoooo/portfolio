@@ -28,9 +28,9 @@
             rel="noopener noreferrer"
           >
             <h3
-              class=" text-md font-normal leading-none ibm-plex-sans-semibold text-gray-200 hover:underline"
+              class="text-md font-normal leading-none ibm-plex-sans-semibold text-gray-200 hover:underline break-words max-w-full sm:max-w-xs md:max-w-md lg:max-w-lg"
             >
-              {project.websiteLink}
+              <span class="break-all">{project.websiteLink}</span>
             </h3>
           </a>
         {/if}
