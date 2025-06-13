@@ -64,7 +64,7 @@
     </p>
   </div>
   <div
-    class="mx-5 w-fit h-fit px-[14px] pb-12 flex flex-row lg:grid lg:grid-cols-8 grid-rows-none gap-y-2 gap-x-2 lg:gap-y-8 lg:gap-x-8 mb-10"
+    class="mx-5 w-fit h-fit px-[14px] pb-12 flex flex-wrap gap-y-2 gap-x-2 md:grid md:grid-cols-5 lg:grid-cols-8 grid-rows-none md:gap-y-4 md:gap-x-4 lg:gap-y-8 lg:gap-x-8 mb-10"
   >
     {#each data.uiUxDesignTools.sort( (a, b) => a.name.localeCompare(b.name), ) as tool (tool.name)}
       <img class="h-12" alt="simple-icon" src={tool.name} />
