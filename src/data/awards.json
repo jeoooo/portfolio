@@ -9,6 +9,10 @@
         "PRESENTER - HCDC International Research Congress 2023",
         "PRESENTER - HCDC CET TechnoFair 2023: Conversazione Research Presentation"
     ],
+    "talks": [
+        { "event": "HCDC Tech Talk 1.0", "organizer": "HCDC Information Technology Society", "date": "January 2025", "url": "https://www.facebook.com/hcdcits/posts/pfbid02M3WofW7iPnie83hDe38EpDR3e3umnFSsT1SYVjW9hciqTUa8cut4ixcUQh82aWRdl" },
+        { "event": "Skill Up September", "organizer": "PWA Pilipinas Davao", "date": "September 2024", "url": "https://www.facebook.com/pwapilipinasdavao/posts/pfbid02H13JnNhbBdCfepUpJefnfxK5ANjazwuThUcgyBGrL8B7HVCd3wrTFuzji2LrZZtZl" }
+    ],
     "seminarsAttended": [
         "Google Developer Group Davao, Impact the Future: International Womens Day 2024",
         "Google I/O Extended Davao 2023",
