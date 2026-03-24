@@ -1,257 +1,46 @@
 <script>
-  import data from "../../jeocarlolubao.json";
+  import education from "../../data/education.json";
 </script>
 
-<div
-  class=" h-fill w-fill mx-[24px] md:md-[100px] lg:mx-[300px] bg-zinc-800 m-3 justify-center items-center pb-[4px]"
->
-  <h1 class="px-[24px] pt-8 pb-4 text-4xl text-white syne-600 font-bold">
-    <i class="fa-solid fa-user-graduate mr-3" /> Education
-  </h1>
-  <ol class="my-[32px] mx-[64px] flex flex-col w-fill border-s">
-    {#each data.education as edu (edu.degree)}
-      <li class="mb-4 ms-4">
-        <div
-          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-3.5 start-[82.5px] sm:start-[358px] md:start-[82.5px] lg:start-[358px] border border-white"
-        ></div>
-        <h3 class="mb-1 text-3xl font-semibold text-gray-50 syne-600">
-          {edu.institution}
-        </h3>
-        <h3
-          class="mt-4 mb-2 text-xl font-semibold text-gray-200 ibm-plex-sans-bold"
-        >
-          {edu.degree}
-        </h3>
-        <h3
-          class=" text-md font-normal leading-none text-gray-400 ibm-plex-sans-regular"
-        >
-          {edu.duration}
-        </h3>
+<section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 border-t-2 border-white overflow-x-hidden">
+  <h2 class="font-black font-syne mb-8 sm:mb-12 leading-none" style="font-size: clamp(2rem, 8vw, 3.75rem);">Education</h2>
 
-        <ul class="pl-5 pt-3">
-          {#each edu.awards as award (award)}
-            <li
-              class="text-base font-bold text-white pt-2 ibm-plex-sans-bold my-1"
-            >
-              <i class="fa-solid fa-medal mr-1" />{award}
-            </li>
-          {/each}
-        </ul>
+  <div class="border-l-2 border-white pl-6 sm:pl-10 space-y-12">
+    {#each education as edu (edu.degree)}
+      <div class="relative">
+        <div class="absolute -left-[29px] sm:-left-[41px] top-2 w-3 h-3 bg-white"></div>
+        <h3 class="text-2xl sm:text-3xl font-black font-syne leading-tight">{edu.institution}</h3>
+        <p class="text-base sm:text-lg ibm-plex-sans-bold mt-1">{edu.degree}</p>
+        <p class="text-sm ibm-plex-mono-regular text-gray-400 mt-1 mb-4">{edu.duration}</p>
+
+        {#if edu.awards?.length}
+          <ul class="space-y-1 mb-4">
+            {#each edu.awards as award (award)}
+              <li class="text-base ibm-plex-sans-bold text-white">— {award}</li>
+            {/each}
+          </ul>
+        {/if}
+
         {#each edu.organizations as org (org.name)}
-          <p class="text-base font-bold text-white pt-5 ibm-plex-sans-bold">
-            {org.name}
-          </p>
-          <ul class="pl-5 pt-3 list-disc list-inside">
+          <p class="text-base ibm-plex-sans-bold text-white mt-4">{org.name}</p>
+          <ul class="list-disc pl-5 space-y-1 mt-2">
             {#each Object.entries(org.positions) as [position, years]}
-              <li class="text-white ibm-plex-sans-regular my-2">
-                <!-- Set text to white -->
-                {position}, ({years.join(", ")})
+              <li class="text-base ibm-plex-sans-regular text-white">
+                {position} ({years.join(", ")})
               </li>
             {/each}
           </ul>
         {/each}
-        <p class="text-base font-bold text-white pt-5 font-ibm-plex-sans">
-          Dean's Lister
-        </p>
-        <ul class="pl-5 pt-3 list-inside">
-          {#each edu.deansLister as semester (semester)}
-            <li class="text-white ibm-plex-sans-regular my-2">
-              <!-- Set text to white -->
-              <i class="fa-solid fa-medal mr-1" />{semester}
-            </li>
-          {/each}
-        </ul>
-      </li>
+
+        {#if edu.deansLister?.length}
+          <p class="text-sm uppercase tracking-widest text-gray-400 ibm-plex-mono-regular mt-6 mb-2">Dean's Lister</p>
+          <ul class="space-y-1">
+            {#each edu.deansLister as semester (semester)}
+              <li class="text-base ibm-plex-sans-regular text-white">— {semester}</li>
+            {/each}
+          </ul>
+        {/if}
+      </div>
     {/each}
-  </ol>
-</div>
-
-<style>
-  .ibm-plex-sans-thin {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-
-  .ibm-plex-sans-extralight {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-  }
-
-  .ibm-plex-sans-light {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-
-  .ibm-plex-sans-regular {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .ibm-plex-sans-medium {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-
-  .ibm-plex-sans-semibold {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-
-  .ibm-plex-sans-bold {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-
-  .ibm-plex-sans-thin-italic {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-
-  .ibm-plex-sans-extralight-italic {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 200;
-    font-style: italic;
-  }
-
-  .ibm-plex-sans-light-italic {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-
-  .ibm-plex-sans-regular-italic {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-
-  .ibm-plex-sans-medium-italic {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-
-  .ibm-plex-sans-semibold-italic {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-  }
-
-  .ibm-plex-sans-bold-italic {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-
-  .ibm-plex-mono-thin {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 100;
-    font-style: normal;
-  }
-
-  .ibm-plex-mono-extralight {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 200;
-    font-style: normal;
-  }
-
-  .ibm-plex-mono-light {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 300;
-    font-style: normal;
-  }
-
-  .ibm-plex-mono-regular {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .ibm-plex-mono-medium {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 500;
-    font-style: normal;
-  }
-
-  .ibm-plex-mono-semibold {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 600;
-    font-style: normal;
-  }
-
-  .ibm-plex-mono-bold {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 700;
-    font-style: normal;
-  }
-
-  .ibm-plex-mono-thin-italic {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 100;
-    font-style: italic;
-  }
-
-  .ibm-plex-mono-extralight-italic {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 200;
-    font-style: italic;
-  }
-
-  .ibm-plex-mono-light-italic {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 300;
-    font-style: italic;
-  }
-
-  .ibm-plex-mono-regular-italic {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
-    font-style: italic;
-  }
-
-  .ibm-plex-mono-medium-italic {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 500;
-    font-style: italic;
-  }
-
-  .ibm-plex-mono-semibold-italic {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 600;
-    font-style: italic;
-  }
-
-  .ibm-plex-mono-bold-italic {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 700;
-    font-style: italic;
-  }
-  .syne-400 {
-    font-family: "Syne", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .syne-600 {
-    font-family: "Syne", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-  }
-
-  .syne-800 {
-    font-family: "Syne", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-  }
-</style>
+  </div>
+</section>

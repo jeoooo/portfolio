@@ -1,0 +1,32 @@
+[
+    {
+        "icon_name": "https://cdn.simpleicons.org/GitHub/fff",
+        "name": "GitHub",
+        "link": "https://github.com/jeoooo"
+    },
+    {
+        "icon_name": "https://img.icons8.com/?size=100&id=8808&format=png&color=ffffff",
+        "name": "Linkedin",
+        "link": "https://www.linkedin.com/in/jeoooo/"
+    },
+    {
+        "icon_name": "https://cdn.simpleicons.org/Behance/fff",
+        "name": "Behance",
+        "link": "https://www.behance.net/jeolubao"
+    },
+    {
+        "icon_name": "https://cdn.simpleicons.org/medium/fff",
+        "name": "I write articles on Medium",
+        "link": "https://medium.com/@jeooocarlo"
+    },
+    {
+        "icon_name": "https://cdn.simpleicons.org/BuyMeACoffee/fff",
+        "name": "Buy Me A Coffee!",
+        "link": "https://www.buymeacoffee.com/jeooo"
+    },
+    {
+        "icon_name": "https://cdn.simpleicons.org/githubsponsors/fff",
+        "name": "Sponsor me on GitHub!",
+        "link": "https://github.com/sponsors/jeoooo"
+    }
+]

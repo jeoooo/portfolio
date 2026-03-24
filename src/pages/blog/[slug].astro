@@ -1,0 +1,36 @@
+---
+import BlogLayout from '../../layouts/blog_layout.astro';
+
+type PostGlob = {
+  file: string;
+  Content: any;
+  frontmatter: {
+    title?: string;
+    description?: string;
+    date?: string;
+    categories?: string[];
+    published?: boolean;
+  };
+};
+
+export async function getStaticPaths() {
+  const posts = (await Astro.glob('../../blog/*.md')) as PostGlob[];
+  return posts.map((post: PostGlob) => {
+    const slug = post.file.split('/').pop()?.replace('.md', '') ?? '';
+    return {
+      params: { slug },
+      props: { post },
+    };
+  });
+}
+
+interface Props {
+  post: PostGlob;
+}
+
+const { post } = Astro.props;
+const { Content, frontmatter } = post;
+---
+<BlogLayout frontmatter={frontmatter}>
+  <Content />
+</BlogLayout>
