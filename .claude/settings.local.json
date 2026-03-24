@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm outdated:*)",
+      "Bash(npm run:*)",
+      "Bash(npm install:*)",
+      "Bash(npx astro:*)",
+      "Bash(for f:*)",
+      "Bash(do sed:*)",
+      "Bash(done)",
+      "Bash(python3 -c \":*)",
+      "Bash(node:*)"
+    ]
+  }
+}

@@ -3,32 +3,32 @@
     "description": "Software Developer | Graphic Designer",
     "socials": [
         {
-            "icon_name": "https://cdn.simpleicons.org/GitHub/333",
+            "icon_name": "https://cdn.simpleicons.org/GitHub/fff",
             "name": "GitHub",
             "link": "https://github.com/jeoooo"
         },
         {
-            "icon_name": "https://img.icons8.com/?size=100&id=8808&format=png&color=000000",
+            "icon_name": "https://img.icons8.com/?size=100&id=8808&format=png&color=ffffff",
             "name": "Linkedin",
             "link": "https://www.linkedin.com/in/jeoooo/"
         },
         {
-            "icon_name": "https://cdn.simpleicons.org/Behance/333",
+            "icon_name": "https://cdn.simpleicons.org/Behance/fff",
             "name": "Behance",
             "link": "https://www.behance.net/jeolubao"
         },
         {
-            "icon_name": "https://cdn.simpleicons.org/medium/333",
+            "icon_name": "https://cdn.simpleicons.org/medium/fff",
             "name": "I write articles on Medium",
             "link": "https://medium.com/@jeooocarlo"
         },
         {
-            "icon_name": "https://cdn.simpleicons.org/BuyMeACoffee/333",
+            "icon_name": "https://cdn.simpleicons.org/BuyMeACoffee/fff",
             "name": "Buy Me A Coffee!",
             "link": "https://www.buymeacoffee.com/jeooo"
         },
         {
-            "icon_name": "https://cdn.simpleicons.org/githubsponsors/333",
+            "icon_name": "https://cdn.simpleicons.org/githubsponsors/fff",
             "name": "Sponsor me on GitHub!",
             "link": "https://github.com/sponsors/jeoooo"
         }
@@ -170,27 +170,27 @@
     ],
     "uiUxDesignTools": [
         {
-            "name": "https://img.icons8.com/?size=100&id=13677&format=png&color=000000",
+            "name": "https://img.icons8.com/?size=100&id=13677&format=png&color=ffffff",
             "color": "#fff"
         },
         {
-            "name": "https://img.icons8.com/?size=100&id=13631&format=png&color=000000",
+            "name": "https://img.icons8.com/?size=100&id=13631&format=png&color=ffffff",
             "color": "#fff"
         },
         {
-            "name": "https://img.icons8.com/?size=100&id=4VVL78edhbW9&format=png&color=000000",
+            "name": "https://img.icons8.com/?size=100&id=4VVL78edhbW9&format=png&color=ffffff",
             "color": "#fff"
         },
         {
-            "name": "https://img.icons8.com/?size=100&id=zfHRZ6i1Wg0U&format=png&color=000000",
+            "name": "https://img.icons8.com/?size=100&id=zfHRZ6i1Wg0U&format=png&color=ffffff",
             "color": "#fff"
         },
         {
-            "name": "https://img.icons8.com/?size=100&id=iWw83PVcBpLw&format=png&color=000000",
+            "name": "https://img.icons8.com/?size=100&id=iWw83PVcBpLw&format=png&color=ffffff",
             "color": "#fff"
         },
         {
-            "name": "https://img.icons8.com/?size=100&id=13675&format=png&color=000000",
+            "name": "https://img.icons8.com/?size=100&id=13675&format=png&color=ffffff",
             "color": "#fff"
         }
     ],
@@ -257,6 +257,7 @@
     ],
     "projects": [
         {
+            "shown": true,
             "title": "PocketbaseExtended",
             "description": {
                 "short_description": "Pocketbase Library for Arduino",
@@ -275,6 +276,7 @@
             ]
         },
         {
+            "shown": true,
             "title": "Flutterdex",
             "description": {
                 "short_description": "Flutter Gen 3 Pokedex App ",
@@ -288,6 +290,7 @@
             ]
         },
         {
+            "shown": true,
             "title": "AniSvelte",
             "description": {
                 "short_description": "Svelte Anime Website using Jikan API",
@@ -314,6 +317,7 @@
             ]
         },
         {
+            "shown": true,
             "title": "Project DESTINY",
             "description": {
                 "short_description": "Davao City Student Portal Status Page",
@@ -344,6 +348,7 @@
             ]
         },
         {
+            "shown": true,
             "title": "HCDC True Site",
             "description": {
                 "short_description": "HCDC Websites Status Page",
@@ -370,6 +375,7 @@
             ]
         },
         {
+            "shown": true,
             "title": "ARRange",
             "description": {
                 "short_description": "UI/UX design concept for an Augmented Reality interior design app",
@@ -383,6 +389,7 @@
             ]
         },
         {
+            "shown": true,
             "title": "FireTracker",
             "description": {
                 "short_description": "An IoT-based First Responder App for Firemen",
@@ -420,6 +427,7 @@
             ]
         },
         {
+            "shown": true,
             "title": "Netrunners",
             "description": {
                 "short_description": "A simple ecommerce Android app using SQLite",
@@ -445,6 +453,7 @@
             ]
         },
         {
+            "shown": true,
             "title": "VoiceNotes",
             "description": {
                 "short_description": "A Speech-to-Text (STT) note-taking app using SQLite",
@@ -470,6 +479,7 @@
             ]
         },
         {
+            "shown": true,
             "title": "Binary Game",
             "description": {
                 "short_description": "A Java-based GUI educational tool for learning binary encoding",
