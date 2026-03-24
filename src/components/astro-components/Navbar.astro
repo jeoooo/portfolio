@@ -1,19 +1,261 @@
+---
+// ── Navbar toggle visibility flags ───────────────────────
+// Set to false to hide a toggle from both desktop and mobile menu.
+const SHOW_FLASHLIGHT = false;
+const SHOW_WIN_XP     = false;
+const SHOW_WIN_7      = false;
+const SHOW_PARTICLES  = true;
+---
+<style is:global>
+  /* ── Nav toggle buttons ──────────────────────────────── */
+  .nav-toggle-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid transparent;
+    background: transparent;
+    color: rgba(255,255,255,0.45);
+    cursor: pointer;
+    font-family: var(--brand-font-mono, monospace);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    transition: color 0.15s, border-color 0.15s, background-color 0.15s;
+    flex-shrink: 0;
+  }
+  .nav-toggle-btn:hover {
+    color: #fff;
+    border-color: rgba(255,255,255,0.25);
+  }
+  .nav-toggle-btn[aria-pressed="true"] {
+    color: #000;
+    background: #fff;
+    border-color: #fff;
+  }
+  .nav-toggle-btn:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+  }
+
+  /* ── Flashlight overlay ──────────────────────────────── */
+  #flashlight-overlay {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 40;
+    display: none;
+  }
+  #flashlight-overlay.fl-active { display: block; }
+
+  /* ── Flashlight controls HUD ─────────────────────────── */
+  #fl-hud {
+    position: fixed;
+    top: 3.25rem;
+    right: 1rem;
+    background: rgba(0,0,0,0.92);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 0.875rem 1rem;
+    z-index: 51;
+    display: none;
+    min-width: 180px;
+    font-family: var(--brand-font-mono, monospace);
+    color: #fff;
+  }
+  #fl-hud.fl-hud-open { display: block; }
+  #fl-hud label {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    color: rgba(255,255,255,0.7);
+    font-size: 0.65rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 0.625rem;
+  }
+  #fl-hud input[type="range"] { width: 100%; accent-color: #fff; cursor: pointer; }
+
+  /* ── Particles container ─────────────────────────────── */
+  #particles-container {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+  }
+  #particles-container.p-active { opacity: 1; }
+  @media (prefers-reduced-motion: reduce) {
+    #particles-container { transition: none; }
+  }
+
+  /* ── Mobile toggle items ─────────────────────────────── */
+  .mobile-toggle-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    background: transparent;
+    font-family: var(--brand-font-mono, monospace);
+    font-size: 0.7rem;
+    letter-spacing: 0.04em;
+    color: rgba(255,255,255,0.5);
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    transition: color 0.15s, background-color 0.15s;
+  }
+  .mobile-toggle-item:hover { background: rgba(255,255,255,0.05); color: #fff; }
+  .mobile-toggle-item[aria-pressed="true"] { color: #fff; }
+  .mobile-toggle-indicator {
+    width: 7px;
+    height: 7px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    flex-shrink: 0;
+    transition: background-color 0.15s, border-color 0.15s;
+  }
+  .mobile-toggle-item[aria-pressed="true"] .mobile-toggle-indicator {
+    background: #fff;
+    border-color: #fff;
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     Windows XP theme — light color overrides
+     ═══════════════════════════════════════════════════════ */
+  body[data-theme="xp"] {
+    background-color: #ECE9D8 !important;
+    color: #000 !important;
+  }
+  body[data-theme="xp"] header nav {
+    background-color: #1F5893 !important; /* XP taskbar blue */
+  }
+  body[data-theme="xp"] #mobile-menu {
+    background-color: #ECE9D8 !important;
+    border-top-color: rgba(0,0,0,0.15) !important;
+  }
+  body[data-theme="xp"] #mobile-menu a { color: #000 !important; }
+  body[data-theme="xp"] #mobile-menu a:hover { background-color: #1F5893 !important; color: #fff !important; }
+  body[data-theme="xp"] #mobile-menu .mobile-toggle-item { color: rgba(0,0,0,0.6) !important; border-top-color: rgba(0,0,0,0.1) !important; }
+  body[data-theme="xp"] #mobile-menu .mobile-toggle-item:hover { background-color: rgba(0,0,0,0.05) !important; color: #000 !important; }
+  body[data-theme="xp"] #mobile-menu .mobile-toggle-item[aria-pressed="true"] { color: #000 !important; }
+  body[data-theme="xp"] #mobile-menu .mobile-toggle-indicator { border-color: rgba(0,0,0,0.3) !important; }
+  body[data-theme="xp"] #mobile-menu .mobile-toggle-item[aria-pressed="true"] .mobile-toggle-indicator { background: #000 !important; border-color: #000 !important; }
+  body[data-theme="xp"] main .text-white { color: #000 !important; }
+  body[data-theme="xp"] main .bg-black { background-color: #ECE9D8 !important; }
+  body[data-theme="xp"] main h1,
+  body[data-theme="xp"] main h2,
+  body[data-theme="xp"] main h3,
+  body[data-theme="xp"] main h4 { color: #000 !important; }
+  body[data-theme="xp"] main p { color: #222 !important; }
+  body[data-theme="xp"] main .border-white { border-color: rgba(0,0,0,0.25) !important; }
+  body[data-theme="xp"] main .border-t-2 { border-color: rgba(0,0,0,0.25) !important; }
+  body[data-theme="xp"] main .text-gray-300,
+  body[data-theme="xp"] main .text-gray-400 { color: #555 !important; }
+  body[data-theme="xp"] main a { color: #1F5893 !important; }
+  body[data-theme="xp"] footer { background-color: #ECE9D8 !important; border-top-color: rgba(0,0,0,0.15) !important; }
+  body[data-theme="xp"] footer .text-white { color: #444 !important; }
+  body[data-theme="xp"] #fl-hud { background: rgba(236,233,216,0.97) !important; border-color: rgba(0,0,0,0.2) !important; color: #000 !important; }
+  body[data-theme="xp"] #fl-hud label { color: rgba(0,0,0,0.65) !important; }
+
+  /* ═══════════════════════════════════════════════════════
+     Windows 7 theme — light color overrides
+     ═══════════════════════════════════════════════════════ */
+  body[data-theme="w7"] {
+    background-color: #F0F0F0 !important;
+    color: #000 !important;
+  }
+  body[data-theme="w7"] header nav {
+    background-color: #1E395B !important; /* W7 taskbar dark blue */
+  }
+  body[data-theme="w7"] #mobile-menu {
+    background-color: #F0F0F0 !important;
+    border-top-color: rgba(0,0,0,0.12) !important;
+  }
+  body[data-theme="w7"] #mobile-menu a { color: #000 !important; }
+  body[data-theme="w7"] #mobile-menu a:hover { background-color: #1E395B !important; color: #fff !important; }
+  body[data-theme="w7"] #mobile-menu .mobile-toggle-item { color: rgba(0,0,0,0.6) !important; border-top-color: rgba(0,0,0,0.08) !important; }
+  body[data-theme="w7"] #mobile-menu .mobile-toggle-item:hover { background-color: rgba(0,0,0,0.04) !important; color: #000 !important; }
+  body[data-theme="w7"] #mobile-menu .mobile-toggle-item[aria-pressed="true"] { color: #000 !important; }
+  body[data-theme="w7"] #mobile-menu .mobile-toggle-indicator { border-color: rgba(0,0,0,0.3) !important; }
+  body[data-theme="w7"] #mobile-menu .mobile-toggle-item[aria-pressed="true"] .mobile-toggle-indicator { background: #000 !important; border-color: #000 !important; }
+  body[data-theme="w7"] main .text-white { color: #000 !important; }
+  body[data-theme="w7"] main .bg-black { background-color: #F0F0F0 !important; }
+  body[data-theme="w7"] main h1,
+  body[data-theme="w7"] main h2,
+  body[data-theme="w7"] main h3,
+  body[data-theme="w7"] main h4 { color: #000 !important; }
+  body[data-theme="w7"] main p { color: #222 !important; }
+  body[data-theme="w7"] main .border-white { border-color: rgba(0,0,0,0.2) !important; }
+  body[data-theme="w7"] main .border-t-2 { border-color: rgba(0,0,0,0.2) !important; }
+  body[data-theme="w7"] main .text-gray-300,
+  body[data-theme="w7"] main .text-gray-400 { color: #555 !important; }
+  body[data-theme="w7"] main a { color: #1E395B !important; }
+  body[data-theme="w7"] footer { background-color: #F0F0F0 !important; border-top-color: rgba(0,0,0,0.12) !important; }
+  body[data-theme="w7"] footer .text-white { color: #444 !important; }
+  body[data-theme="w7"] #fl-hud { background: rgba(240,240,240,0.97) !important; border-color: rgba(0,0,0,0.18) !important; color: #000 !important; }
+  body[data-theme="w7"] #fl-hud label { color: rgba(0,0,0,0.65) !important; }
+</style>
+
 <header>
   <nav class="fixed top-0 w-full bg-black z-50">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 h-12 flex items-center justify-between">
+
+      <!-- Brand -->
       <a href="/portfolio" class="font-syne text-xl font-normal text-white hover:text-gray-300 transition-colors">
         @jeooo
       </a>
 
-      <!-- Desktop links -->
-      <div class="hidden sm:flex">
+      <!-- Desktop nav + toggles -->
+      <div class="hidden sm:flex items-center">
         <a href="/portfolio/blog" class="font-syne text-base text-white px-4 h-12 flex items-center hover:bg-white hover:text-black transition-colors duration-150">
           Blog
         </a>
+
+        <div class="flex items-center border-l border-white/20 ml-2 pl-2 gap-0.5">
+          <!-- Flashlight -->
+          {SHOW_FLASHLIGHT && (
+            <button id="toggle-flashlight" class="nav-toggle-btn" aria-pressed="false" aria-label="Toggle flashlight mode (F)" title="Flashlight (F)">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square">
+                <circle cx="12" cy="12" r="4"/>
+                <line x1="12" y1="2" x2="12" y2="5"/>
+                <line x1="12" y1="19" x2="12" y2="22"/>
+                <line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/>
+                <line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/>
+                <line x1="2" y1="12" x2="5" y2="12"/>
+                <line x1="19" y1="12" x2="22" y2="12"/>
+                <line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/>
+                <line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/>
+              </svg>
+            </button>
+          )}
+
+          <!-- Win XP -->
+          {SHOW_WIN_XP && (
+            <button id="toggle-xp" class="nav-toggle-btn" aria-pressed="false" aria-label="Toggle Windows XP theme" title="Windows XP">XP</button>
+          )}
+
+          <!-- Win 7 -->
+          {SHOW_WIN_7 && (
+            <button id="toggle-w7" class="nav-toggle-btn" aria-pressed="false" aria-label="Toggle Windows 7 theme" title="Windows 7">W7</button>
+          )}
+
+          <!-- Particles -->
+          {SHOW_PARTICLES && (
+            <button id="toggle-particles" class="nav-toggle-btn" aria-pressed="false" aria-label="Toggle particle background" title="Particles">✦</button>
+          )}
+
+          <!-- Reset -->
+          <button id="btn-reset" class="nav-toggle-btn" aria-label="Reset all toggles to default" title="Reset all">↺</button>
+        </div>
       </div>
 
-      <!-- Hamburger button (mobile only) -->
-      <button id="menu-toggle" class="sm:hidden text-white p-2 focus:outline-none" aria-label="Toggle menu">
+      <!-- Mobile hamburger -->
+      <button id="menu-toggle" class="sm:hidden text-white p-2 focus:outline-none focus-visible:outline-white" aria-label="Toggle menu" aria-expanded="false">
         <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
@@ -28,18 +270,364 @@
       <a href="/portfolio/blog" class="block px-6 py-4 font-syne text-white hover:bg-white hover:text-black transition-colors">
         Blog
       </a>
+      {SHOW_FLASHLIGHT && (
+        <button id="m-toggle-flashlight" class="mobile-toggle-item" aria-pressed="false" aria-label="Toggle flashlight mode">
+          <span>Flashlight</span><span class="mobile-toggle-indicator"></span>
+        </button>
+      )}
+      {SHOW_WIN_XP && (
+        <button id="m-toggle-xp" class="mobile-toggle-item" aria-pressed="false" aria-label="Toggle Windows XP theme">
+          <span>Windows XP Theme</span><span class="mobile-toggle-indicator"></span>
+        </button>
+      )}
+      {SHOW_WIN_7 && (
+        <button id="m-toggle-w7" class="mobile-toggle-item" aria-pressed="false" aria-label="Toggle Windows 7 theme">
+          <span>Windows 7 Theme</span><span class="mobile-toggle-indicator"></span>
+        </button>
+      )}
+      {SHOW_PARTICLES && (
+        <button id="m-toggle-particles" class="mobile-toggle-item" aria-pressed="false" aria-label="Toggle particle background">
+          <span>Particles</span><span class="mobile-toggle-indicator"></span>
+        </button>
+      )}
+      <button id="m-btn-reset" class="mobile-toggle-item" aria-label="Reset all toggles to default" style="color:rgba(255,255,255,0.3)">
+        <span>Reset All</span><span></span>
+      </button>
     </div>
   </nav>
-
-  <script is:inline>
-    const btn = document.getElementById('menu-toggle');
-    const menu = document.getElementById('mobile-menu');
-    const iconOpen = document.getElementById('icon-open');
-    const iconClose = document.getElementById('icon-close');
-    btn?.addEventListener('click', () => {
-      menu?.classList.toggle('hidden');
-      iconOpen?.classList.toggle('hidden');
-      iconClose?.classList.toggle('hidden');
-    });
-  </script>
 </header>
+
+<!-- Flashlight overlay -->
+<div id="flashlight-overlay" aria-hidden="true" role="presentation"></div>
+
+<!-- Flashlight controls HUD -->
+<div id="fl-hud" role="dialog" aria-label="Flashlight controls">
+  <label>Brightness<input type="range" id="fl-brightness" min="0" max="95" value="85" aria-label="Overlay brightness"></label>
+  <label>Radius (+/- keys)<input type="range" id="fl-radius" min="50" max="400" value="150" aria-label="Spotlight radius"></label>
+</div>
+
+<!-- Particles container -->
+<div id="particles-container" aria-hidden="true" role="presentation"></div>
+
+<!-- A11y live region -->
+<div id="toggle-announce" aria-live="polite" aria-atomic="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)"></div>
+
+<script is:inline>
+(function () {
+  'use strict';
+
+  // ── Persistent state ──────────────────────────────────────
+  var STATE_KEY    = 'portfolio-nav-v1';
+  var FL_PREFS_KEY = 'portfolio-fl-v1';
+
+  function loadState() {
+    try {
+      var s = Object.assign({ fl: false, xp: false, w7: false, pt: false }, JSON.parse(localStorage.getItem(STATE_KEY) || '{}'));
+      // Ensure mutual exclusivity — can't have both themes on
+      if (s.xp && s.w7) { s.w7 = false; }
+      return s;
+    } catch (e) { return { fl: false, xp: false, w7: false, pt: false }; }
+  }
+  function saveState() {
+    try { localStorage.setItem(STATE_KEY, JSON.stringify(state)); } catch (e) {}
+  }
+  function loadFlPrefs() {
+    try { return Object.assign({ radius: 150, brightness: 85 }, JSON.parse(localStorage.getItem(FL_PREFS_KEY) || '{}')); }
+    catch (e) { return { radius: 150, brightness: 85 }; }
+  }
+  function saveFlPrefs() {
+    try { localStorage.setItem(FL_PREFS_KEY, JSON.stringify(flPrefs)); } catch (e) {}
+  }
+
+  var state   = loadState();
+  var flPrefs = loadFlPrefs();
+  var flPos   = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+  var flRafPending = false;
+  var ptLoaded  = false;
+  var ptInstance = null;
+
+  // ── DOM refs ──────────────────────────────────────────────
+  var overlay   = document.getElementById('flashlight-overlay');
+  var flHud     = document.getElementById('fl-hud');
+  var ptEl      = document.getElementById('particles-container');
+  var announcer = document.getElementById('toggle-announce');
+
+  var btnFL  = document.getElementById('toggle-flashlight');
+  var btnXP  = document.getElementById('toggle-xp');
+  var btnW7  = document.getElementById('toggle-w7');
+  var btnPT  = document.getElementById('toggle-particles');
+  var btnRst = document.getElementById('btn-reset');
+
+  var mBtnFL  = document.getElementById('m-toggle-flashlight');
+  var mBtnXP  = document.getElementById('m-toggle-xp');
+  var mBtnW7  = document.getElementById('m-toggle-w7');
+  var mBtnPT  = document.getElementById('m-toggle-particles');
+  var mBtnRst = document.getElementById('m-btn-reset');
+
+  var flBright = document.getElementById('fl-brightness');
+  var flRad    = document.getElementById('fl-radius');
+
+  // ── Announce helper ───────────────────────────────────────
+  function announce(msg) {
+    if (!announcer) return;
+    announcer.textContent = '';
+    setTimeout(function () { announcer.textContent = msg; }, 60);
+  }
+
+  // ── Helpers ───────────────────────────────────────────────
+  function setPressed(btn, on) {
+    if (!btn) return;
+    btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    var dot = btn.querySelector('.mobile-toggle-indicator');
+    if (dot) dot.style.background = on ? (document.body.getAttribute('data-theme') ? '#000' : '#fff') : 'transparent';
+  }
+
+  // ── Flashlight ────────────────────────────────────────────
+  function applyOverlay() {
+    if (!overlay) return;
+    var alpha = (flPrefs.brightness / 100).toFixed(3);
+    var r = flPrefs.radius;
+    var x = flPos.x + 'px';
+    var y = flPos.y + 'px';
+    overlay.style.background = 'rgba(0,0,0,' + alpha + ')';
+    var mask = 'radial-gradient(circle ' + r + 'px at ' + x + ' ' + y + ', transparent 55%, rgba(0,0,0,0.6) 80%, black 100%)';
+    overlay.style.webkitMaskImage = mask;
+    overlay.style.maskImage = mask;
+    flRafPending = false;
+  }
+
+  function scheduleOverlay() {
+    if (flRafPending) return;
+    flRafPending = true;
+    requestAnimationFrame(applyOverlay);
+  }
+
+  function onPointerMove(e) { flPos.x = e.clientX; flPos.y = e.clientY; scheduleOverlay(); }
+  function onTouchMove(e) {
+    if (e.touches.length > 0) { flPos.x = e.touches[0].clientX; flPos.y = e.touches[0].clientY; scheduleOverlay(); }
+  }
+
+  function enableFlashlight() {
+    if (!overlay) return;
+    overlay.classList.add('fl-active');
+    if (flBright) flBright.value = flPrefs.brightness;
+    if (flRad)    flRad.value    = flPrefs.radius;
+    applyOverlay();
+    window.addEventListener('pointermove', onPointerMove, { passive: true });
+    window.addEventListener('touchmove', onTouchMove, { passive: true });
+    if (flHud) flHud.classList.add('fl-hud-open');
+  }
+
+  function disableFlashlight() {
+    if (!overlay) return;
+    overlay.classList.remove('fl-active');
+    window.removeEventListener('pointermove', onPointerMove);
+    window.removeEventListener('touchmove', onTouchMove);
+    if (flHud) flHud.classList.remove('fl-hud-open');
+  }
+
+  function setFlashlight(on) {
+    state.fl = on;
+    saveState();
+    on ? enableFlashlight() : disableFlashlight();
+    setPressed(btnFL, on);
+    setPressed(mBtnFL, on);
+    announce('Flashlight ' + (on ? 'on' : 'off'));
+  }
+
+  // ── Win themes (strictly mutually exclusive) ──────────────
+  function activateTheme(which) {
+    // Remove any existing theme stylesheet and classes
+    var xpLink = document.getElementById('theme-xp-css');
+    var w7Link = document.getElementById('theme-w7-css');
+    if (xpLink) xpLink.remove();
+    if (w7Link) w7Link.remove();
+    document.documentElement.classList.remove('theme-xp', 'theme-w7');
+    document.body.removeAttribute('data-theme');
+
+    state.xp = which === 'xp';
+    state.w7 = which === 'w7';
+    saveState();
+
+    if (which) {
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.id  = 'theme-' + which + '-css';
+      link.href = which === 'xp' ? 'https://unpkg.com/xp.css' : 'https://unpkg.com/7.css';
+      document.head.appendChild(link);
+      document.documentElement.classList.add('theme-' + which);
+      document.body.setAttribute('data-theme', which);
+    }
+
+    // Sync all four buttons (both XP and W7 may need updating)
+    setPressed(btnXP,  state.xp); setPressed(mBtnXP,  state.xp);
+    setPressed(btnW7,  state.w7); setPressed(mBtnW7,  state.w7);
+
+    var label = which === 'xp' ? 'Windows XP' : which === 'w7' ? 'Windows 7' : 'default';
+    announce(label + ' theme ' + (which ? 'on' : 'off'));
+  }
+
+  function setXP(on) { activateTheme(on ? 'xp' : null); }
+  function setW7(on) { activateTheme(on ? 'w7' : null); }
+
+  // ── Particles ─────────────────────────────────────────────
+  var PT_TRANSITION_MS = 600; // must match CSS transition duration
+  var ptResizeTimer    = null;
+  var ptLastMobile     = window.innerWidth < 768;
+
+  function initParticles() {
+    if (!window.tsParticles || !ptEl) return Promise.resolve(null);
+    var mobile  = window.innerWidth < 768;
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    return tsParticles.load('particles-container', {
+      background: { color: 'transparent' },
+      detectRetina: true,
+      particles: {
+        number:  { value: reduced ? 0 : (mobile ? 20 : 70) },
+        color:   { value: '#ffffff' },
+        shape:   { type: 'circle' },
+        opacity: { value: 0.25 },
+        size:    { value: { min: 1, max: 3 } },
+        move:    { enable: !reduced, speed: 0.8, random: true },
+        links: {
+          enable:   !mobile && !reduced,
+          distance: 140,
+          color:    '#ffffff',
+          opacity:  0.08,
+          width:    1,
+        },
+      },
+    }).then(function (c) { ptInstance = c; return c; });
+  }
+
+  function destroyParticles() {
+    if (ptInstance) { try { ptInstance.destroy(); } catch (e) {} ptInstance = null; }
+    ptLoaded = false;
+    if (ptEl) ptEl.innerHTML = '';
+  }
+
+  function enableParticles() {
+    if (!ptEl) return;
+    function doInit() {
+      initParticles().then(function () {
+        ptLoaded = true;
+        ptEl.classList.add('p-active'); // fade in after canvas is ready
+      });
+    }
+    if (window.tsParticles) {
+      if (!ptLoaded) { doInit(); } else { ptEl.classList.add('p-active'); }
+      return;
+    }
+    // Lazy-load tsparticles, then init + fade in
+    var s   = document.createElement('script');
+    s.src   = 'https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js';
+    s.onload = doInit;
+    document.head.appendChild(s);
+  }
+
+  function disableParticles() {
+    if (!ptEl) return;
+    ptEl.classList.remove('p-active'); // fade out
+    // Destroy only after the CSS transition finishes to avoid a visible snap
+    setTimeout(destroyParticles, PT_TRANSITION_MS);
+  }
+
+  // Reinitialize with a cross-fade when the mobile/desktop breakpoint is crossed
+  function onResize() {
+    if (!state.pt) return;
+    var isMobile = window.innerWidth < 768;
+    if (isMobile === ptLastMobile) return;
+    ptLastMobile = isMobile;
+    clearTimeout(ptResizeTimer);
+    ptResizeTimer = setTimeout(function () {
+      ptEl.classList.remove('p-active');                // fade out
+      setTimeout(function () {
+        destroyParticles();
+        initParticles().then(function () {
+          ptEl.classList.add('p-active');               // fade back in
+        });
+      }, PT_TRANSITION_MS / 2);                         // start reinit at mid-fade
+    }, 150);                                            // debounce resize events
+  }
+
+  window.addEventListener('resize', onResize, { passive: true });
+
+  function setParticles(on) {
+    state.pt = on;
+    saveState();
+    on ? enableParticles() : disableParticles();
+    setPressed(btnPT, on);
+    setPressed(mBtnPT, on);
+    announce('Particles ' + (on ? 'on' : 'off'));
+  }
+
+  // ── Reset ─────────────────────────────────────────────────
+  function resetAll() {
+    setFlashlight(false);
+    activateTheme(null);
+    setParticles(false);
+    announce('All toggles reset');
+  }
+
+  // ── Wire desktop buttons ──────────────────────────────────
+  if (btnFL)  btnFL.addEventListener('click',  function () { setFlashlight(!state.fl); });
+  if (btnXP)  btnXP.addEventListener('click',  function () { setXP(!state.xp); });
+  if (btnW7)  btnW7.addEventListener('click',  function () { setW7(!state.w7); });
+  if (btnPT)  btnPT.addEventListener('click',  function () { setParticles(!state.pt); });
+  if (btnRst) btnRst.addEventListener('click', resetAll);
+
+  // ── Wire mobile buttons ───────────────────────────────────
+  if (mBtnFL)  mBtnFL.addEventListener('click',  function () { setFlashlight(!state.fl); });
+  if (mBtnXP)  mBtnXP.addEventListener('click',  function () { setXP(!state.xp); });
+  if (mBtnW7)  mBtnW7.addEventListener('click',  function () { setW7(!state.w7); });
+  if (mBtnPT)  mBtnPT.addEventListener('click',  function () { setParticles(!state.pt); });
+  if (mBtnRst) mBtnRst.addEventListener('click', resetAll);
+
+  // ── Flashlight HUD controls ───────────────────────────────
+  if (flBright) flBright.addEventListener('input', function () {
+    flPrefs.brightness = parseInt(this.value, 10); saveFlPrefs(); if (state.fl) applyOverlay();
+  });
+  if (flRad) flRad.addEventListener('input', function () {
+    flPrefs.radius = parseInt(this.value, 10); saveFlPrefs(); if (state.fl) applyOverlay();
+  });
+
+  // ── Keyboard shortcuts ────────────────────────────────────
+  document.addEventListener('keydown', function (e) {
+    var tag = e.target && e.target.tagName;
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || (e.target && e.target.isContentEditable)) return;
+    if ((e.key === 'f' || e.key === 'F') && !e.ctrlKey && !e.metaKey && !e.altKey) { setFlashlight(!state.fl); }
+    if (state.fl) {
+      if (e.key === '+' || e.key === '=') { flPrefs.radius = Math.min(400, flPrefs.radius + 20); saveFlPrefs(); if (flRad) flRad.value = flPrefs.radius; applyOverlay(); }
+      if (e.key === '-' || e.key === '_') { flPrefs.radius = Math.max(50,  flPrefs.radius - 20); saveFlPrefs(); if (flRad) flRad.value = flPrefs.radius; applyOverlay(); }
+    }
+  });
+
+  // ── Mobile hamburger ──────────────────────────────────────
+  var menuToggle = document.getElementById('menu-toggle');
+  var mobileMenu = document.getElementById('mobile-menu');
+  var iconOpen   = document.getElementById('icon-open');
+  var iconClose  = document.getElementById('icon-close');
+  if (menuToggle) {
+    menuToggle.addEventListener('click', function () {
+      var open = mobileMenu && !mobileMenu.classList.contains('hidden');
+      if (mobileMenu) mobileMenu.classList.toggle('hidden');
+      if (iconOpen)   iconOpen.classList.toggle('hidden');
+      if (iconClose)  iconClose.classList.toggle('hidden');
+      menuToggle.setAttribute('aria-expanded', (!open).toString());
+    });
+  }
+
+  // ── Apply persisted state on load ────────────────────────
+  // Set button visual states first (no side effects)
+  setPressed(btnFL, state.fl); setPressed(mBtnFL, state.fl);
+  setPressed(btnXP, state.xp); setPressed(mBtnXP, state.xp);
+  setPressed(btnW7, state.w7); setPressed(mBtnW7, state.w7);
+  setPressed(btnPT, state.pt); setPressed(mBtnPT, state.pt);
+  // Then activate features
+  if (state.fl) enableFlashlight();
+  if (state.xp) activateTheme('xp');
+  else if (state.w7) activateTheme('w7');  // else-if enforces mutual exclusivity
+  if (state.pt) enableParticles();
+
+})();
+</script>
