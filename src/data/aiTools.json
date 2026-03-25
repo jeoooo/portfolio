@@ -1,0 +1,8 @@
+[
+    { "name": "claude", "label": "Claude" },
+    { "name": "githubcopilot", "label": "GitHub Copilot" },
+    { "name": "googlegemini", "label": "Gemini" },
+    { "name": "openai", "label": "ChatGPT" },
+    { "name": "deepseek", "label": "DeepSeek" },
+    { "name": "zai", "label": "GLM (Z.ai)" }
+]

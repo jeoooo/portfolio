@@ -1,268 +1,105 @@
 ---
-var sadge_emote: string = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0859f80e-0951-4431-a3d2-6e44ead6ae8c/derfvpg-61848df5-c41b-4f64-9ae9-6462f2b37ac3.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA4NTlmODBlLTA5NTEtNDQzMS1hM2QyLTZlNDRlYWQ2YWU4Y1wvZGVyZnZwZy02MTg0OGRmNS1jNDFiLTRmNjQtOWFlOS02NDYyZjJiMzdhYzMuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.lJF47W1u-imCSIVaC75w1caGulF6UezQZb62xvnnpd4"
-var image_404: string = "https://i.imgur.com/ElIMvxm.png";
+import Head from "../components/astro-components/Head.astro";
+const image_404: string = "https://i.imgur.com/ElIMvxm.png";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgVKjbS6eO9Mz7mpYCPCsWM5bdGQ6-rNMSLTkao-4wPw&s" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		  <!-- Font Awesome icons (free version)-->
-		  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-
-		<title>oOf</title>
-		<meta title="Jeo | Android Developer" />
-		<meta name="description" content="Jeo | Android Developer" />
-	  
-		<meta property="og:url" content="https://jeoooo.github.io/portfolio" />
-		<meta property="og:type" content="portfolio" />
-		<meta property="og:title" content="Hi! I'm Jeo 💻📱👩‍💻" />
-		<meta
-		  property="og:description"
-		  content="Software Developer | Graphic Designer"
-		/>
-		<meta property="og:image" content="https://i.imgur.com/zpipPLf.png" />
-		  	
-		<!-- ibm fonts -->
-		<link
-		  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-		  rel="stylesheet">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link
-		  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-		  rel="stylesheet">
-		  	
-		<!-- syne fonts -->
-		<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-	
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Syne:wght@400..800&display=swap" rel="stylesheet">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Syne:wght@500&display=swap" rel="stylesheet">
-	
-	</head>	
-	<body class="bg-zinc-900">
-        <section class="bg-white dark:bg-zinc-900 flex justify-center items-center h-screen">
-            <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-                <div class="mx-auto max-w-screen-sm text-center">
-                    <img src={image_404} alt="" srcset="">
-                    <p class="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white syne-600">Something's missing.</p>
-                    <p class="mb-4 text-base font-light text-gray-500 dark:text-gray-400 syne-400">
-                      <img class="inline-flex h-10 pb-3" src={sadge_emote} alt="" srcset="">
-                      Sorry, we can't find that page. You'll find lots to explore on the home page. 
-                      <img class="inline-flex h-10 pb-3" src={sadge_emote} alt="" srcset=""> 
-                    </p>
-                    <p class="mb-4 text-lg font-light text-gray-500 dark:text-gray-400 syne-400">logo by <a href="https://twitter.com/sawaratsuki1004" class="hover:underline" target="_blank" rel="noopener noreferrer">@sawaratsuki1004</a></p>
-                    <a href="/" class="inline-flex syne-400 text-zinc-900 hover:text-white transition ease-in-out hover:bg-zinc-900 border border-white bg-white hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-white my-4">Back to Homepage</a>
-                </div>   
-            </div>
-        </section>
-        
-
-	</body>
-
-
+  <head>
+    <Head />
+    <title>404 — Page Not Found</title>
+  </head>
+  <body>
+    <main class="error-page">
+      <div class="error-grid">
+        <div class="error-rule"></div>
+        <p class="error-label ibm-plex-mono-regular">ERROR / 404</p>
+        <img src={image_404} alt="404" class="error-image" />
+        <p class="error-headline syne-600">Page not found.</p>
+        <p class="error-body ibm-plex-sans-light">
+          The page you requested does not exist or has been moved.
+        </p>
+        <a href="/" class="error-link ibm-plex-sans-medium">
+          &larr; Back to homepage
+        </a>
+      </div>
+    </main>
+  </body>
 </html>
 
-
 <style>
-    .ibm-plex-sans-thin {
-      font-family: "IBM Plex Sans", sans-serif;
-      font-weight: 100;
-      font-style: normal;
-    }
-  
-    .ibm-plex-sans-extralight {
-      font-family: "IBM Plex Sans", sans-serif;
-      font-weight: 200;
-      font-style: normal;
-    }
-  
-    .ibm-plex-sans-light {
-      font-family: "IBM Plex Sans", sans-serif;
-      font-weight: 300;
-      font-style: normal;
-    }
-  
-    .ibm-plex-sans-regular {
-      font-family: "IBM Plex Sans", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-    }
-  
-    .ibm-plex-sans-medium {
-      font-family: "IBM Plex Sans", sans-serif;
-      font-weight: 500;
-      font-style: normal;
-    }
-  
-    .ibm-plex-sans-semibold {
-      font-family: "IBM Plex Sans", sans-serif;
-      font-weight: 600;
-      font-style: normal;
-    }
-  
-    .ibm-plex-sans-bold {
-      font-family: "IBM Plex Sans", sans-serif;
-      font-weight: 700;
-      font-style: normal;
-    }
-  
-    .ibm-plex-sans-thin-italic {
-      font-family: "IBM Plex Sans", sans-serif;
-      font-weight: 100;
-      font-style: italic;
-    }
-  
-    .ibm-plex-sans-extralight-italic {
-      font-family: "IBM Plex Sans", sans-serif;
-      font-weight: 200;
-      font-style: italic;
-    }
-  
-    .ibm-plex-sans-light-italic {
-      font-family: "IBM Plex Sans", sans-serif;
-      font-weight: 300;
-      font-style: italic;
-    }
-  
-    .ibm-plex-sans-regular-italic {
-      font-family: "IBM Plex Sans", sans-serif;
-      font-weight: 400;
-      font-style: italic;
-    }
-  
-    .ibm-plex-sans-medium-italic {
-      font-family: "IBM Plex Sans", sans-serif;
-      font-weight: 500;
-      font-style: italic;
-    }
-  
-    .ibm-plex-sans-semibold-italic {
-      font-family: "IBM Plex Sans", sans-serif;
-      font-weight: 600;
-      font-style: italic;
-    }
-  
-    .ibm-plex-sans-bold-italic {
-      font-family: "IBM Plex Sans", sans-serif;
-      font-weight: 700;
-      font-style: italic;
-    }
-  
-    .ibm-plex-mono-thin {
-      font-family: "IBM Plex Mono", monospace;
-      font-weight: 100;
-      font-style: normal;
-    }
-  
-    .ibm-plex-mono-extralight {
-      font-family: "IBM Plex Mono", monospace;
-      font-weight: 200;
-      font-style: normal;
-    }
-  
-    .ibm-plex-mono-light {
-      font-family: "IBM Plex Mono", monospace;
-      font-weight: 300;
-      font-style: normal;
-    }
-  
-    .ibm-plex-mono-regular {
-      font-family: "IBM Plex Mono", monospace;
-      font-weight: 400;
-      font-style: normal;
-    }
-  
-    .ibm-plex-mono-medium {
-      font-family: "IBM Plex Mono", monospace;
-      font-weight: 500;
-      font-style: normal;
-    }
-  
-    .ibm-plex-mono-semibold {
-      font-family: "IBM Plex Mono", monospace;
-      font-weight: 600;
-      font-style: normal;
-    }
-  
-    .ibm-plex-mono-bold {
-      font-family: "IBM Plex Mono", monospace;
-      font-weight: 700;
-      font-style: normal;
-    }
-  
-    .ibm-plex-mono-thin-italic {
-      font-family: "IBM Plex Mono", monospace;
-      font-weight: 100;
-      font-style: italic;
-    }
-  
-    .ibm-plex-mono-extralight-italic {
-      font-family: "IBM Plex Mono", monospace;
-      font-weight: 200;
-      font-style: italic;
-    }
-  
-    .ibm-plex-mono-light-italic {
-      font-family: "IBM Plex Mono", monospace;
-      font-weight: 300;
-      font-style: italic;
-    }
-  
-    .ibm-plex-mono-regular-italic {
-      font-family: "IBM Plex Mono", monospace;
-      font-weight: 400;
-      font-style: italic;
-    }
-  
-    .ibm-plex-mono-medium-italic {
-      font-family: "IBM Plex Mono", monospace;
-      font-weight: 500;
-      font-style: italic;
-    }
-  
-    .ibm-plex-mono-semibold-italic {
-      font-family: "IBM Plex Mono", monospace;
-      font-weight: 600;
-      font-style: italic;
-    }
-  
-    .ibm-plex-mono-bold-italic {
-      font-family: "IBM Plex Mono", monospace;
-      font-weight: 700;
-      font-style: italic;
-    }
-    .syne-400 {
-      font-family: "Syne", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 400;
-      font-style: normal;
-    }
-  
-    .syne-600 {
-      font-family: "Syne", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 600;
-      font-style: normal;
-    }
-  
-    .syne-800 {
-      font-family: "Syne", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 800;
-      font-style: normal;
-    }
-  </style>
+  body {
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .error-page {
+    width: 100%;
+    padding: var(--space-8) var(--space-6);
+  }
+
+  .error-grid {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .error-rule {
+    width: 3rem;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: var(--space-4);
+  }
+
+  .error-image {
+    width: 10rem;
+    height: auto;
+    margin-bottom: var(--space-4);
+  }
+
+  .error-label {
+    font-size: var(--text-xs);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #888;
+    margin: 0;
+  }
+
+  .error-headline {
+    font-size: var(--text-2xl);
+    margin: 0;
+    color: #fff;
+  }
+
+  .error-body {
+    font-size: var(--text-base);
+    color: #aaa;
+    margin: 0;
+    max-width: 36ch;
+    line-height: var(--leading-relaxed);
+  }
+
+  .error-link {
+    display: inline-block;
+    margin-top: var(--space-4);
+    padding: var(--space-2) var(--space-6);
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    font-size: var(--text-sm);
+    letter-spacing: 0.05em;
+    transition: background-color 0.15s, color 0.15s;
+  }
+
+  .error-link:hover {
+    background-color: #fff;
+    color: #000;
+  }
+
+</style>

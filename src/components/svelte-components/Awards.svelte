@@ -30,6 +30,23 @@
 
     <div class="grid sm:grid-cols-[180px,1fr] gap-4 sm:gap-12 border-t border-white/20 py-8">
       <p class="text-xs uppercase tracking-widest text-gray-400 ibm-plex-mono-regular sm:pt-1">
+        Talks
+      </p>
+      <ul class="space-y-4">
+        {#each awards.talks as talk}
+          <li class="text-base ibm-plex-sans-regular text-white leading-relaxed">
+            <a href={talk.url} target="_blank" rel="noopener noreferrer" class="hover:underline underline-offset-4">
+              {talk.event}
+            </a>
+            <span class="text-gray-400"> — {talk.organizer}</span>
+            <span class="block text-xs ibm-plex-mono-regular text-gray-500 mt-0.5">{talk.date}</span>
+          </li>
+        {/each}
+      </ul>
+    </div>
+
+    <div class="grid sm:grid-cols-[180px,1fr] gap-4 sm:gap-12 border-t border-white/20 py-8">
+      <p class="text-xs uppercase tracking-widest text-gray-400 ibm-plex-mono-regular sm:pt-1">
         Seminars
       </p>
       <ul class="space-y-3">
