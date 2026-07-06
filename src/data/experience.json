@@ -1,15 +1,40 @@
 [
     {
-        "title": "Software Developer",
-        "company": "Ingenuity Software",
-        "duration": "2024 – Present"
-    },
-    {
-        "title": "Freelance Developer",
-        "duration": "2022 – Present",
+        "title": "Full Stack Engineer (Part-time)",
+        "company": "SkyeDesk",
+        "duration": "Jan 2026 – Jun 2026 · Australia, Remote",
         "responsibilities": {
             "roleDescription": [
-                "Creating personal projects for skill enhancement and actively contributing to Free and Open Source Software (FOSS) projects on GitHub, driven by a passion for open source and continuous learning."
+                "Built a sports academy platform end to end: public marketing site plus private athlete/admin portal (SvelteKit, PostgreSQL).",
+                "Shipped a Stripe registration and payment system with validation, duplicate prevention, and dynamic pricing logic.",
+                "Integrated Zoho Bigin CRM via REST to sync enquiries and purchases, with node-cron jobs automating athlete lifecycle tracking.",
+                "Built an athlete management system with auth, admin overrides, bulk imports, and deduplication (PocketBase, Better Auth, Drizzle ORM).",
+                "Wired a Playwright/Vitest E2E and unit suite into a containerized CI/CD pipeline (Docker, Terraform)."
+            ]
+        }
+    },
+    {
+        "title": "Software Developer",
+        "company": "Ingenuity Software",
+        "duration": "Feb 2024 – May 2026",
+        "responsibilities": {
+            "roleDescription": [
+                "Full Stack: Built a tournament management app with a real-time filtering leaderboard, inline admin editing with role-based APIs, and deeplinked shareable scorecards. Delivered 50+ PRs (Next.js 14, TypeScript, SWR, MUI v5).",
+                "Full Stack: Built role-based manager and planner UIs for a field ops platform covering billing, work orders, and routing, with unit tests (React, TanStack Router/Query, Tailwind).",
+                "Full Stack: Built a Sanity CMS marketing site with parallax, video background, and scroll transitions, deployed via AWS Amplify (Next.js 14, Framer Motion, Styled Components).",
+                "Mobile: Built a React Native field service app in under 2 months: OTP auth flow, Google/Facebook OAuth, photo upload with retry/caching, and a status-driven interactive map (Expo, Zustand, TanStack Query).",
+                "Mobile: Architected a reusable Flutter Clean Architecture template with AWS Amplify/Cognito auth and a cross-platform Dio HTTP client for rapid team onboarding.",
+                "General: Mentored interns on production-grade and AI-assisted development workflows through code reviews and guidance."
+            ]
+        }
+    },
+    {
+        "title": "Freelance Software Engineer",
+        "duration": "Jan 2023 – Present",
+        "responsibilities": {
+            "roleDescription": [
+                "Shipped a Flutter VPN app to the Google Play Store in under 3 months, with a companion AstroJS marketing site.",
+                "Built a community platform (React, Firebase) handling auth, real-time data, and user management."
             ]
         }
     },
@@ -19,8 +44,8 @@
         "duration": "March 2023 – May 2023",
         "responsibilities": {
             "roleDescription": [
-                "Enhanced user experience and functionality of a business consultancy services app.",
-                "Developed a freelancing platform for Medical Professionals, focusing on accessibility and functionality."
+                "Maintained a React Native consultancy app.",
+                "Led a Laravel/PHP networking platform for medical professionals."
             ]
         }
     },
