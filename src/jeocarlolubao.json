@@ -201,11 +201,14 @@
             "duration": "2024 – Present"
         },
         {
-            "title": "Freelance Developer",
-            "duration": "2022 – Present",
+            "title": "Freelance Software Engineer",
+            "duration": "Jan 2023 – Jun 2026",
             "responsibilities": {
                 "roleDescription": [
-                    "Creating personal projects for skill enhancement and actively contributing to Free and Open Source Software (FOSS) projects on GitHub, driven by a passion for open source and continuous learning."
+                    "Owned and shipped full-stack mobile and web products, handling front-end, back-end, APIs, and deployment using Flutter, React, AstroJS, Svelte, and cloud hosting, reducing feature rollout time by ~30% and improving user experience.",
+                    "Revamped UI, authentication, and payment workflows for a community platform, improving page load performance by 1–2 seconds and reducing authentication errors by ~25% across front-end and backend systems.",
+                    "Engaged in personal projects and open-source contributions, applying AI-assisted development techniques such as boilerplate generation, refactoring, and automated testing to accelerate feature delivery and improve maintainability.",
+                    "Accelerated development and reduced production risk by implementing CI/CD pipelines, testing best practices, and backend emulation, ensuring smoother releases and higher code quality."
                 ]
             }
         },
@@ -475,7 +478,7 @@
             ]
         },
         {
-            "shown": true,
+            "shown": false,
             "title": "VoiceNotes",
             "description": {
                 "short_description": "A Speech-to-Text (STT) note-taking app using SQLite",
@@ -501,7 +504,7 @@
             ]
         },
         {
-            "shown": true,
+            "shown": false,
             "title": "Binary Game",
             "description": {
                 "short_description": "A Java-based GUI educational tool for learning binary encoding",

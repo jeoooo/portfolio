@@ -119,7 +119,7 @@
         ]
     },
     {
-        "shown": true,
+        "shown": false,
         "title": "VoiceNotes",
         "description": {
             "short_description": "A Speech-to-Text (STT) note-taking app using SQLite",
@@ -133,7 +133,7 @@
         ]
     },
     {
-        "shown": true,
+        "shown": false,
         "title": "Binary Game",
         "description": {
             "short_description": "A Java-based GUI educational tool for learning binary encoding",

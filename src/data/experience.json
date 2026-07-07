@@ -30,11 +30,13 @@
     },
     {
         "title": "Freelance Software Engineer",
-        "duration": "Jan 2023 – Present",
+        "duration": "Jan 2023 – Jun 2026",
         "responsibilities": {
             "roleDescription": [
-                "Shipped a Flutter VPN app to the Google Play Store in under 3 months, with a companion AstroJS marketing site.",
-                "Built a community platform (React, Firebase) handling auth, real-time data, and user management."
+                "Owned and shipped full-stack mobile and web products, handling front-end, back-end, APIs, and deployment using Flutter, React, AstroJS, Svelte, and cloud hosting, reducing feature rollout time by ~30% and improving user experience.",
+                "Revamped UI, authentication, and payment workflows for a community platform, improving page load performance by 1–2 seconds and reducing authentication errors by ~25% across front-end and backend systems.",
+                "Engaged in personal projects and open-source contributions, applying AI-assisted development techniques such as boilerplate generation, refactoring, and automated testing to accelerate feature delivery and improve maintainability.",
+                "Accelerated development and reduced production risk by implementing CI/CD pipelines, testing best practices, and backend emulation, ensuring smoother releases and higher code quality."
             ]
         }
     },
