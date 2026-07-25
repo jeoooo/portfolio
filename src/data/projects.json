@@ -4,7 +4,7 @@
         "title": "PocketbaseExtended",
         "description": {
             "short_description": "Pocketbase Library for Arduino",
-            "long_description": "(Under Development) The PocketbaseExtended library facilitates smooth integration between Arduino projects and PocketBase, an open-source backend solution. PocketBase encompasses an embedded SQLite database with real-time subscriptions, integrated authentication management, a user-friendly dashboard UI, and a straightforward REST-ish API. By using the PocketbaseExtended library, developers can effortlessly connect their Arduino devices to the feature-rich PocketBase platform, streamlining real-time data processing and communication. Simplify your IoT projects with the seamless integration provided by the PocketbaseExtended library."
+            "long_description": "The PocketbaseExtended library facilitates smooth integration between Arduino projects and PocketBase, an open-source backend solution. PocketBase encompasses an embedded SQLite database with real-time subscriptions, integrated authentication management, a user-friendly dashboard UI, and a straightforward REST-ish API. By using the PocketbaseExtended library, developers can effortlessly connect their Arduino devices to the feature-rich PocketBase platform, streamlining real-time data processing and communication. An open-source project with 22 GitHub stars, listed in the Arduino Library Manager."
         },
         "websiteLink": "https://github.com/jeoooo/PocketbaseExtended",
         "techStack": [
@@ -37,6 +37,49 @@
         "techStack": [
             { "name": "python", "color": "#fff" },
             { "name": "fastapi", "color": "#fff" },
+            { "name": "postgresql", "color": "#fff" },
+            { "name": "docker", "color": "#fff" }
+        ]
+    },
+    {
+        "shown": true,
+        "title": "ApoStore",
+        "description": {
+            "short_description": "Open-source POS and merch store for GDG Davao",
+            "long_description": "ApoStore is an open-source point-of-sale and merchandise storefront built for GDG Davao, currently in active development. It combines a TanStack-powered frontend with Firebase for auth and real-time data to help the community manage merch sales and inventory at events and meetups."
+        },
+        "techStack": [
+            { "name": "react", "color": "#fff" },
+            { "name": "tanstack", "color": "#fff" },
+            { "name": "firebase", "color": "#fff" }
+        ]
+    },
+    {
+        "shown": true,
+        "title": "School Management System API",
+        "description": {
+            "short_description": "REST API for colleges, departments, courses, and enrollments",
+            "long_description": "A REST API built with Django and Django REST Framework for managing colleges, departments, courses, and student enrollments. It features a custom role-based user model for admins, faculty, and students, auto-generated Swagger documentation, and a unit/integration test suite, all containerized with Docker for consistent deployment."
+        },
+        "websiteLink": "https://github.com/jeoooo/schoolmgmt-be",
+        "techStack": [
+            { "name": "python", "color": "#fff" },
+            { "name": "django", "color": "#fff" },
+            { "name": "postgresql", "color": "#fff" },
+            { "name": "docker", "color": "#fff" }
+        ]
+    },
+    {
+        "shown": true,
+        "title": "Vortex API",
+        "description": {
+            "short_description": "REST backend for a hackathon platform built with Django",
+            "long_description": "Vortex API is a REST backend for a hackathon platform built with Django and Django REST Framework. It handles authentication via django-allauth, exposes auto-generated OpenAPI docs through drf-spectacular, and is backed by PostgreSQL with a pytest test suite for reliability, all running in Docker."
+        },
+        "websiteLink": "https://github.com/jeoooo/vortex-api-django",
+        "techStack": [
+            { "name": "python", "color": "#fff" },
+            { "name": "django", "color": "#fff" },
             { "name": "postgresql", "color": "#fff" },
             { "name": "docker", "color": "#fff" }
         ]
